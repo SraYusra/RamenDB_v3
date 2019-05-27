@@ -3,6 +3,15 @@
     <h1>Search</h1>
     <div>
       <input type="text" v-model="search" placeholder="Search">
+      <select v-model="selected">
+        <option disabled>Filter by...</option>
+        <option>Title</option>
+        <option>Description</option>
+      </select>
+      <span>Project</span>
+      <input type="checkbox" id="projType" v-model="projType">
+      <span>Service</span>
+      <input type="checkbox" id="servType" v-model="servType">
     </div>
     <div v-if="projects.length > 0" class="table-wrap">
       <table>
@@ -41,7 +50,10 @@ export default {
   data () {
     return {
       projects: [],
-      search: ''
+      search: '',
+      selected: '',
+      projType: true,
+      servType: true
     }
   },
   mounted () {
@@ -72,9 +84,25 @@ export default {
   },
   computed: {
     filteredProjects () {
-      return this.projects.filter((project) => {
-        return project.title.toLowerCase().includes(this.search.toLowerCase())
-      })
+      console.log('proj: ' + this.projType)
+      console.log('serv: ' + this.servType)
+      if (this.projType || this.servType) {
+        if (this.projType) {
+          if (this.selected === 'Title') {
+            return this.projects.filter((project) => {
+              return project.title.toLowerCase().includes(this.search.toLowerCase())
+            })
+          } if (this.selected === 'Description') {
+            return this.projects.filter((project) => {
+              return project.description.toLowerCase().includes(this.search.toLowerCase())
+            })
+          } else {
+            return this.projects.filter((project) => {
+              return project.title.toLowerCase().includes(this.search.toLowerCase())
+            })
+          }
+        }
+      }
     }
   }
 }
