@@ -4,6 +4,9 @@
       <a id="home" href="/"> 
         <span>Projects/Services</span>  
       </a>
+      <a id="search" href="/search"> 
+        <span>Search</span>  
+      </a>
       <a id="upload" href="/upload"> 
         <span>Upload</span>  
       </a>

@@ -137,9 +137,11 @@ export default {
 html, body {
   margin: 0;
   padding: 0;
+  overflow-x: scroll;
 }
 body {
   margin: 32px auto;
+  overflow-x: scroll;
 }
 .panel {
   border: 2px solid #dfdfdf;
@@ -166,7 +168,7 @@ table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
   margin-top: 15px;
 }
 
