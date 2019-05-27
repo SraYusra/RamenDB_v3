@@ -1,10 +1,10 @@
 <template>
   <div class="searchProjects">
-    <h1>Projects and Services</h1>
+    <h1>Search</h1>
+    <div>
+      <input type="text" v-model="search" placeholder="Search">
+    </div>
     <div v-if="projects.length > 0" class="table-wrap">
-      <div>
-        <router-link v-bind:to="{ name: 'addproject' }" class="">Add Project/Service</router-link>
-      </div>
       <table>
         <tr>
           <td>Title</td>
@@ -12,7 +12,7 @@
           <td width="100">Type</td>
           <td width="100" align="center">Action</td>
         </tr>
-        <tr v-for="(project,index) in projects" :key="index">
+        <tr v-for="(project,index) in filteredProjects" :key="index">
           <td>{{ project.title }}</td>
           <td>{{ project.description }}</td>
           <td>{{ project.type.toLowerCase() }}</td>
@@ -30,7 +30,6 @@
     <br>
     <br>
     <br>
-    <router-link v-bind:to="{ name: 'upload' }" class="upload_link">File Upload</router-link>
   </div>
 </template>
 
@@ -41,7 +40,8 @@ export default {
   name: 'searchProjects',
   data () {
     return {
-      projects: []
+      projects: [],
+      search: ''
     }
   },
   mounted () {
@@ -69,6 +69,13 @@ export default {
         })
       })
     }
+  },
+  computed: {
+    filteredProjects () {
+      return this.projects.filter((project) => {
+        return project.title.toLowerCase().includes(this.search.toLowerCase())
+      })
+    }
   }
 }
 </script>
@@ -81,7 +88,8 @@ export default {
   margin: 10px auto;
   text-align: center;
 }
-table th, table tr {
+table th,
+table tr {
   text-align: left;
 }
 table thead {

@@ -1,6 +1,9 @@
 <template>
   <div class="projects">
     <h1>Projects and Services</h1>
+    <div>
+      <input type="text" v-model="search" placeholder="Search">
+    </div>
     <div v-if="projects.length > 0" class="table-wrap">
       <div>
         <router-link v-bind:to="{ name: 'addproject' }" class="">Add Project/Service</router-link>
@@ -12,7 +15,7 @@
           <td width="100">Type</td>
           <td width="100" align="center">Action</td>
         </tr>
-        <tr v-for="(project,index) in projects" :key="index">
+        <tr v-for="(project,index) in filteredProjects" :key="index">
           <td>{{ project.title }}</td>
           <td>{{ project.description }}</td>
           <td>{{ project.type.toLowerCase() }}</td>
@@ -41,7 +44,8 @@ export default {
   name: 'projects',
   data () {
     return {
-      projects: []
+      projects: [],
+      search: ''
     }
   },
   mounted () {
@@ -67,6 +71,13 @@ export default {
         $this.$router.go({
           path: '/'
         })
+      })
+    }
+  },
+  computed: {
+    filteredProjects () {
+      return this.projects.filter((project) => {
+        return project.title.toLowerCase().includes(this.search.toLowerCase())
       })
     }
   }
