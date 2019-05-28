@@ -39,6 +39,7 @@
 
 <script>
 import ProjectsService from '@/services/ProjectsService'
+import Swal from 'sweetalert2'
 
 export default {
   name: 'projects',
@@ -58,7 +59,7 @@ export default {
     },
     async deleteProject (id) {
       const $this = this
-      $this.$swal({
+      Swal.fire({
         title: 'Are you sure?',
         text: "You won't be able to revert this!",
         type: 'warning',
@@ -66,15 +67,17 @@ export default {
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonText: 'Yes, delete it!'
-      }).then((value) => {
-        if (value) {
-          $this.$swal(`the reutrned value is ${value}`)
+      }).then((result) => {
+        if (result.value) {
+          Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
           ProjectsService.deleteProject(id)
           $this.$router.go({
             path: '/'
           })
-        } else {
-          $this.$swal('cancelled')
         }
       })
     }
