@@ -5,6 +5,7 @@ import addproject from '@/components/AddProject'
 import editproject from '@/components/EditProject'
 import upload from '@/components/UploadFile'
 import search from '@/components/SearchProjects'
+import upload2 from '@/components/UploadFile2'
 
 Vue.use(Router)
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/search',
       component: search,
       name: 'search'
+    },
+    {
+      path: '/upload2',
+      component: upload2,
+      name: 'upload2'
     }
   ]
 })

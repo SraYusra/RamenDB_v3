@@ -1,6 +1,6 @@
 <template>
-  <div class="upload">
-    <h1>File Upload</h1>
+  <div class="upload2">
+    <h1>File Upload 2.0</h1>
     <div class="panel panel-sm">
       <div class="panel-heading"> 
         <h4>CSV Import</h4>
@@ -56,7 +56,7 @@
 
 <script>
 export default {
-  name: 'upload',
+  name: 'upload2',
   data () {
     return {
       channel_name: '',
@@ -107,6 +107,76 @@ export default {
       // INSTEAD OF RETURN, lets pass result to a new function to filter out the keys to only get ones we need and post them to database
       return result // JavaScript object
     },
+    parseCSV (csv) {
+      // var vm = this
+      // ALL the lines in the CSV file
+      var lines = csv.split('\n')
+
+      // Headers that are allowed, that we want
+      var availHeaders = [
+        'Summary',
+        'Project description',
+        'Issue id',
+        'Component/s',
+        'Status',
+        'Custom field (Department/Faculty)',
+        'Custom field (Customer Name)',
+        'Custom field (Customer User ID)',
+        'Time Spent',
+        'Created',
+        'Due Date'
+      ]
+      // tempHeaders has all the first line headers of the CSV file -- includes headers we need AND don't need
+      var tempHeaders = lines[0].split(',')
+      // An array on the indexes where the elements we want exist
+      // We use this to map the content to its headers in later lines
+      var indexes = []
+
+      // Parsing all headers and only getting the ones we need
+      // The goal here is to find all index numbers of where relevant items lie
+      var count = 0
+      tempHeaders.forEach(function (key) {
+        // if exists within set of fields, add index to array of indexes
+        availHeaders.forEach(function (headRR) {
+          if (key === headRR) {
+            indexes.push(count)
+          }
+        })
+        count++
+      })
+
+      console.log(indexes)
+
+      // After that, read line by line. Map data to headers (these variables are to display data on page)
+      lines.map(function (line, indexLine) {
+        var entry = line.split(',')
+        if (indexLine < 1) return
+        console.log('indexes: ' + indexes)
+
+        console.log(entry[0])
+
+        for (var i in indexes) {
+          console.log(i)
+        }
+        /*
+          var obj = {}
+          obj.title = entry[indexes[0]]
+          obj.description = entry[indexes[1]]
+          obj.ticketNum = entry[indexes[2]]
+          obj.type = entry[indexes[3]]
+          obj.status = entry[indexes[4]]
+          obj.faculty = entry[indexes[5]]
+          obj.customerName = entry[indexes[6]]
+          obj.customerID = entry[indexes[7]]
+          obj.hours = entry[indexes[8]]
+          obj.startDate = entry[indexes[9]]
+          obj.endDate = entry[indexes[10]]
+        */
+      })
+
+      // Once display is done, build JSON objects to be sent to the database
+      // ~FIN
+    },
     loadCSV (e) {
       var vm = this
       if (window.FileReader) {
@@ -115,8 +185,9 @@ export default {
         // Handle errors load
         reader.onload = function (event) {
           var csv = event.target.result
-          console.log(csv)
+          // console.log(csv)
           vm.parse_csv = vm.csvJSON(csv)
+          vm.parseCSV(csv)
         }
         reader.onerror = function (evt) {
           if (evt.target.error.name === 'NotReadableError') {
