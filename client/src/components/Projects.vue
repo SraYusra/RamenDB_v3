@@ -66,11 +66,16 @@ export default {
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
         confirmButtonText: 'Yes, delete it!'
-      }).then(function () {
-        ProjectsService.deleteProject(id)
-        $this.$router.go({
-          path: '/'
-        })
+      }).then((value) => {
+        if (value) {
+          $this.$swal(`the reutrned value is ${value}`)
+          ProjectsService.deleteProject(id)
+          $this.$router.go({
+            path: '/'
+          })
+        } else {
+          $this.$swal('cancelled')
+        }
       })
     }
   },

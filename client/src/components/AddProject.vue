@@ -15,21 +15,21 @@
         <div>
           <label>Type: </label>
           <select v-model="type" ref="type">
-              <option :selected="type=='Type...'" :value="null">Type...</option>
+              <option disabled :selected="type=='Type...'" :value="null">Type...</option>
               <option>PROJECT</option> <!--  -->
               <option>SERVICE</option>
           </select>
 
           <label>Status: </label>
           <select v-model="status" ref="status">
-              <option :selected="status=='Choose a Status...'" :value="null">Choose a Status...</option>
+              <option disabled :selected="status=='Choose a Status...'" :value="null">Choose a Status...</option>
               <option v-for="s in statuses" v-bind:value="s" :key="s">{{s}}</option>
           </select>
         </div>
         <div>
           <label>Faculty/Affiliate: </label>
           <select v-model="faculty" ref="faculty">
-              <option :selected="faculty=='Choose a Faculty...'" :value="null">Choose a Faculty...</option>
+              <option disabled :selected="faculty=='Choose a Faculty...'" :value="null">Choose a Faculty...</option>
               <option v-for="f in faculties" v-bind:value="f" :key="f">{{f}}</option>
           </select>
         </div>

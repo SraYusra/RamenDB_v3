@@ -23,8 +23,17 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .burger {
   position: fixed;
 }
+
+.cross-style {
+  cursor: pointer;
+  position: absolute;
+  right: 2px;
+  top: 6px;
+}
+
+
 </style>
