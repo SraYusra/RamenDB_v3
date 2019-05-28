@@ -84,10 +84,50 @@ export default {
   },
   computed: {
     filteredProjects () {
-      console.log('proj: ' + this.projType)
-      console.log('serv: ' + this.servType)
       if (this.projType || this.servType) {
-        if (this.projType) {
+        if (this.projType && !this.servType) {
+          if (this.selected === 'Title') {
+            return this.projects.filter((project) => {
+              if (project.type.toLowerCase().includes('project')) {
+                return project.title.toLowerCase().includes(this.search.toLowerCase())
+              }
+            })
+          } if (this.selected === 'Description') {
+            return this.projects.filter((project) => {
+              if (project.type.toLowerCase().includes('project')) {
+                return project.description.toLowerCase().includes(this.search.toLowerCase())
+              }
+            })
+          } else {
+            return this.projects.filter((project) => {
+              if (project.type.toLowerCase().includes('project')) {
+                return project.title.toLowerCase().includes(this.search.toLowerCase())
+              }
+            })
+          }
+        }
+
+        if (this.servType && !this.projType) {
+          if (this.selected === 'Title') {
+            return this.projects.filter((project) => {
+              if (project.type.toLowerCase().includes('service')) {
+                return project.title.toLowerCase().includes(this.search.toLowerCase())
+              }
+            })
+          } if (this.selected === 'Description') {
+            return this.projects.filter((project) => {
+              if (project.type.toLowerCase().includes('service')) {
+                return project.description.toLowerCase().includes(this.search.toLowerCase())
+              }
+            })
+          } else {
+            return this.projects.filter((project) => {
+              if (project.type.toLowerCase().includes('service')) {
+                return project.title.toLowerCase().includes(this.search.toLowerCase())
+              }
+            })
+          }
+        } else {
           if (this.selected === 'Title') {
             return this.projects.filter((project) => {
               return project.title.toLowerCase().includes(this.search.toLowerCase())

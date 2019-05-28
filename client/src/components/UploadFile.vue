@@ -132,7 +132,7 @@ export default {
 
 <style scoped>
 .upload {
-  margin-top: 150px;
+  margin-top: 130px;
 }
 html, body {
   margin: 0;
