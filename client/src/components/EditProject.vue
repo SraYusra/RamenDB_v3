@@ -63,12 +63,15 @@
 
         <div>
           <label> Start Date: </label>
-          <input type="date" style="width: 410px" name="startDate" placeholder="START DATE" v-model="startDate">
+          <template>
+            <date-pick v-model="date"></date-pick>
+            <input type="date" style="width: 410px" name="startDate" placeholder="START DATE" v-model="startDate">
+          </template>
         </div>
 
         <div>
 
-          <label> E n d Date: </label>
+          <label> End Date: </label>
           <input type="date" style="width: 410px" name="endDate" placeholder="END DATE" v-model="endDate">
         </div>
 
@@ -133,8 +136,7 @@ export default {
       // So I created a new date object, parsed whatever I get back from Mongo, and assigned these new dates to startDate and endDate
 
       // Update: this still doesn't work :$
-      // debugger
-      // var temp = new Date(this.startDate)
+      // var temp = new Date()
       // this.startDate = temp.getFullYear() + '-' + (temp.getMonth() + 1) + '-' + temp.getDate() // Month is incremented cuz months start at 0
 
       var temp2 = new Date()
