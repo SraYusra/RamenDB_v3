@@ -16,6 +16,7 @@
     "express": "^4.15.4",
     "mongoose": "^5.5.1",
     "morgan": "^1.8.2",
-    "nodemon": "^1.12.1"
+    "nodemon": "^1.12.1",
+    "vuejs-datepicker": "^1.5.4"
   }
 }

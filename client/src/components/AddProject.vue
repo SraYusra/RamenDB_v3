@@ -56,7 +56,7 @@
 
         <div>
           <label>Start Date: </label>
-          <input type="date" style="width: 410px" name="startDate" placeholder="START DATE" v-model="startDate">
+          <input type="date" style="width: 410px" name="startDate" value="" placeholder="START DATE" v-model="startDate">
         </div>
 
         <div>
