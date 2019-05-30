@@ -99,6 +99,7 @@ export default {
         headers.map(function (header, indexHeader) {
           obj[header] = currentline[indexHeader]
         })
+
         result.push(obj)
       })
 

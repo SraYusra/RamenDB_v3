@@ -55,6 +55,8 @@
 </template>
 
 <script>
+import ProjectsService from '@/services/ProjectsService'
+
 export default {
   name: 'upload2',
   data () {
@@ -66,7 +68,8 @@ export default {
       headers: ['Title', 'Description', 'Select'],
       parse_csv: [],
       sortOrders: {},
-      sortKey: ''
+      sortKey: '',
+      toBePosted: []
     }
   },
   filters: {
@@ -112,13 +115,14 @@ export default {
       // ALL the lines in the CSV file
       var lines = csv.split('\n')
 
+      /*
       // Headers that are allowed, that we want
       var availHeaders = [
         'Summary',
-        'Project description',
-        'Issue id',
-        'Component/s',
+        'Issue key',
         'Status',
+        'Project description',
+        'Component/s',
         'Custom field (Department/Faculty)',
         'Custom field (Customer Name)',
         'Custom field (Customer User ID)',
@@ -126,12 +130,15 @@ export default {
         'Created',
         'Due Date'
       ]
+      */
+
       // tempHeaders has all the first line headers of the CSV file -- includes headers we need AND don't need
-      var tempHeaders = lines[0].split(',')
+      // var tempHeaders = lines[0].split(',')
       // An array on the indexes where the elements we want exist
       // We use this to map the content to its headers in later lines
-      var indexes = []
+      var indexes = [0, 1, 5, 10, 11, 17, 21, 22, 57, 59, 62]
 
+      /*
       // Parsing all headers and only getting the ones we need
       // The goal here is to find all index numbers of where relevant items lie
       var count = 0
@@ -144,21 +151,59 @@ export default {
         })
         count++
       })
+      */
 
-      console.log(indexes)
+      console.log(indexes) // HEEREE is where it breaksss
+
+      // Pop last entry/line in csv cuz its undefined
+      lines.pop()
 
       // After that, read line by line. Map data to headers (these variables are to display data on page)
       lines.map(function (line, indexLine) {
-        var entry = line.split(',')
+        // Splits between commas unless they're in between quotes
+        var entry = line.split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
+        entry = entry || []
+
+        console.log(entry)
+
         if (indexLine < 1) return
         console.log('indexes: ' + indexes)
 
-        console.log(entry[0])
+        var postHeaders = [
+          'title',
+          'ticketNum',
+          'status',
+          'description',
+          'hours',
+          'startDate',
+          'type',
+          'endDate',
+          'customerName',
+          'customerID',
+          'faculty'
+        ]
 
-        for (var i in indexes) {
-          console.log(i)
-        }
+        var content = []
+        indexes.forEach(function (index) {
+          console.log(index)
+          var x = parseInt(index)
+          console.log(entry[x])
+          content.push(entry[x])
+        })
+        console.log('Content: ' + content)
+
+        var obj = {}
+        postHeaders.forEach((k, i) => { obj[k] = content[i] })
+        obj.status.toUpperCase()
+        console.log(obj)
+
+        this.toBePosted = this.toBePosted || []
+
+        this.toBePosted.push(obj)
+
         /*
+          == TODO: POST OBJ
+          == THE ABOVE CODE DOES THE FOLLOWING:
           var obj = {}
           obj.title = entry[indexes[0]]
           obj.description = entry[indexes[1]]
@@ -172,9 +217,14 @@ export default {
           obj.startDate = entry[indexes[9]]
           obj.endDate = entry[indexes[10]]
         */
+
+        this.addProject(obj)
       })
 
-      // Once display is done, build JSON objects to be sent to the database
+      // FEEL FREE TO ERASE THE CONSOLE.LOGS
+
+      // Once all JSONS are created, post all JSONs in this.toBePosted
+
       // ~FIN
     },
     loadCSV (e) {
@@ -197,6 +247,27 @@ export default {
       } else {
         alert('FileReader are not supported in this browser.')
       }
+    },
+    async addProject (post) {
+      await ProjectsService.addProject({
+        title: post.title,
+        description: post.description,
+        ticketNum: post.ticketNum,
+        type: post.type,
+        customerName: post.customerName,
+        customerID: post.customerID,
+        status: post.status,
+        hours: post.hours,
+        startDate: post.startDate,
+        endDate: post.endDate,
+        faculty: post.faculty
+      })
+      this.$swal(
+        'Great!',
+        `Your project has been added!`,
+        'success'
+      )
+      this.$router.push({ name: 'Projects' })
     }
   }
 }
