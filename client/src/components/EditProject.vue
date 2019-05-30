@@ -136,14 +136,8 @@ export default {
       // So I created a new date object, parsed whatever I get back from Mongo, and assigned these new dates to startDate and endDate
 
       // Update: this still doesn't work :$
-<<<<<<< HEAD
-      var temp = new Date()
-      this.startDate = temp.getFullYear() + '-' + (temp.getMonth() + 1) + '-' + temp.getDate() // Month is incremented cuz months start at 0
-=======
-      // debugger
-      // var temp = new Date(this.startDate)
+      // var temp = new Date()
       // this.startDate = temp.getFullYear() + '-' + (temp.getMonth() + 1) + '-' + temp.getDate() // Month is incremented cuz months start at 0
->>>>>>> 3a2085296be848f9b6bdf55a141e5b005b29b52f
 
       var temp2 = new Date()
       this.endDate = temp2.getFullYear() + '-' + (temp2.getMonth() + 1) + '-' + temp2.getDate()

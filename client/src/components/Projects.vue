@@ -6,7 +6,9 @@
     </div>
     <div v-if="projects.length > 0" class="table-wrap">
       <div>
-        <router-link v-bind:to="{ name: 'addproject' }" class="">Add Project/Service</router-link>
+        <router-link v-bind:to="{ name: 'addproject' }" class="upload_link">Add Project/Service</router-link>
+        <br>
+        <br>
       </div>
       <table>
         <tr>
