@@ -5,7 +5,7 @@
     <slidenav></slidenav>
     <div class="navbar-item" width="1700">
       <a style="text-decoration: none" href="/">
-        <img src="../../assets/logo.png" width="50" height="60">
+        <img alt="Ramen noodles in a bowl" src="../../assets/logo.png" width="50" height="60">
         <div class="logo">Ramen Database</div>
       </a>
     </div>
