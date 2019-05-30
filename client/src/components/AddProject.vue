@@ -75,6 +75,7 @@
 <script>
 import ProjectsService from '@/services/ProjectsService'
 import { BasicSelect } from 'vue-search-select'
+import Swal from 'sweetalert2'
 
 export default {
   name: 'addproject',
@@ -105,29 +106,36 @@ export default {
     this.statuses = require('./status.json').statuses
     this.faculties = require('./faculties.json').faculties
   },
-
   methods: {
     async addProject () {
-      await ProjectsService.addProject({
-        title: this.title,
-        description: this.description,
-        ticketNum: this.ticketNum,
-        type: this.type,
-        customerName: this.customerName,
-        customerID: this.customerID,
-        courseID: this.courseID,
-        status: this.status,
-        hours: this.hours,
-        startDate: this.startDate,
-        endDate: this.endDate,
-        faculty: this.faculty
-      })
-      this.$swal(
-        'Great!',
-        `Your project has been added!`,
-        'success'
-      )
-      this.$router.push({ name: 'Projects' })
+      if (this.title !== '') {
+        await ProjectsService.addProject({
+          title: this.title,
+          description: this.description,
+          ticketNum: this.ticketNum,
+          type: this.type,
+          customerName: this.customerName,
+          customerID: this.customerID,
+          courseID: this.courseID,
+          status: this.status,
+          hours: this.hours,
+          startDate: this.startDate,
+          endDate: this.endDate,
+          faculty: this.faculty
+        })
+        Swal.fire(
+          'Great!',
+          `Your project has been added!`,
+          'success'
+        )
+        this.$router.push({ name: 'Projects' })
+      } else {
+        Swal.fire(
+          'Error!',
+          `Please enter a title.`,
+          'failure'
+        )
+      }
     },
     onSelect (department) {
       this.department = department
