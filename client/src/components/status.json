@@ -1,14 +1,14 @@
 {
     "statuses": [
-        "OPEN",
-        "ROADMAP",
-        "NEEDS APPROVAL",
-        "INVESTIGATING",
-        "FROZEN",
-        "ESCALATED",
-        "WAITING FOR REPORTER",
-        "WAITING FOR EXTERNAL",
-        "INACTIVE - PENDING CLOSURE",
-        "CLOSED"
+        "Open",
+        "Roadmap",
+        "Needs Approval",
+        "Investigating",
+        "Frozen",
+        "Escalated",
+        "Waiting for Reporter",
+        "Waiting for External",
+        "Inactive - Pending Closure",
+        "Closed"
     ]
 }
