@@ -1,0 +1,6 @@
+# Junk #
+.DS_Store
+
+# Priv #
+.env
+ssl/

@@ -115,7 +115,7 @@ export default {
       // ALL the lines in the CSV file
       var lines = csv.split('\n')
       console.log('LINES 1:' + lines[1])
-      console.log('LINES 2:' + lines[2])
+      console.log(lines[2])
 
       /*
       // Headers that are allowed, that we want
@@ -151,6 +151,8 @@ export default {
         var entry = line.split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
         entry = entry || []
 
+        if (entry.length < 1 || entry === undefined) return
+
         console.log(entry)
 
         if (indexLine < 1) return
@@ -181,9 +183,7 @@ export default {
 
         var obj = {}
         postHeaders.forEach((k, i) => { obj[k] = content[i] })
-        obj.status.toUpperCase()
 
-        obj.type.toUpperCase()
         obj.type.includes('Project') ? obj.type = 'PROJECT' : obj.type = 'SERVICE'
 
         console.log(obj)
@@ -240,6 +240,9 @@ export default {
     },
     async addProjects () {
       await this.toBePosted.forEach(async function (post) {
+        post.description.replace(/"/g, '')
+        post.faculty.replace(/"/g, '')
+        post.status.toLowerCase()
         await ProjectsService.addProject({
           title: post.title,
           description: post.description,
