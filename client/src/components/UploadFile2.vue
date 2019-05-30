@@ -114,6 +114,8 @@ export default {
       var vm = this
       // ALL the lines in the CSV file
       var lines = csv.split('\n')
+      console.log('LINES 1:' + lines[1])
+      console.log('LINES 2:' + lines[2])
 
       /*
       // Headers that are allowed, that we want
@@ -133,7 +135,7 @@ export default {
       */
 
       // tempHeaders has all the first line headers of the CSV file -- includes headers we need AND don't need
-      // var tempHeaders = lines[0].split(',')
+
       // An array on the indexes where the elements we want exist
       // We use this to map the content to its headers in later lines
       var indexes = [0, 1, 5, 10, 11, 17, 21, 22, 57, 59, 62]
@@ -141,7 +143,7 @@ export default {
       console.log(indexes) // HEEREE is where it breaksss
 
       // Pop last entry/line in csv cuz its undefined
-      lines.pop()
+      // lines.pop()
 
       // After that, read line by line. Map data to headers (these variables are to display data on page)
       lines.map(function (line, indexLine) {
@@ -202,16 +204,14 @@ export default {
           obj.startDate = entry[indexes[9]]
           obj.endDate = entry[indexes[10]]
         */
-
         vm.toBePosted.push(obj)
-        vm.toBePosted = vm.toBePosted || []
-
-        console.log(vm.toBePosted)
       })
 
       // FEEL FREE TO ERASE THE CONSOLE.LOGS
 
-      // Once all JSONS are created, post all JSONs in this.toBePosted
+      // Once all JSONS are created, post all JSONs in this.toBePosted, if its undefined or empty, assign it to an empty array
+      vm.toBePosted = vm.toBePosted || []
+      console.log(vm.toBePosted)
 
       // vm.addProjects()
 
