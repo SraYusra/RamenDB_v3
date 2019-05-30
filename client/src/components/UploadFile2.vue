@@ -20,7 +20,7 @@
         </div>
         
         <div class="col-sm-offset-3 col-sm-9">
-          <a href="/" class="btn btn-primary"><button class="app_project_btn">Parse CSV</button></a>
+          <button @click="addProjects" class="app_project_btn">Parse CSV</button>
         </div>
 
         <!-- HERE is where the table will be displayed once CSV is uploaded -->
@@ -111,9 +111,11 @@ export default {
       return result // JavaScript object
     },
     parseCSV (csv) {
-      // var vm = this
+      var vm = this
       // ALL the lines in the CSV file
       var lines = csv.split('\n')
+      console.log('LINES 1:' + lines[1])
+      console.log('LINES 2:' + lines[2])
 
       /*
       // Headers that are allowed, that we want
@@ -133,30 +135,15 @@ export default {
       */
 
       // tempHeaders has all the first line headers of the CSV file -- includes headers we need AND don't need
-      // var tempHeaders = lines[0].split(',')
+
       // An array on the indexes where the elements we want exist
       // We use this to map the content to its headers in later lines
       var indexes = [0, 1, 5, 10, 11, 17, 21, 22, 57, 59, 62]
 
-      /*
-      // Parsing all headers and only getting the ones we need
-      // The goal here is to find all index numbers of where relevant items lie
-      var count = 0
-      tempHeaders.forEach(function (key) {
-        // if exists within set of fields, add index to array of indexes
-        availHeaders.forEach(function (headRR) {
-          if (key === headRR) {
-            indexes.push(count)
-          }
-        })
-        count++
-      })
-      */
-
       console.log(indexes) // HEEREE is where it breaksss
 
       // Pop last entry/line in csv cuz its undefined
-      lines.pop()
+      // lines.pop()
 
       // After that, read line by line. Map data to headers (these variables are to display data on page)
       lines.map(function (line, indexLine) {
@@ -195,11 +182,11 @@ export default {
         var obj = {}
         postHeaders.forEach((k, i) => { obj[k] = content[i] })
         obj.status.toUpperCase()
+
+        obj.type.toUpperCase()
+        obj.type.includes('Project') ? obj.type = 'PROJECT' : obj.type = 'SERVICE'
+
         console.log(obj)
-
-        this.toBePosted = this.toBePosted || []
-
-        this.toBePosted.push(obj)
 
         /*
           == TODO: POST OBJ
@@ -217,13 +204,16 @@ export default {
           obj.startDate = entry[indexes[9]]
           obj.endDate = entry[indexes[10]]
         */
-
-        this.addProject(obj)
+        vm.toBePosted.push(obj)
       })
 
       // FEEL FREE TO ERASE THE CONSOLE.LOGS
 
-      // Once all JSONS are created, post all JSONs in this.toBePosted
+      // Once all JSONS are created, post all JSONs in this.toBePosted, if its undefined or empty, assign it to an empty array
+      vm.toBePosted = vm.toBePosted || []
+      console.log(vm.toBePosted)
+
+      // vm.addProjects()
 
       // ~FIN
     },
@@ -248,23 +238,25 @@ export default {
         alert('FileReader are not supported in this browser.')
       }
     },
-    async addProject (post) {
-      await ProjectsService.addProject({
-        title: post.title,
-        description: post.description,
-        ticketNum: post.ticketNum,
-        type: post.type,
-        customerName: post.customerName,
-        customerID: post.customerID,
-        status: post.status,
-        hours: post.hours,
-        startDate: post.startDate,
-        endDate: post.endDate,
-        faculty: post.faculty
+    async addProjects () {
+      await this.toBePosted.forEach(async function (post) {
+        await ProjectsService.addProject({
+          title: post.title,
+          description: post.description,
+          ticketNum: post.ticketNum,
+          type: post.type,
+          customerName: post.customerName,
+          customerID: post.customerID,
+          status: post.status,
+          hours: post.hours,
+          startDate: post.startDate,
+          endDate: post.endDate,
+          faculty: post.faculty
+        })
       })
       this.$swal(
         'Great!',
-        `Your project has been added!`,
+        `Your projects have been added! Please REFRESH page.`,
         'success'
       )
       this.$router.push({ name: 'Projects' })
