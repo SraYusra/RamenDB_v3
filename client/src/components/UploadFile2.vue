@@ -31,8 +31,8 @@
                   @click="sortBy(key)"
                   :class="{ active: sortKey == key }">
                 {{ key | capitalize }}
-                <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
-                </span>
+                <!-- <span class="arrow" :class="sortOrders[key] > 0 ? 'asc' : 'dsc'">
+                </span> -->
               </th>
             </tr>
           </thead> 
@@ -65,32 +65,34 @@ export default {
       channel_fields: [],
       channel_entries: [],
       parse_header: [],
-      headers: ['Title', 'Description', 'Select'],
-      parse_csv: [],
+      headers: [],
+      parse_csv: [], // im not suree
       sortOrders: {},
       sortKey: '',
-      toBePosted: []
+      toBePosted: [] // contains all objects to be posted to DB
     }
   },
   filters: {
+    // capitalizes first letter only
     capitalize: function (str) {
       return str.charAt(0).toUpperCase() + str.slice(1)
     }
   },
   methods: {
+    // no idea............................................................................
     sortBy: function (key) {
       var vm = this
       vm.sortKey = key
       vm.sortOrders[key] = vm.sortOrders[key] * -1
     },
+    // old parse csv(dont need, why is this here)
     csvJSON (csv) {
-      var vm = this
       var lines = csv.split('\n')
       var result = []
       var headers = lines[0].split(',')
-      vm.parse_header = lines[0].split(',')
+      this.parse_header = lines[0].split(',')
       lines[0].split(',').forEach(function (key) {
-        vm.sortOrders[key] = 1
+        this.sortOrders[key] = 1
       })
 
       lines.map(function (line, indexLine) {
@@ -110,8 +112,8 @@ export default {
       // INSTEAD OF RETURN, lets pass result to a new function to filter out the keys to only get ones we need and post them to database
       return result // JavaScript object
     },
+    // reads file from loadCSV and parses CSV into objects to be posted
     parseCSV (csv) {
-      var vm = this
       // ALL the lines in the CSV file
       var lines = csv.split('\n')
       var headerLine = lines[0].split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
@@ -139,20 +141,21 @@ export default {
       // lines.pop()
 
       // After that, read line by line. Map data to headers (these variables are to display data on page)
+      // line in indexLine
       lines.map(function (line, indexLine) {
         // Splits between commas unless they're in between quotes
         var entry = line.split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
-        entry = entry || []
+        entry = entry || [] // entry is null or []
 
-        if (entry.length < 1 || entry === undefined) return
+        if (entry.length < 1 || entry === undefined) return // bad
 
         console.log(entry)
 
-        if (indexLine < 1) return
+        if (indexLine < 1) return // get rid of headers
 
         // Map content of line to the heaaders in lines[0], also stored in headerLine
         var lineMapped = {}
-        headerLine.forEach((k, i) => { lineMapped[k] = entry[i] })
+        headerLine.forEach((k, i) => { lineMapped[k] = entry[i] }) // maps headers to entries for one line at a time
 
         console.log(lineMapped)
 
@@ -161,7 +164,7 @@ export default {
         // Here i am trying to get all the content from availHeadersw
         availHeaders.forEach(
           (key, ind) => {
-            tempContent[ind] = lineMapped[key]
+            tempContent[ind] = lineMapped[key] // getting values of entry so they can be posted to postHeaders
           }
         )
 
@@ -184,7 +187,7 @@ export default {
         var obj = {}
         postHeaders.forEach((k, i) => { obj[k] = tempContent[i] })
 
-        if (obj) obj.type.includes('Project') ? obj.type = 'PROJECT' : obj.type = 'SERVICE'
+        if (obj) obj.type.includes('Project') ? obj.type = 'PROJECT' : obj.type = 'SERVICE' // broken
 
         console.log(obj)
 
@@ -204,30 +207,28 @@ export default {
           obj.startDate = entry[indexes[9]]
           obj.endDate = entry[indexes[10]]
         */
-        vm.toBePosted.push(obj)
+        this.toBePosted.push(obj) // pushes ready object to be posted into toBePosted array
       })
 
-      // FEEL FREE TO ERASE THE CONSOLE.LOGS
-
       // Once all JSONS are created, post all JSONs in this.toBePosted, if its undefined or empty, assign it to an empty array
-      vm.toBePosted = vm.toBePosted || []
-      console.log(vm.toBePosted)
+      this.toBePosted = this.toBePosted || []
+      console.log(this.toBePosted)
 
       // vm.addProjects()
 
       // ~FIN
     },
+    // loads the file yeeeeeeee
     loadCSV (e) {
-      var vm = this
       if (window.FileReader) {
         var reader = new FileReader()
         reader.readAsText(e.target.files[0])
         // Handle errors load
         reader.onload = function (event) {
-          var csv = event.target.result
+          var csv = event.target.result // Loads entire csv file content
           // console.log(csv)
-          vm.parse_csv = vm.csvJSON(csv)
-          vm.parseCSV(csv)
+          this.parse_csv = this.csvJSON(csv)
+          this.parseCSV(csv) // Passes the csv to parseCSV
         }
         reader.onerror = function (evt) {
           if (evt.target.error.name === 'NotReadableError') {
