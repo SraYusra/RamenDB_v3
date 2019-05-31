@@ -108,7 +108,8 @@ export default {
   },
   methods: {
     async addProject () {
-      if (this.title !== '') {
+      var errorString = ''
+      if (this.title !== '' && this.ticketNum !== '' && this.description !== '' && this.customerName !== '' && this.customerID !== '') {
         await ProjectsService.addProject({
           title: this.title,
           description: this.description,
@@ -130,10 +131,26 @@ export default {
         )
         this.$router.push({ name: 'Projects' })
       } else {
+        if (this.title === '') {
+          errorString += 'Please enter a title.<br>'
+        }
+        if (this.ticketNum === '') {
+          errorString += 'Please enter a ticket number.<br>'
+        }
+        if (this.description === '') {
+          errorString += 'Please enter a description.<br>'
+        }
+        if (this.customerName === '') {
+          errorString += 'Please enter a customer name.<br>'
+        }
+        if (this.customerID === '') {
+          errorString += 'Please enter a customer ID.<br>'
+        }
+        console.log(errorString)
         Swal.fire(
           'Error!',
-          `Please enter a title.`,
-          'failure'
+          errorString,
+          'error'
         )
       }
     },
