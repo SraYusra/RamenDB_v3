@@ -84,6 +84,8 @@
 
 <script>
 import ProjectsService from '@/services/ProjectsService'
+import Swal from 'sweetalert2'
+
 export default {
   name: 'editproject',
   data () {
@@ -128,9 +130,11 @@ export default {
       this.courseID = response.data.courseID
       this.status = response.data.status
       this.hours = response.data.hours
-      this.startDate = response.data.startDate
-      this.endDate = response.data.endDate
-      this.faculty = response.data.faculty
+      var tempDate = response.data.startDate.split('T')
+      this.startDate = tempDate[0]
+      tempDate = response.data.endDate.split('T')
+      this.endDate = tempDate[0]
+      this.faculty = response.data.faculty.replace(/['"]+/g, '')
 
       // Here, mongo send back a whack date that did not work when I tried to attach it to the input fields
       // So I created a new date object, parsed whatever I get back from Mongo, and assigned these new dates to startDate and endDate
@@ -139,33 +143,64 @@ export default {
       // var temp = new Date()
       // this.startDate = temp.getFullYear() + '-' + (temp.getMonth() + 1) + '-' + temp.getDate() // Month is incremented cuz months start at 0
 
-      var temp2 = new Date()
-      this.endDate = temp2.getFullYear() + '-' + (temp2.getMonth() + 1) + '-' + temp2.getDate()
+      // var temp2 = new Date(this.endDate)
+      // this.endDate = temp2.getFullYear() + '-' + (temp2.getMonth() + 1) + '-' + temp2.getDate()
     },
     async updateProject () {
       // Sends the updated data to the API
-      await ProjectsService.updateProject({
-        id: this.$route.params.id,
-        title: this.title,
-        description: this.description,
-        ticketNum: this.ticketNum,
-        type: this.type,
-        customerName: this.customerName,
-        customerID: this.customerID,
-        courseID: this.courseID,
-        status: this.status,
-        hours: this.hours,
-        startDate: this.startDate,
-        endDate: this.endDate,
-        faculty: this.faculty
-      })
-      // Message that pops up when successfully updated
-      this.$swal(
-        'Great!',
-        `Your project has been updated!`,
-        'success'
-      )
-      this.$router.push({ name: 'Projects' })
+      var errorString = ''
+      if (this.startDate !== `"[0-9]{4}-[0-9]{2}-[0-9]{2}"`) {
+        console.log('incorrect')
+      }
+      if (this.startDate === undefined) {
+        console.log('un')
+      }
+      if (this.title !== '' && this.ticketNum !== '' && this.description !== '' && this.customerName !== '' && this.customerID !== '') {
+        await ProjectsService.updateProject({
+          id: this.$route.params.id,
+          title: this.title,
+          description: this.description,
+          ticketNum: this.ticketNum,
+          type: this.type,
+          customerName: this.customerName,
+          customerID: this.customerID,
+          courseID: this.courseID,
+          status: this.status,
+          hours: this.hours,
+          startDate: this.startDate,
+          endDate: this.endDate,
+          faculty: this.faculty
+        })
+        // Message that pops up when successfully updated
+        Swal.fire(
+          'Great!',
+          `Your project has been updated!`,
+          'success'
+        )
+        this.$router.push({ name: 'Projects' })
+      } else {
+        if (this.title === '') {
+          errorString += 'Please enter a title.<br>'
+        }
+        if (this.ticketNum === '') {
+          errorString += 'Please enter a ticket number.<br>'
+        }
+        if (this.description === '') {
+          errorString += 'Please enter a description.<br>'
+        }
+        if (this.customerName === '') {
+          errorString += 'Please enter a customer name.<br>'
+        }
+        if (this.customerID === '') {
+          errorString += 'Please enter a customer ID.<br>'
+        }
+        console.log(errorString)
+        Swal.fire(
+          'Error!',
+          errorString,
+          'error'
+        )
+      }
     }
   }
 }

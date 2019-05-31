@@ -56,7 +56,7 @@
 
         <div>
           <label>Start Date: </label>
-          <input type="date" style="width: 410px" name="startDate" value="" placeholder="START DATE" v-model="startDate">
+          <input type="date" style="width: 410px" name="startDate" placeholder="START DATE" v-model="startDate">
         </div>
 
         <div>
@@ -109,6 +109,11 @@ export default {
   methods: {
     async addProject () {
       var errorString = ''
+      console.log('valid?: ' + this.isValidDate(this.startDate))
+      if (this.startDate !== '[0-9]{4}-[0-9]{2}-[0-9]{2}') {
+        console.log(this.startDate)
+        errorString += 'Please enter a valid start date.<br>'
+      }
       if (this.title !== '' && this.ticketNum !== '' && this.description !== '' && this.customerName !== '' && this.customerID !== '') {
         await ProjectsService.addProject({
           title: this.title,
@@ -153,6 +158,15 @@ export default {
           'error'
         )
       }
+    },
+    // input in ISO format: yyyy-MM-dd
+    isValidDate (input) {
+      var bits = input.split('-')
+      console.log('bits: ' + bits)
+      var d = new Date(bits[0], bits[1] - 1, bits[2])
+      console.log('d: ' + d)
+      console.log('ret: ' + d.getFullYear() === bits[0] && (d.getMonth() + 1) === bits[1] && d.getDate() === Number(bits[2]))
+      return d.getFullYear() === bits[0] && (d.getMonth() + 1) === bits[1] && d.getDate() === Number(bits[2])
     },
     onSelect (department) {
       this.department = department
