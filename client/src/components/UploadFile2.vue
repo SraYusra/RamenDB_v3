@@ -114,33 +114,26 @@ export default {
       var vm = this
       // ALL the lines in the CSV file
       var lines = csv.split('\n')
-      console.log('LINES 1:' + lines[1])
+      var headerLine = lines[0].split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
+      console.log('headerLine :' + headerLine)
       console.log(lines[2])
 
-      /*
       // Headers that are allowed, that we want
       var availHeaders = [
         'Summary',
         'Issue key',
         'Status',
         'Project description',
-        'Component/s',
-        'Custom field (Department/Faculty)',
-        'Custom field (Customer Name)',
-        'Custom field (Customer User ID)',
         'Time Spent',
         'Created',
-        'Due Date'
+        'Component/s',
+        'Due Date',
+        'Custom field (Customer Name)',
+        'Custom field (Customer User ID)',
+        'Custom field (Department/Faculty)'
       ]
-      */
 
       // tempHeaders has all the first line headers of the CSV file -- includes headers we need AND don't need
-
-      // An array on the indexes where the elements we want exist
-      // We use this to map the content to its headers in later lines
-      var indexes = [0, 1, 5, 10, 11, 17, 21, 22, 57, 59, 62]
-
-      console.log(indexes) // HEEREE is where it breaksss
 
       // Pop last entry/line in csv cuz its undefined
       // lines.pop()
@@ -156,7 +149,23 @@ export default {
         console.log(entry)
 
         if (indexLine < 1) return
-        console.log('indexes: ' + indexes)
+
+        // Map content of line to the heaaders in lines[0], also stored in headerLine
+        var lineMapped = {}
+        headerLine.forEach((k, i) => { lineMapped[k] = entry[i] })
+
+        console.log(lineMapped)
+
+        var tempContent = []
+
+        // Here i am trying to get all the content from availHeadersw
+        availHeaders.forEach(
+          (key, ind) => {
+            tempContent[ind] = lineMapped[key]
+          }
+        )
+
+        console.log(tempContent)
 
         var postHeaders = [
           'title',
@@ -172,19 +181,10 @@ export default {
           'faculty'
         ]
 
-        var content = []
-        indexes.forEach(function (index) {
-          console.log(index)
-          var x = parseInt(index)
-          console.log(entry[x])
-          content.push(entry[x])
-        })
-        console.log('Content: ' + content)
-
         var obj = {}
-        postHeaders.forEach((k, i) => { obj[k] = content[i] })
+        postHeaders.forEach((k, i) => { obj[k] = tempContent[i] })
 
-        obj.type.includes('Project') ? obj.type = 'PROJECT' : obj.type = 'SERVICE'
+        if (obj) obj.type.includes('Project') ? obj.type = 'PROJECT' : obj.type = 'SERVICE'
 
         console.log(obj)
 
