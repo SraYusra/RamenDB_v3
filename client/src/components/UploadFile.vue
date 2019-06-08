@@ -55,6 +55,8 @@
 </template>
 
 <script>
+import ProjectsService from '@/services/ProjectsService'
+
 export default {
   name: 'upload',
   data () {
@@ -63,10 +65,11 @@ export default {
       channel_fields: [],
       channel_entries: [],
       parse_header: [],
-      headers: ['Title', 'Description', 'Select'],
+      headers: [],
       parse_csv: [],
       sortOrders: {},
-      sortKey: ''
+      sortKey: '',
+      toBePosted: []
     }
   },
   filters: {
@@ -127,6 +130,137 @@ export default {
       } else {
         alert('FileReader are not supported in this browser.')
       }
+    },
+    parseCSV (csv) {
+      // ALL the lines in the CSV file
+      var lines = csv.split('\n')
+      var headerLine = lines[0].split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
+      console.log('headerLine :' + headerLine)
+      console.log(lines[2])
+
+      // Headers that are allowed, that we want
+      var availHeaders = [
+        'Summary',
+        'Issue key',
+        'Status',
+        'Project description',
+        'Time Spent',
+        'Created',
+        'Component/s',
+        'Due Date',
+        'Custom field (Customer Name)',
+        'Custom field (Customer User ID)',
+        'Custom field (Department/Faculty)'
+      ]
+
+      // tempHeaders has all the first line headers of the CSV file -- includes headers we need AND don't need
+
+      // Pop last entry/line in csv cuz its undefined
+      // lines.pop()
+
+      // After that, read line by line. Map data to headers (these variables are to display data on page)
+      // line in indexLine
+      lines.map(function (line, indexLine) {
+        // Splits between commas unless they're in between quotes
+        var entry = line.split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
+        entry = entry || [] // entry is null or []
+
+        if (entry.length < 1 || entry === undefined) return // bad
+
+        console.log(entry)
+
+        if (indexLine < 1) return // get rid of headers
+
+        // Map content of line to the heaaders in lines[0], also stored in headerLine
+        var lineMapped = {}
+        headerLine.forEach((k, i) => { lineMapped[k] = entry[i] }) // maps headers to entries for one line at a time
+
+        console.log(lineMapped)
+
+        var tempContent = []
+
+        // Here i am trying to get all the content from availHeadersw
+        availHeaders.forEach(
+          (key, ind) => {
+            tempContent[ind] = lineMapped[key] // getting values of entry so they can be posted to postHeaders
+          }
+        )
+
+        console.log(tempContent)
+
+        var postHeaders = [
+          'title',
+          'ticketNum',
+          'status',
+          'description',
+          'hours',
+          'startDate',
+          'type',
+          'endDate',
+          'customerName',
+          'customerID',
+          'faculty'
+        ]
+
+        var obj = {}
+        postHeaders.forEach((k, i) => { obj[k] = tempContent[i] })
+
+        if (obj) obj.type.includes('Project') ? obj.type = 'PROJECT' : obj.type = 'SERVICE' // broken
+
+        console.log(obj)
+
+        /*
+          == TODO: POST OBJ
+          == THE ABOVE CODE DOES THE FOLLOWING:
+          var obj = {}
+          obj.title = entry[indexes[0]]
+          obj.description = entry[indexes[1]]
+          obj.ticketNum = entry[indexes[2]]
+          obj.type = entry[indexes[3]]
+          obj.status = entry[indexes[4]]
+          obj.faculty = entry[indexes[5]]
+          obj.customerName = entry[indexes[6]]
+          obj.customerID = entry[indexes[7]]
+          obj.hours = entry[indexes[8]]
+          obj.startDate = entry[indexes[9]]
+          obj.endDate = entry[indexes[10]]
+        */
+        this.toBePosted.push(obj) // pushes ready object to be posted into toBePosted array
+      })
+
+      // Once all JSONS are created, post all JSONs in this.toBePosted, if its undefined or empty, assign it to an empty array
+      this.toBePosted = this.toBePosted || []
+      console.log(this.toBePosted)
+
+      // vm.addProjects()
+
+      // ~FIN
+    },
+    async addProjects () {
+      await this.toBePosted.forEach(async function (post) {
+        post.description.replace(/"/g, '')
+        post.faculty.replace(/"/g, '')
+        post.status.toLowerCase()
+        await ProjectsService.addProject({
+          title: post.title,
+          description: post.description,
+          ticketNum: post.ticketNum,
+          type: post.type,
+          customerName: post.customerName,
+          customerID: post.customerID,
+          status: post.status,
+          hours: post.hours,
+          startDate: post.startDate,
+          endDate: post.endDate,
+          faculty: post.faculty
+        })
+      })
+      this.$swal(
+        'Great!',
+        `Your projects have been added! Please REFRESH page.`,
+        'success'
+      )
+      this.$router.push({ name: 'Projects' })
     }
   }
 }

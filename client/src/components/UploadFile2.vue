@@ -227,7 +227,7 @@ export default {
         reader.onload = function (event) {
           var csv = event.target.result // Loads entire csv file content
           // console.log(csv)
-          this.parse_csv = this.csvJSON(csv)
+          // this.parse_csv = this.csvJSON(csv)
           this.parseCSV(csv) // Passes the csv to parseCSV
         }
         reader.onerror = function (evt) {
