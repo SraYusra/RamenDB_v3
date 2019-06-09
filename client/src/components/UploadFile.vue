@@ -20,7 +20,7 @@
         </div>
         
         <div class="col-sm-offset-3 col-sm-9">
-          <a href="/" class="btn btn-primary"><button class="app_project_btn">Parse CSV</button></a>
+          <button @click="addProjects" class="app_project_btn">Parse CSV</button>
         </div>
 
         <!-- HERE is where the table will be displayed once CSV is uploaded -->
