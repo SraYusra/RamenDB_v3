@@ -1,0 +1,831 @@
+﻿Summary,Issue key,Issue id,Issue Type,Status,Project key,Project name,Project type,Project lead,Project description,Project url,Priority,Resolution,Assignee,Reporter,Creator,Created,Updated,Last Viewed,Resolved,Component/s,Component/s,Due Date,Votes,Labels,Labels,Labels,Labels,Labels,Labels,Labels,Labels,Labels,Description,Environment,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Watchers,Log Work,Log Work,Log Work,Log Work,Log Work,Log Work,Log Work,Log Work,Log Work,Original Estimate,Remaining Estimate,Time Spent,Work Ratio,Œ£ Original Estimate,Œ£ Remaining Estimate,Œ£ Time Spent,Security Level,Outward issue link (Cloners),Outward issue link (Duplicate),Outward issue link (Escalated),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Outward issue link (Relates),Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Attachment,Custom field (Access),Custom field (Account Number),Custom field (Administered By),Custom field (Administrator Email),Custom field (Administrator Name),Custom field (Applications),Custom field (Approval Status),Custom field (Audience),Custom field (Backout plan),Custom field (Booking Number),Custom field (Building & Room),Custom field (CPU),Custom field (Cc Groups),Custom field (Cc Users),Custom field (Cc Users),Custom field (Cc Users),Custom field (Cc Users),Custom field (Cc Users),Custom field (Cc Users),Custom field (Cc Users),Custom field (Change completion date),Custom field (Change reason),Custom field (Change risk),Custom field (Change start date),Custom field (Change type),Custom field (Customer Name),Custom field (Customer Request Type),Custom field (Customer User ID),Custom field (Data Classification),Custom field (Database),Custom field (Department/Faculty),Custom field (Directories),Custom field (Disk),Custom field (Email Contact),Custom field (Epic Link),Custom field (External issue ID),Custom field (Gigabytes),Custom field (Global Rank),Custom field (Has Database),Custom field (Has Firewall),Custom field (Home Number),Custom field (Impact),Custom field (Impact of failure),Custom field (Implementation plan),Custom field (Investigation reason),Custom field (Key Status),Custom field (Memory),Custom field (Network Speed),Custom field (Notification Email),Custom field (Notifications),Custom field (Operating System),Custom field (Operational categorization),Custom field (Oracle Bug/RFE),Custom field (Oracle SR),Custom field (Payment Method),Custom field (Pending reason),Custom field (Probability of failure),Custom field (Product categorization),Custom field (Rank),Custom field (Rank (Obsolete)),Custom field (Request participants),Custom field (Root cause),Custom field (Satisfaction),Custom field (Severity),Custom field (Source),Sprint,Custom field (Standard Checks),Custom field (Testing),Custom field (Urgency),Custom field (VM OS),Custom field (Work Number),Custom field (Workaround),Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment,Comment
+Post-Production: Edit and Finalize Interview,ITRC-3422,301906,Task,Investigating,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,,aquiquer,aquiquer,aquiquer,2019-05-23 11:53,2019-05-23 11:56,2019-05-30 15:54,,ITRC Project,,2019-06-03 0:00,0,itrc-project,,,,,,,,,,,aquiquer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1bi13:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Pre-Production: Watch Art of Video Interviews Lynda Tutorial,ITRC-3420,301903,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Done,aquiquer,aquiquer,aquiquer,2019-05-23 11:51,2019-05-23 11:57,2019-05-30 15:54,2019-05-23 11:57,ITRC Project,,2019-05-30 0:00,0,ITRC-Projects,,,,,,,,,,,aquiquer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1bi0f:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Pre-Production: Camera Settings/Lighting Set-Up,ITRC-3419,301902,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Done,aquiquer,aquiquer,aquiquer,2019-05-23 11:50,2019-05-23 11:56,2019-05-30 15:54,2019-05-23 11:56,ITRC Project,,2019-05-30 0:00,0,itrc-project,,,,,,,,,,,aquiquer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1bi07:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Update ITRC Website,ITRC-3412,300884,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Fixed,zbaig4,zbaig4,zbaig4,2019-05-16 8:58,2019-05-16 15:26,2019-05-30 15:54,2019-05-16 15:26,ITRC Project,,,0,itrc,itrc-website,,,,,,,,"* Update any instances of ""Student Consultant"" to ""Team""
+* Update ITRC Student photos, names, and programs",,sfoster9,zbaig4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1bbqn:,9.22E+18,,,,,,,Ping,No,,,,,"16/May/19 3:26 PM;zbaig4;* ""Student Consultants"" term replaced with ""staff"" or ""designer""
+* Removed all photos of old staff and ones leaving
+* Added new and returning staff photos
+* Fixed and updated some of the wording in the description. For example, Adobe Creative Suite is now Adobe Creative Cloud and Articulate Storyline was mentioned. Other redundant information was removed.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+Spring Perspectives VIDEO,ITRC-3406,300733,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Done,,gguiccia,gguiccia,2019-05-15 12:08,2019-05-28 9:27,2019-05-17 12:48,2019-05-28 9:27,ITRC Project,,,0,itrc,itrc-project-video,,,,,,,,Video from *Spring Perspective 2019* is now on Force (Projects).,,gguiccia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,abaile59,lvelezri,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1bat3:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Owl Project - Noise,ITRC-3399,300421,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Done,aquiquer,aquiquer,aquiquer,2019-05-14 10:32,2019-05-30 8:28,2019-05-30 15:54,2019-05-30 8:28,ITRC Project,,2019-05-29 0:00,0,itrc-project,,,,,,,,,,,aquiquer,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ramon Sanchez,,RSanchez,,,"Western Technology Services, Division of",,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1b8w7:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+owl project ,ITRC-3380,299859,Task,Open,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Low,,jzhou468,jzhou468,jzhou468,2019-05-10 10:44,2019-05-10 10:44,2019-05-10 16:33,,ITRC Project,,2019-05-24 0:00,0,,,,,,,,,,,,jzhou468,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Roman Sanches,,rsanchez,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1b5fj:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+OWL Project Site - Genre Defining Films,ITRC-3379,299858,Task,Investigating,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,,aissar2,aissar2,aissar2,2019-05-10 10:44,2019-05-10 10:52,2019-05-10 10:50,,ITRC Project,,2019-05-24 0:00,0,itrc-project,,,,,,,,,Create an OWL project site.,,aissar2,rsanchez,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ramon Sanchez,,rsanchez,,,"Western Technology Services, Division of",,,rsanchez@uwo.ca,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1b5fb:,9.22E+18,,,,,,,Ping,No,,,,,"10/May/19 10:50 AM;aissar2;Ramon has approved this topic
+
+¬†",,,,,,,,,,,,,,,,,,,,,,,,,,,
+Owl project site - Driver's Ed,ITRC-3378,299857,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Done,abaile59,abaile59,abaile59,2019-05-10 10:43,2019-05-30 13:22,2019-05-10 16:27,2019-05-30 13:22,ITRC Project,,2019-05-24 0:00,0,itrc-project,,,,,,,,,,,abaile59,rsanchez,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ramon Sanchez,,rsanchez,,,"Western Technology Services, Division of",,,rsanchez@uwo.ca,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1b5f3:,9.22E+18,,,,,,,Ping,No,,,,,10/May/19 10:50 AM;abaile59;Ramon has approved this project!,30/May/19 1:22 PM;abaile59;I've completed this project!,,,,,,,,,,,,,,,,,,,,,,,,,,
+OWL Project Site - Ableton Live 10,ITRC-3377,299856,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Minor,Fixed,gguiccia,gguiccia,gguiccia,2019-05-10 10:43,2019-05-16 11:38,2019-05-30 15:54,2019-05-16 11:38,ITRC Project,,2019-05-24 0:00,0,itrc-owl,,,,,,,,,"The following are the list of requirements and assets you should be using in your OWL Project Sites.¬†
+ ¬†
+ ¬†¬†**¬†Requirements¬†**
+ * Use all the tools found in OWL¬†
+
+ * Add external resources when possible (ex. multimedia, journals, etc)
+
+ * Create interactive elements using¬†Storyline &¬†[H5P.org|https://h5p.org/]
+ * Infograph¬†(ie.¬†[Canva¬†|https://www.canva.com/]or Illustrator)
+ * Video (ie. video essay, lightboard, animation)
+
+ * Create a syllabus using the syllabus tool
+
+ * Create stylized Lessons Pages or use¬†[Rise|https://360.articulate.com/]¬†(requires login)
+
+ * Quizzes & Assignments
+
+ * Incorporate iClicker or¬†[Kahoot¬†|https://kahoot.com/]during presentation",,gguiccia,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ramon Sanchez,,rsanchez,,,"Western Technology Services, Division of",,,gguiccia@uwo.ca,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1b5ev:,9.22E+18,,,,,,,Ping,No,,,,,10/May/19 10:50 AM;gguiccia;Ramon has approved,,,,,,,,,,,,,,,,,,,,,,,,,,,
+OWL Project Site - Intro to MMA,ITRC-3376,299854,Task,Open,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,,lvelezri,lvelezri,lvelezri,2019-05-10 10:42,2019-05-10 10:53,2019-05-30 15:54,,ITRC Project,,2019-05-24 0:00,0,,,,,,,,,,,,lvelezri,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1b5ef:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+New Photos for ITRC Website,ITRC-3369,299061,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Fixed,jroach7,jroach7,jroach7,2019-05-07 9:45,2019-05-07 14:47,2019-05-30 15:54,2019-05-07 14:47,ITRC Project,,,0,itrc,itrc-project,photos,,,,,,,"We will be taking photos for us in Jen's redesign of our ITRC site. All products below require a 4x3 (800 x 600) photo, and a square (150 x 150) icon.
+ * Ultracart
+ * Mixer¬†
+ * Canon C100
+ * Canon 7D
+ * Tripod
+ * Lav mac and receiver
+ * Shotgun mic
+ * Handheld Mic
+ * USB Mic
+ * Mic Stand
+ * Scanner
+ * Handheld Camcorder (Old)
+ * Handheld camcorder (New)
+ * Cintiq (Old)
+ * Cintiq (New)",cascade,jroach7,jsadle7,sfoster9,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1b0i7:,9.22E+18,,,,,,,Ping,No,,,,,"07/May/19 10:50 AM;jroach7;All photos are on the force and can be found under¬†*3369 - New Photos for ITRC Website > Raw.*¬†Once completed, the edited photos will be found in the¬†*Edits*¬†folder, under¬†*4x3* and¬†*Square*.¬†","07/May/19 12:28 PM;jroach7;[~jsadle7] The photos are edited and up on the force. I am having some issues with .jpegs appearing differently across monitors (e.g. they will look fine on the iMac monitor, then pixelated and uneven on a secondary monitor). I think I have corrected for this issue, but if you see anything wrong please let me know. If you want to see different shots/need more photos taken, please let me know!",07/May/19 2:47 PM;jsadle7;Thanks for these Jodie. These will work great! I will let you know when they are on the site.,,,,,,,,,,,,,,,,,,,,,,,,,
+Bandersnatch - Public Health Refugee Videos,ITRC-3344,296282,Task,Investigating,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,,zbaig4,zbaig4,zbaig4,2019-04-18 12:04,2019-05-30 9:03,2019-05-30 9:57,,ITRC Project,,2019-08-31 0:00,0,itrc-project,itrc-project-storyline,itrc-project-video,,,,,,,"h1. Team
+
+Instructor: Lloy Wylie - [lwylie2@uwo.ca|mailto:lwylie2@uwo.ca]
+
+PhD Students: Lis Pino and Damilola Toki - [lpino2@uwo.ca|mailto:lpino2@uwo.ca] and [dtoki@uwo.ca|mailto:dtoki@uwo.ca]
+
+¬†
+
+ELT Lead - Ramon
+
+Lead - Zeeshan
+
+Team - Abby C, Alex Q, Guillermo G
+h1. Purpose
+
+Emphasis the impact of the refugee process on family health in Canada.
+h1. Deliverables
+ * 50 short clips or long 10 clips
+ * Choose your own adventure aspect
+ * Community Engagement Edits* Extra (Seperate project)
+
+h1. Timeline",,achapm26,aquiquer,gguiccia,rsanchez,zbaig4,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Lloy Wylie,,lwylie2,,,Schulich School of Medicine & Dentistry,,,lwylie2@uwo.ca,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1ajef:,9.22E+18,,,,,,,Ping,No,,,,,"24/Apr/19 9:04 AM;zbaig4;Sent Lloy an email approving the project and asked some follow-up questions about the project.
+
+The Email:
+
+""Hi Lloy,
+
+It was great meeting you and Liz Thursday and we are excited to take on this project together! After discussing with Ramon, we just had some questions and things we needed clarification on:¬†
+
+We made a flow chart based on the Refugee Migration Journey Through Decision Points river map and just wanted to confirm if that is the direction the videos will take and that everything is correct?
+
+I also wanted to clarify if the first two lines in the Health Care Navigation paragraph apply to all the countries? This would result in more clips since we would want to show that for each family.
+
+¬†
+
+Other questions we have include:
+ * What would the total number of clips/scenes¬†be? I am assuming anywhere between 50-60.
+ * How did you want to go about the choose-your-own-adventure aspect? We have found that the videos for each country are fairly linear and the choices have been made. We can have an introduction video which leads to the user selecting from countries, but after that it seems linear.¬†
+ ** If you did want there to be more choice for each country, how would you like to go about that?
+
+ * When can you have a script ready for us?¬†
+ ** Do you need any help?
+
+ * When can you have a storyboard ready for us?¬†
+ ** Do you need any help? We have storyboard templates I can send you. All you would really need is a quick sketch, it does not need to look pretty, just something to setup the shot and a quick description.
+
+ * Is there anything in the meantime we can do and help out with?
+
+We are really excited to take on this project and looking forward to starting! """,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Create banners for advertising the OWL faculty survey,ITRC-3342,296177,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,High,Fixed,zbaig4,sfoster9,sfoster9,2019-04-17 16:15,2019-04-22 12:53,2019-05-30 15:54,2019-04-22 12:53,ITRC Project,,2019-04-18 0:00,0,itrc-design,,,,,,,,,"For the current faculty survey about OWL, we would like to encourage faculty to complete the survey, so we will be posting message with an image to Twitter, to Western sites, and to OWL's home page.
+
+Please create a simple design that can be adapted to the various dimensions below. Please make this design different from the student survey banner design from ITRC-3328.
+
+*Deliverables*:
+Please create four png images with the following specifications containing text (found below) and a simple design:
+# Twitter: 1024px by 512px
+# WTS banner: 1660px by 200px (with the textual content in 170px from the right and left edges)
+# Western banner: 1920px by 600px
+# OWL banner: 950px by 500px 
+
+*Contents*:
+Faculty: Provide your feedback about OWL
+Check your email inbox for a message titled ""Provide Feedback on OWL at Western"" to access the faculty survey. 
+Please complete the survey by May 1st.
+
+(for the OWL and Twitter banners, please exclude the middle line that begins with ""Check your email inbox..."" because this will be included as a textual message)",,sfoster9,zbaig4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,ITRC-3328,,,,18/Apr/19 3:11 PM;zbaig4;OWL Banner.png;https://jira.uwo.ca/secure/attachment/36692/OWL+Banner.png,18/Apr/19 3:11 PM;zbaig4;Survey Banner V2.ai;https://jira.uwo.ca/secure/attachment/36696/Survey+Banner+V2.ai,18/Apr/19 3:11 PM;zbaig4;Twitter Banner.png;https://jira.uwo.ca/secure/attachment/36693/Twitter+Banner.png,18/Apr/19 3:11 PM;zbaig4;Western Banner.png;https://jira.uwo.ca/secure/attachment/36694/Western+Banner.png,18/Apr/19 3:11 PM;zbaig4;WTS Banner.png;https://jira.uwo.ca/secure/attachment/36695/WTS+Banner.png,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1airb:,9.22E+18,,,,,,,Ping,No,,,,,"18/Apr/19 12:26 PM;zbaig4;Hi [~sfoster9], do you like this look or would you like to change anything before I continue with the other banners?","18/Apr/19 12:44 PM;sfoster9;Nice, [~zbaig4]! I like the style. 
+
+Should we have a stylized OWL home page on the laptop? ",18/Apr/19 3:14 PM;zbaig4;[~sfoster9] I've finished and added all the banners as PNGs. I've also added the original Banner ai. file. Let me know if you have any changes! :),"22/Apr/19 12:11 PM;sfoster9;Thanks, [~zbaig4]! I've posted the OWL Banner to the OWL Gateway, and have sent the others to the site owners to be posted.
+
+FYI: your Western Banner and WTS Banner are both a pixel higher than the specifications.",,,,,,,,,,,,,,,,,,,,,,,,
+BIO 2290 - Bacterial Cloning Articulate Storyline Module,ITRC-3341,296071,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Fixed,ddorobek,ddorobek,ddorobek,2019-04-17 11:45,2019-05-23 10:17,2019-05-23 10:19,2019-05-23 10:17,ITRC Project,,2019-05-17 0:00,0,itrc-project-storyline,,,,,,,,,"Create an interactive Storyline module about Bacterial Cloning.
+
+¬†
+
+Timeline:
+ * April 17 - Content Received
+ * April 30 - Update Meeting & Demo
+ * May 10 - QA
+ * May 17 - Delivery (Projected)
+
+¬†
+
+Admin
+ * Course:¬†BIOLOGY 2290
+ * Instructor: Michelle Belton ([mharris7@uwo.ca|mailto:mharris7@uwo.ca])
+ * ITRC Lead: Damien D.
+ * ELT: Ramon",,ddorobek,rsanchez,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,rsanchez,,,,,,,,,,,,Michelle Belton,,mharris7,,,"Biology, Department of",,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1ai3r:,9.22E+18,,,,,,,Ping,No,,,,,"26/Apr/19 9:24 AM;rsanchez;I have sent Michelle a first version of the module Damien created and encourage them to provide feedback:
+{quote}Hi¬†Michelle
+
+I wanted to provide you a first draft of the cloning module that was produced by the Damien Dorobek from the ITRC. There are some uncompleted slides that we need to discuss but please feel free to to go through the modules and provide feedback; you can use the commenting feature on the right-hand side.
+
+[https://360.articulate.com/review/content/dadf693a-50db-4cc8-9dcc-d706f2a3f435/review]
+
+¬†
+{quote}","17/May/19 12:52 PM;rsanchez;[~ddorobek] has completed the module and will provide Michelle with the final version for final approval. If there are no revisions needed, the export and project file will be sent to Michelle via One Drive. The project files and export files will be archived on the force.¬†","17/May/19 12:54 PM;rsanchez;Update, we need to ask Michelle for the script and enter captions for accessibility.¬†",23/May/19 10:17 AM;ddorobek;I have sent Michelle the module and implemented it in her OWL site.,,,,,,,,,,,,,,,,,,,,,,,,
+Remove the ITRC 20 banner and ITRC 20th anniversary page from the ITRC public site,ITRC-3338,294593,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,High,Fixed,zbaig4,sfoster9,sfoster9,2019-04-08 12:48,2019-05-15 16:36,2019-05-30 15:54,2019-05-15 16:22,ITRC Project,,,0,cascade,itrc,itrc20,,,,,,,Remove the ITRC 20 banner and the anniversary page (https://itrc.uwo.ca/about_us/itrc20.html) from the ITRC's public site.,https://itrc.uwo.ca/about_us/itrc20.html,sfoster9,zbaig4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1a8zb:,9.22E+18,,,,,,,Ping,No,,,,,15/May/19 4:22 PM;zbaig4;Banner and Page have been unpublished and are no longer visible.,"15/May/19 4:36 PM;sfoster9;Thanks, Zeeshan!",,,,,,,,,,,,,,,,,,,,,,,,,,
+Psych 2070B - Course Trailer,ITRC-3336,294358,Task,Open,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,,,apypstra,apypstra,2019-04-05 12:49,2019-05-07 15:56,2019-05-30 15:54,,ITRC Project,,,0,itrc,itrc-project,itrc-project-video,,,,,,,,,apypstra,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,05/Apr/19 1:53 PM;dqian6;Digital Storyboard Template_ Psych2070B.docx;https://jira.uwo.ca/secure/attachment/36403/Digital+Storyboard+Template_+Psych2070B.docx,05/Apr/19 1:53 PM;dqian6;psych2070b - text storyline.doc;https://jira.uwo.ca/secure/attachment/36404/psych2070b+-+text+storyline.doc,05/Apr/19 12:49 PM;apypstra;storyboard.pptx;https://jira.uwo.ca/secure/attachment/36401/storyboard.pptx,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1a7j3:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+ITRC Poster Design for Open Ed Student-Faculty Showcase,ITRC-3335,292122,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Done,dqian6,dqian6,dqian6,2019-03-25 13:32,2019-03-25 13:51,2019-05-30 15:54,2019-03-25 13:51,ITRC Project,,2019-03-25 0:00,0,,,,,,,,,,"# 11""x17"" @ 300dpi
+ # Incorporates the following information
+ ** Title: Ask me anything about open projects at the ITRC
+ ** location of ITRC
+ ** ITRC logo",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,25/Mar/19 1:43 PM;dqian6;ITRC poster.jpg;https://jira.uwo.ca/secure/attachment/36079/ITRC+poster.jpg,25/Mar/19 1:43 PM;dqian6;ITRC_poster_compressed.pdf;https://jira.uwo.ca/secure/attachment/36080/ITRC_poster_compressed.pdf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,jsadle7,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i19tr3:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Create posters and banners for advertising the upcoming OWL survey,ITRC-3328,290018,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Critical,Done,zbaig4,sfoster9,sfoster9,2019-03-12 16:09,2019-04-17 16:17,2019-05-30 15:54,2019-03-22 10:00,ITRC Project,,2019-03-13 0:00,0,owl-survey,,,,,,,,,"For the upcoming student surveys about OWL, we would like to encourage students to complete the survey by displaying a poster on the Visix screens located around campus and a banner on the OWL homepage.
+
+*Deliverables:*
+
+Please create two Visix posters using the recommended resolutions (one poster in the 4:3 aspect ratio and one in 16:9):
+https://wts.uwo.ca/visix/resolutions.html
+
+Please create an OWL banner measuring 951px wide by 500px high. 
+
+*Requirements:*
+
+Please create a simple design that can be used for both the posters and the banner. Include a catchy headline and graphics. 
+
+Include the OWL logo, a link to the survey (http://bit.ly/OWLStudentSurvey2019 - only include on the Visix posters), and mention to take the survey by March 28th. 
+
+Potential headlines could be:
+
+* Students: What do you want your OWL to be?
+* Students: We want to hear from you about OWL!
+* Tell us about your OWL student experience!
+
+*Please complete by the end of the day March 13, 2019.*",,aaladl,astew5,sfoster9,zbaig4,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,20/Mar/19 9:44 AM;astew5;OWL Survey - IG.png;https://jira.uwo.ca/secure/attachment/35957/OWL+Survey+-+IG.png,20/Mar/19 9:44 AM;astew5;OWL Survey - Twitter.png;https://jira.uwo.ca/secure/attachment/35958/OWL+Survey+-+Twitter.png,13/Mar/19 4:13 PM;zbaig4;OWL Survey Banner.ai;https://jira.uwo.ca/secure/attachment/35762/OWL+Survey+Banner.ai,14/Mar/19 3:53 PM;zbaig4;OWL Survey Banner.png;https://jira.uwo.ca/secure/attachment/35821/OWL+Survey+Banner.png,15/Mar/19 2:39 PM;dqian6;OWL Web Banner.ai;https://jira.uwo.ca/secure/attachment/35854/OWL+Web+Banner.ai,13/Mar/19 4:13 PM;zbaig4;OWL_Poster.ai;https://jira.uwo.ca/secure/attachment/35763/OWL_Poster.ai,15/Mar/19 2:39 PM;dqian6;OWL_Web_Banner1.png;https://jira.uwo.ca/secure/attachment/35855/OWL_Web_Banner1.png,15/Mar/19 2:39 PM;dqian6;OWL_Web_Banner2.png;https://jira.uwo.ca/secure/attachment/35856/OWL_Web_Banner2.png,15/Mar/19 2:39 PM;dqian6;OWL_Web_Banner3.png;https://jira.uwo.ca/secure/attachment/35853/OWL_Web_Banner3.png,15/Mar/19 2:39 PM;dqian6;OWL_Web_Banner4.png;https://jira.uwo.ca/secure/attachment/35857/OWL_Web_Banner4.png,13/Mar/19 4:12 PM;zbaig4;owlEmblem.svg;https://jira.uwo.ca/secure/attachment/35760/owlEmblem.svg,21/Mar/19 4:14 PM;zbaig4;OWLSurvey_WTS.png;https://jira.uwo.ca/secure/attachment/36029/OWLSurvey_WTS.png,14/Mar/19 3:53 PM;zbaig4;OWLSurveyPoster_16-9.png;https://jira.uwo.ca/secure/attachment/35823/OWLSurveyPoster_16-9.png,14/Mar/19 3:53 PM;zbaig4;OWLSurveyPoster_4-3.png;https://jira.uwo.ca/secure/attachment/35822/OWLSurveyPoster_4-3.png,13/Mar/19 4:13 PM;zbaig4;qr-code (1).svg;https://jira.uwo.ca/secure/attachment/35761/qr-code+%281%29.svg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i19grr:,9.22E+18,,,,,,,Ping,No,,,,,"13/Mar/19 10:33 AM;sfoster9;A few comments on the recently uploaded banner:
+
+ !OWL Survey Banner.jpg|thumbnail! 
+
+* The OWL emblem looks blue in the image and is really pixelated
+* Should the OWL emblem be bigger?
+* Should we add a background to the banner?","13/Mar/19 2:05 PM;zbaig4;Uploaded updated posters with:
+ * Smaller QR Code
+ * Larger OWL
+ ** Will replace this with the vector once provided. I could not find a vector file on the force or in KIWI.
+ * Different Font","13/Mar/19 2:30 PM;sfoster9;Thanks, [~zbaig4]! 
+
+Sorry for the delay on this: here is the vector of the OWL logo: https://owl.uwo.ca/library/skin/morpheus-owl/images/owlEmblem.svg
+
+Here are a few other changes:
+* Instead of ""What do you want your OWL to be?"", I like the second suggestion from above instead: ""Students: We want to hear from you about OWL!""
+* In the second line, ""Student Experience"" should be lowercase: ""student experience"" 
+* Please move the ""Scan with your Phone Camera!"" to under the line under the OWL emblem and make the text slightly smaller
+
+
+","13/Mar/19 4:16 PM;zbaig4;I made some changes to both the banner and posters to make them more similar and consistent.¬†
+
+Uploaded them as PNG files. I also uploaded the .ai files in case any changes need to be made.¬†","14/Mar/19 9:31 AM;sfoster9;[~aaladl], could you please add a white background to the three files and re-export the .png files using the .ai files that [~zbaig4] has attached to this ticket? Thanks. ",14/Mar/19 9:47 AM;aaladl;[~sfoster9] I attached the files with the white background.,14/Mar/19 3:54 PM;zbaig4;[~sfoster9]¬†Files have been updated and re-uploaded.,"14/Mar/19 3:55 PM;sfoster9;Thanks, [~zbaig4]!",15/Mar/19 12:08 PM;dqian6;DIMENSION: 1920*450,"15/Mar/19 12:58 PM;dqian6;[~sfoster9] ai and png files uploaded, and I made banners with and without the QR code.
+
+*A digital design tip for everyone: Creating outlines on fonts can avoid the problem of¬†missing fonts message upon opening a file in applications on different computers, creating outlines can convert your fonts into vector format shapes;)¬†","15/Mar/19 1:04 PM;sfoster9;Thanks, Danni. 
+
+The background have transparency to them. Can you put a white layer at the bottom to avoid that, please?
+
+The thickness of the lines to the tools on the right of the image are really thick compared to the other images created earlier this week. Can you please adjust your lines to match?","15/Mar/19 1:21 PM;dqian6;[~sfoster9]¬†Files have been updated and re-uploaded. it's a bit strange because the stroke weight of those lines are as same as lines in the images made earlier, but I reduced the weight to make them look thinner anyway.",15/Mar/19 2:02 PM;sfoster9;Maybe it is the relationship of the stroke size to the size of the icon circles that makes them appear different?,"15/Mar/19 2:35 PM;dqian6;Maybe yes, but it looks good now.","15/Mar/19 2:36 PM;sfoster9;Thanks, [~dqian6]!","19/Mar/19 9:36 AM;sfoster9;We've been asked to format the banners for Instagram and Twitter as well. 
+
+Can you please create two more versions of the white banners?
+
+Instagram: 1080px by 1080px
+Twitter: 1024px by 512px
+
+(... according to https://dustn.tv/instagram-sizes/ and https://sproutsocial.com/insights/social-media-image-sizes-guide/#twitter )",20/Mar/19 9:44 AM;astew5;Twitter and Instagram images are attached and in the project file on the Force.,"20/Mar/19 12:41 PM;sfoster9;Thanks, [~astew5]! I've sent those to the communication coordinator. ",21/Mar/19 9:45 AM;zbaig4;[~sfoster9] I created and uploaded a WTS Banner. Size 1660 x 200. I kept pretty much all the same elements for consistency.¬†,"21/Mar/19 3:52 PM;sfoster9;Thanks, [~zbaig4]!","21/Mar/19 4:06 PM;sfoster9;[~zbaig4], sorry. Me again...
+
+The WTS Banner needs to be changed to accommodate the big carousel arrows on either side. Can you move the items around to provide enough whitespace on either side for the arrows to overlap without covering any of our content, please?","21/Mar/19 4:15 PM;zbaig4;[~sfoster9] I moved everything in 80px, let me know if it needs to be moved in a little more?","22/Mar/19 9:20 AM;sfoster9;Thanks, [~zbaig4]. I'll have them try it out and let you know. ","22/Mar/19 10:00 AM;sfoster9;The banner has been posted to the WTS home page. Thanks, everyone, for your help. ",,,,
+eCampus Poster Template,ITRC-3323,289353,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,High,Done,astew5,astew5,astew5,2019-03-07 16:06,2019-03-08 16:54,2019-05-30 15:54,2019-03-08 16:54,ITRC Project,,,0,itrc-project,,,,,,,,,"* 3 x 4 feet
+ * Must be made as a Powerpoint template
+ * Look into editing Master Slides
+
+
+ * Include¬†3-4 columns for content
+ * Determine header and body fonts and colour scheme
+ * I would stick to a light colour scheme for readability
+
+
+ * Graphics should be go to the edge
+ * Include the eCampus Logo",,astew5,rsanchez,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i19cnz:,9.22E+18,,,,,,,Ping,No,,,,,07/Mar/19 4:07 PM;astew5;First draft template saved on the Force (Projects > 3323 - eCampus Poster Template),08/Mar/19 4:54 PM;rsanchez;Thank you Allyson and [~dqian6] for creating these posters. I have sent it off to Lauren for feedback.¬†,,,,,,,,,,,,,,,,,,,,,,,,,,
+Design Certificate PDF with Wallet Size Cutout,ITRC-3321,287174,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Done,ifarrukh,rsanchez,rsanchez,2019-02-25 15:15,2019-05-17 15:12,2019-05-17 15:12,2019-05-17 15:12,ITRC Project,,2019-03-08 0:00,0,itrc-project-design,,,,,,,,,"Chris Vandelaar is requesting an updated version of the Certificate PDF for the Engineering Shop Training Module. He is specifically asking for students to be able to print the certificate with a wallet size cutout which would have fillable boxes as a means of verification. Tasks
+ # Determine if we can duplicated values in OWL's Certificate tool
+ # Design 2-3 mock-ups for Chris
+ # Adhere to Western's Graphic Standards
+
+Specs:
+ * Fillable PDF
+ * Credit Card Area Size (‚Äã3¬†^3^‚ÅÑ~8~¬†√ó ‚Äã2¬†^1^‚ÅÑ~8~¬†inches)",,rsanchez,sfoster9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,26/Mar/19 3:38 PM;rsanchez;Engineer_Horizontal_CMYK.eps;https://jira.uwo.ca/secure/attachment/36141/Engineer_Horizontal_CMYK.eps,26/Mar/19 3:38 PM;rsanchez;Engineer_Stacked_CMYK.eps;https://jira.uwo.ca/secure/attachment/36142/Engineer_Stacked_CMYK.eps,17/May/19 3:12 PM;rsanchez;New Certificate.pdf;https://jira.uwo.ca/secure/attachment/37337/New+Certificate.pdf,25/Feb/19 3:13 PM;rsanchez;original_pdf_annotated.jpg;https://jira.uwo.ca/secure/attachment/35386/original_pdf_annotated.jpg,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i18z7r:,9.22E+18,,,,,,,Ping,No,,,,,25/Feb/19 3:17 PM;rsanchez;You will have to create this in InDesign or Adobe Acrobat Pro.,"26/Mar/19 3:39 PM;rsanchez;[~ifarrukh] feedback from Chris.¬†
+
+{quote}
+
+Sorry for the delay on this. I‚Äôve been waiting to hear back from our Communications dept.
+
+I like the certificate and the layout is exactly what I was hoping for and had envisioned.
+
+Attached are some Western Engineering graphic files. I‚Äôm hoping we can ‚Äúengineeringify‚Äù this new layout using them. Is this possible?
+
+Thanks,
+
+Chris
+
+{quote}
+
+Please see attached resources and the Western Graphic Standards ([https://communications.uwo.ca/comms/pdf/Western_StyleGuide_Final_Jan2013.pdf)]
+
+and rework the layout to make it more Western themed.",17/May/19 3:12 PM;rsanchez;Sent the revised version to Chris.¬†,,,,,,,,,,,,,,,,,,,,,,,,,
+Eng Training HTML5 Module Conversions,ITRC-3313,283437,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Done,,ccretu,ccretu,2019-02-01 12:52,2019-03-05 12:43,2019-05-30 15:54,2019-03-05 12:43,ITRC Project,,2019-02-28 0:00,0,owl,,,,,,,,,"Goal: Converting Chris' modules to HTML5. Try to have this task done by the end of February. Possibly test out idea to merge gradebook items by overriding the database because it cannot be done through OWL, this would prevent us from have multiple legacy gradebook items.
+
+First Task:
+
+Confirm whether or not existing modules are in HTML5 only and if they are in HTML5 with a flash backup then test to see if the flash backup will make a difference or not.
+
+Second Task:
+
+Convert modules 1-4 to HTML5 if needed
+
+Third Task:
+
+Test modules 1-4. Modules 1-3 should be relatively straight forward, however module 4 will likely cause some issues due to the videos. Make sure to test in the OWL environment.
+
+Fourth Task:
+
+Make sure any remaining videos on the course site are HTML and not flash (Introduction video in lessons).¬†",,ccretu,rsanchez,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i18ck7:,9.22E+18,,,,,,,Ping,No,,,,,26/Feb/19 3:05 PM;ccretu;First 3 tasks are completed. The only testing left to do is safari on Mac.,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CEL Book Design Phase II (Senor Churro Bilingual),ITRC-3312,282669,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Fixed,astew5,astew5,astew5,2019-01-29 14:54,2019-05-07 11:59,2019-05-30 15:54,2019-04-03 11:09,ITRC Project,,,0,itrc-project,,,,,,,,,"h1. Phase II of El Senor Churro
+
+Convert the existing book to a bilingual version.
+h2. Details:
+ * Same point size font for both languages
+ * Colour code languages or use different fonts
+ * Headshots for contributors
+ * Aaron will provide translated text from two student contributors
+ * Diabetes information in separate index
+ * Introduction page (book description from back cover)
+ * Back cover - just image?
+ * Denote bilingual on cover
+ * Spanish and English title
+ * Potential new illustrations
+
+h2. Meetings:
+ * Wed. Jan. 30 @ 10am - plan project and establish timeline (/)",,astew5,,,,,,,,,,,,,,;31/Jan/19 3:53 PM;astew5;5400,;13/Feb/19 10:13 AM;astew5;3600,;26/Feb/19 2:41 PM;astew5;3600,,,,,,,,0,12600,,,0,12600,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Aaron Bengall,,abengall,,,,,,aaronbengall@gmail.com,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i187tr:,9.22E+18,,,,,,,Ping,No,,,,,"30/Jan/19 11:01 AM;astew5;Draft layout: Feb. 13 (/)
+
+Translation: March 5 (/)
+
+Headshots: March 13 (/)
+
+Final Draft: TBD","26/Feb/19 2:40 PM;astew5;Waiting On:
+ * in-progress text (/)
+ * new illustrations (/)",27/Mar/19 8:46 AM;astew5;I've sent Aaron the full layout with the translated text and am waiting on feedback from him and Ana Garcia.,"03/Apr/19 8:43 AM;astew5;Next steps:
+ * Finalize all designs (/)
+ * send all files to Aaron (/)
+ * Complete project (/)","03/Apr/19 11:09 AM;astew5;With all design work complete, I've packaged the content and sent everything to Aaron.",,,,,,,,,,,,,,,,,,,,,,,
+Project Management/Work Flow Training Video,ITRC-3309,281928,Task,Investigating,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,,ifarrukh,ifarrukh,ifarrukh,2019-01-24 16:01,2019-01-24 16:02,2019-05-30 15:54,,ITRC Project,,2019-04-18 0:00,0,itrc-project,,,,,,,,,"Start Date: January 24th, 2019
+
+Projected Completion Date: Before May
+
+Main Idea: Will be creating a training video for the new hires that will outline how to manage a project as a lead while also conveying how a project is successfully completed from beginning to end.¬†
+
+1st Meeting (January 31st, 2019)
+ * Discussing ideas about project management elements that need to be included in the video and the general flow of the video¬†",,ifarrukh,rsanchez,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1839z:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Internal Training Video - Editing Techniques,ITRC-3302,280580,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Done,astew5,astew5,astew5,2019-01-17 15:50,2019-04-12 13:39,2019-05-30 15:54,2019-04-12 13:39,ITRC Project,,,0,itrc-project,,,,,,,,,"*Purpose*
+
+This training video will demonstrate the effects and benefits of using each technique in a given instance and explain the best practises for these techniques.
+
+*Structure*
+
+The video will use examples from film/television/media to demonstrate how these techniques appear in the final product and when to best use them in ITRC projects.
+
+¬†
+
+*Techniques:*
+ * Split Editing
+ ** L Cut
+ ** J Cut
+ * Invisible Cuts
+ ** Object Wipes
+ * Match Cut
+ ** Action Cuts
+ * Multiclip
+ * Parallel Editing
+ ** Cross-Cut
+ * Cutaway
+ * Cut-in
+ * Montage
+ * Hard cut
+ * Jump cut
+ * Wipes
+ * Smash Cut
+ * Dissolve
+ * Fast Cutting
+ * Slow Cutting
+ * Split-screen
+
+*Tasks:*
+ * Define each technique (/)
+ * match techniques to example (/)
+ * Script (/)
+ * Example Clips (/)
+ * Voiceover (/)
+ * Edit (/)
+ * Final Video¬†(/)
+
+*Files:*
+
+Force > Projects > 3302 - Editing Techniques Internal Training Video",,astew5,rsanchez,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Ramon Sanchez,,rsanchez,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i17uyf:,9.22E+18,,,,,,,Ping,No,,,,,27/Mar/19 8:45 AM;astew5;Waiting on feedback from Ramon.,"03/Apr/19 8:42 AM;astew5;Final Edits:
+ * Title Card (/)
+ * Adjust audio¬†(/)
+ * add Scary Movie 3 clip¬†(/)
+ * Captions¬†(/)",10/Apr/19 2:55 PM;astew5;Video exported with and without captions burned in.,"10/Apr/19 4:20 PM;rsanchez;Great! One last edit:
+ * The Scary Movie 3 scene still says Wolf of Wall Street
+
+Also, can you provide the VTT or caption file on the force?","10/Apr/19 4:23 PM;rsanchez;Also, can you use your original voice over audio? The new one is arguably worst sorry!","11/Apr/19 9:16 AM;astew5;I've re-exported the video with original audio and correct lower third, but I'm unable to export the captions separately at the moment.","11/Apr/19 9:24 AM;astew5;Adam did some wizardry and the captions are now exported (under ""Captions"" in the project folder)",,,,,,,,,,,,,,,,,,,,,
+Project Database of Projects,ITRC-3290,279757,Task,Open,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,,yalshara,yalshara,yalshara,2019-01-15 12:38,2019-05-14 13:57,2019-05-17 15:20,,ITRC Project,,2019-04-26 0:00,0,itrc-project,,,,,,,,,"A reporting tool that displays multifaceted project data, for stat purposes.
+
+Team: Yusra, Damien, Ramon, Danni
+
+Schedule/Milestones:
+ * Database & API - Feb 12th
+ * UI Flow - Feb 12th
+ * Front End Mockup - Feb 22nd
+ * QA 1 -¬†
+ * QA 2 -¬†
+
+¬†
+
+Overview:
+ - Service updates
+ - Events tracking
+ - Projects we've done
+ - Stats tool
+ - Majority Jira data - data source
+ ** good place to start, would translate over
+
+Data components:
+ - Faculty or department
+ - Names
+ - Contact info (email)
+ - Project or service
+ - Placeholder for jira ticket number
+ - Nature of project/service
+ - Start and end date of project (actual) or single date for service
+ - No consultants
+ - Status: approved or denied
+ - ELT
+
+
+
+Service Data Components:
+ - No status
+ - One date; no start and end
+ - Duration (potentially)
+
+¬†
+ Basic functionality:
+ - Login
+ - Queries
+ - Export csv or pdf of table
+ - Be able to add new data
+ - manually add new row and fill in¬†
+ - Give me a bar graph, pie chart, what other types of charts are needed
+ - Account manager
+ - Delete Rows with confirmation
+ - Save Queries
+ - Add service, or faculty etc. for any of the columns really
+ - Consistent dates
+
+¬†
+ Workflow:
+ - Login
+ - Dashboard - stats
+ - 4 buttons: New entry, query, generate report,¬†logout
+
+¬†
+ Mock-ups:
+ - Adobe XD
+ ¬†",,apypstra,ddorobek,dqian6,jsadle7,rsanchez,sfoster9,yalshara,,,,,,,,,,,,,,,,,180,180,,0%,59640,664380,75600,Default,,,,,,,,16/Jan/19 3:39 PM;rsanchez;ITRC-3290 - Project Charter.docx;https://jira.uwo.ca/secure/attachment/34414/ITRC-3290+-+Project+Charter.docx,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ddorobek,rsanchez,,,,,,,,,,,Ramon Sanchez,,rsanchez,,,"Western Technology Services, Division of",,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i17pvj:,9.22E+18,,,,,,,Ping,No,,,,,"15/Jan/19 1:46 PM;rsanchez;Also, someone give this application a name.",,,,,,,,,,,,,,,,,,,,,,,,,,,
+Western Libraries Customer Service Videos,ITRC-3276,278410,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Fixed,zbaig4,zbaig4,zbaig4,2019-01-09 10:46,2019-04-02 14:00,2019-05-30 15:54,2019-04-02 14:00,ITRC Project,,,0,itrc,itrc-project,itrc-project-video,,,,,,,"A video project that will ""teach library staff how to provide reference service to student, faculty, and staff."" Specifically customer service exchange. Consists of 4-6 videos, approximately 5 minutes each. Involves on-site filming and green screen in the ITRC Studio.
+
+*TEAM*
+
+Instructor: Christy Sich <csich@uwo.ca>
+ ITRC Lead: Zeeshan
+ Team: Jodie, Jen
+ ELT: Ramon
+
+*SCHEDULE*
+
+JAN-09-2019 - Initial Meeting
+ JAN-31-2019 - Script Delivered
+ FEB-01-13-2019 - Pre-Production, Storyboard, Testing
+ FEB-14-2019 - Film Day (Library Scenes)
+ TBA - Film Day (Narration - Studio)
+ FEB-28-2019 - Project End¬†
+
+*TO DO*
+
+(/) Learn emoticons (Zeeshan only(internal))
+
+(/) Test audio (Will upload notes)
+
+(/) Make diagram
+
+(/) Get scripts
+
+(/) Get storyboard
+
+(/) Edit storyboard
+
+(/) Costume design
+
+(/) Schedule shoot day
+
+(/) Collect props
+
+(/) Finalize set arrangement
+
+(/) Test lighting and visual setup
+
+(/) Spike set
+
+(/) Find graphic assets
+
+(/) Shoot
+
+(/) Log clips
+
+(/) Graphics package",,jroach7,jsadle7,rsanchez,zbaig4,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,04/Feb/19 4:04 PM;zbaig4;Clip1.pdf;https://jira.uwo.ca/secure/attachment/34864/Clip1.pdf,04/Feb/19 4:04 PM;zbaig4;Clip2.pdf;https://jira.uwo.ca/secure/attachment/34865/Clip2.pdf,04/Feb/19 4:04 PM;zbaig4;Clip3.pdf;https://jira.uwo.ca/secure/attachment/34866/Clip3.pdf,04/Feb/19 4:05 PM;zbaig4;Clip4.pdf;https://jira.uwo.ca/secure/attachment/34867/Clip4.pdf,18/Jan/19 9:34 AM;jroach7;Diagram with Labels.jpg;https://jira.uwo.ca/secure/attachment/34449/Diagram+with+Labels.jpg,18/Jan/19 9:34 AM;jroach7;Diagram without Labels.png;https://jira.uwo.ca/secure/attachment/34450/Diagram+without+Labels.png,16/Jan/19 12:17 PM;rsanchez;Floor Plan - Label.png;https://jira.uwo.ca/secure/attachment/34408/Floor+Plan+-+Label.png,16/Jan/19 12:17 PM;rsanchez;Flor Plan - Plain.png;https://jira.uwo.ca/secure/attachment/34409/Flor+Plan+-+Plain.png,09/Jan/19 3:18 PM;rsanchez;ITRC-3276_Project_Charter_v1.docx;https://jira.uwo.ca/secure/attachment/34268/ITRC-3276_Project_Charter_v1.docx,16/Jan/19 11:54 AM;rsanchez;kellog-1.jpg;https://jira.uwo.ca/secure/attachment/34403/kellog-1.jpg,16/Jan/19 11:54 AM;rsanchez;kellog-2.jpg;https://jira.uwo.ca/secure/attachment/34402/kellog-2.jpg,16/Jan/19 11:54 AM;rsanchez;kellog-3.jpg;https://jira.uwo.ca/secure/attachment/34401/kellog-3.jpg,16/Jan/19 11:54 AM;rsanchez;kellog-4.jpg;https://jira.uwo.ca/secure/attachment/34404/kellog-4.jpg,16/Jan/19 11:53 AM;rsanchez;kellog-5.jpg;https://jira.uwo.ca/secure/attachment/34405/kellog-5.jpg,16/Jan/19 11:54 AM;rsanchez;kellog-6.jpg;https://jira.uwo.ca/secure/attachment/34406/kellog-6.jpg,04/Feb/19 4:05 PM;zbaig4;Reference Interviews-Final.docx;https://jira.uwo.ca/secure/attachment/34868/Reference+Interviews-Final.docx,13/Feb/19 2:38 PM;zbaig4;Script and Shot List.docx;https://jira.uwo.ca/secure/attachment/35183/Script+and+Shot+List.docx,13/Feb/19 2:38 PM;zbaig4;Shotlist Schedule.xlsx;https://jira.uwo.ca/secure/attachment/35182/Shotlist+Schedule.xlsx,17/Jan/19 1:33 PM;zbaig4;Zoom H4N - Multi Track Recording (MTR).pdf;https://jira.uwo.ca/secure/attachment/34441/Zoom+H4N+-+Multi+Track+Recording+%28MTR%29.pdf,,,,,,,,,,,,,,,,,,,,,,,,,,Christy Sich,,csich,,,Western Libraries,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i17hk7:,9.22E+18,,,,,,,Ping,No,,,,,"09/Jan/19 3:18 PM;rsanchez;Email after our first email:
+
+{quote}
+
+Hi Christy
+
+It was very nice to meet you and your team this morning. We are excited to work with you and your team in creating these series of videos for your training program.¬†
+
+I have CC‚Äôd Zeeshan Baig from the ITRC as he will be your primary contact during this project. I do request to CC me in any correspondence with Zeeshan so I can be kept in the loop.
+
+Next steps would be for your team to finalize the scripts and begin storyboarding. As discussed, I have attached a zip folder with a sample of a storyboard and a pdf template for reference. Please feel free to send us scripts as they are completed so we can begin planning the technical side of the scene.¬†
+
+In addition, I have confirmed that our team will be available to film all the library scenes on *FEB-14-2019* from *9AM ‚Äì 4PM*. We can schedule another date for the narration scene with Dan Sich once the scripts have been completed.
+
+Lastly, I have attached a draft version of a project charter, which outlines the scope, milestones, deliverables, and schedule for this project. Please take a look and make any necessary changes. In our next in-person meeting, we can finalize the charter, discuss licences & accessibility, and sign the document.
+
+{quote}",15/Jan/19 1:47 PM;rsanchez;[~zbaig4] were we able to book the room for us to do some audio & lighting testing?,15/Jan/19 3:42 PM;zbaig4;[~rsanchez] I will ask jodie if this works for her but I am thinking a Wednesday around 11am to 12pm. That is the only time where we are all available.,"16/Jan/19 11:01 AM;rsanchez;Jodie says thats okay. Please make the necessary arrangements, sooner rather than later so we can acquire the correct equipment.¬†","16/Jan/19 11:53 AM;rsanchez;[~zbaig4] disregard the my last message. Can you book the room for a full on lighting test sometime in February, closer to the shoot day?
+
+Jodie and I just went to the room and took some photos of the space. Please see above.","16/Jan/19 12:18 PM;rsanchez;I have made a quick floor plan of the space. The measurements are NOT accurate nor does it include furniture. I am hoping we can use it to block lighting, equipment and talent.¬†¬†",16/Jan/19 2:34 PM;rsanchez;Inspiration?¬†https://www.youtube.com/watch?v=l0NOhQj1m3s,"16/Jan/19 2:40 PM;rsanchez;Sorry even better, library realness:¬†https://www.youtube.com/watch?v=Niac-sIGd8g","16/Jan/19 2:45 PM;rsanchez;Last one, my favourite is 'bad' Ethan:¬†https://www.youtube.com/watch?v=unn3YirLZkA
+
+Library. Ethan. Who is it now?","17/Jan/19 11:01 AM;jroach7;Potential props/set pieces:
+ * Plants
+ * Cart
+ * Books
+ * Large whiteboard
+ * Small whiteboard
+ * Monitor
+ * Mouse and keyboard
+ * Desk bell
+ * Pamphlets
+ * Signs?",17/Jan/19 11:30 AM;rsanchez;I have created a pintrest account with [itrc3@uwo.ca.|mailto:itrc3@uwo.ca.]¬†The password is the same one we use for Rise. I made a board specifically for this project:¬†https://pin.it/swcxicr4e3rvhs,17/Jan/19 1:34 PM;zbaig4;I added a quick guide on how to use the Zoom to record Multi Track Audio. Hope it helps.,18/Jan/19 12:41 PM;rsanchez;The new lights will be in next week or early the following week. I am going to book some studio time to test the lights. See the kiwi calendar for details.,"18/Jan/19 1:52 PM;zbaig4;Christy emailed me back, here is the response:
+
+Hi Zeeshan,
+
+It looks like Taylor is fully booked on the 5th, 6th, and 7th.  It is free on the Monday Feb 4th or Friday Feb 8th. Could one of those dates work? If so, let me know what time might work and I will book it for you.  The room also appears fully available the week before.  
+
+Thanks,
+Christy
+
+So we couldn‚Äôt get the room for the date we wanted. I think we could book it for Monday the 4th since I am in all day after 9:30 to do a lighting test. I will also ask her about availability the week of the shoot. Does the 4th work or should we do it Wednesday Jan 30th so we are all present. Let me know and I‚Äôll email her back. ","24/Jan/19 11:54 AM;zbaig4;Christy emailed me, here it is:
+
+Hi Zeeshan,
+
+I received the green light to film at the help desk on Feb 14th. ¬† You can visit the Taylor Library¬† anytime to test the lighting- I don't need to be there. I will let staff know. ¬†¬†
+
+We have the story boards and scripts at a near finished state. We are meeting Friday to polish and plan to send them to you then. ¬†
+
+¬†
+
+Overall, we are set to film on the 14th using the Original HelpDesk and we can go in whenever to test lighting. Scripts and storyboards should be in soon.",04/Feb/19 4:00 PM;zbaig4;Christy sent us the scripts and the storyboards. There are 4 clips we need to film. I will attach the storyboards and script.,"07/Feb/19 1:52 PM;rsanchez;We had a successful test shoot today. Next tasks include:
+ * Contacting Christy about Props (ie. books behind the librarian)
+ * Determine Planned Shooting Specs (ie. camera settings, lens type, light intensity)
+ * Develop and share with Christy a shooting schedule based on the script
+ ** This should include insert shots (ie. close-up of keyboard typing)
+
+[~zbaig4] [~jroach7]¬†it might also be useful to determine the tone, style, and special effects we want to use that will require specific steps during production (ie. camera movement for whip pan transitions).¬†","07/Feb/19 2:02 PM;zbaig4;Notes from Camera and Lighting Test:
+
+Camera:
+ * use 50mm lens
+ * ~2.8f, 1/60, ISO 400
+ * Filming towards the entrance
+ * Will need to stop and start filming for when people are getting help at the desk
+
+Lighting:
+ * 2 lights max
+ * Close to subject
+ * Light high up, angled down, slightly to the left so the right side of the face is more lit up.
+ * Lights at 50-70% power, depending on skin tone.
+ * Need big Umbrella attachment, with black grid and white diffuser.
+ * Power cables are out of the way since they are under the desk and the plug is right beside.
+ * Need gels for warmer light?
+ * Bounce light off wall?
+ * Lighting for person sitting at desk and wide shot is good.",13/Feb/19 1:53 PM;zbaig4;[~jsadle7],"22/Feb/19 4:14 PM;zbaig4;Filming is done! Editing is now going to be taking place. All the clips, except for Dan's parts are organized and on Mercy. Scene 3 is currently being editing by me. I will then move onto scene 4 afterwards, then 1 and 2.","26/Feb/19 1:55 PM;rsanchez;I have created a rough cut of Scene 1 found on Mercy and is ready for FX, annotations, and finishing touches.¬†","08/Mar/19 4:56 PM;rsanchez;I completed coloring, annotating, and adjusting audio for all clips and uploaded a low-res version to Vimeo [https://vimeo.com/album/5823124]¬†(password is books). Let us wait for Christy's feedback and make revisions as needed. The final version of these videos should be exported at 1080.¬†
+
+Exported versions can be found in the project folder under *exports*.¬†","20/Mar/19 12:01 PM;zbaig4;All changes made, all captions created. Everything exported and in the folder ""3276 - Western Libraries Customer Service"" on the Scratch on Mercy. Waiting for Christy to pick up zipped file.",02/Apr/19 2:00 PM;zbaig4;One spelling error was changed. Christy picked up all the files. Project closed.,,,,
+Rebecca Timbeck - Testing Articulate Modules,ITRC-3260,273334,Task,Open,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,,jlau333,jsadle7,jsadle7,2018-11-28 11:03,2019-04-17 15:04,2019-05-30 15:54,,ITRC Project,,,0,,,,,,,,,,"* Export, upload and Test articulate modules
+ * Create fillable pdf certificate",,jsadle7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,22/Mar/19 1:32 PM;jsadle7;Jeff Holmes-March-2019-PC.pdf;https://jira.uwo.ca/secure/attachment/36048/Jeff+Holmes-March-2019-PC.pdf,28/Nov/18 11:27 AM;jsadle7;Rebecca-Timbeck-Nov-2018-PC.pdf;https://jira.uwo.ca/secure/attachment/33680/Rebecca-Timbeck-Nov-2018-PC.pdf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i16m9b:,9.22E+18,,,,,,,Ping,No,,,,,"28/Nov/18 11:27 AM;jsadle7;Note, I will update the charter once Rebecca has signed it.¬†","22/Mar/19 2:16 PM;jsadle7;[~ifarrukh]
+
+wording for the certificate: {color:#000000}""{color}{color:#000000}This is to certify that¬†{color}*{Name}*{color:#000000}¬†has successfully completed the¬†{color}{color:#000000}OT Online Anatomy Modules¬†{color}{color:#000000}on¬†{color}*{Date}""*
+
+To Do:
+ * Upload all five modules into an OWL Site. Modules are located here: [https://uwoca-my.sharepoint.com/:f:/g/personal/jsadle7_uwo_ca/EqHn-Vn4MkxNvPnrdm-eii0BqUgUx2tJwTTZgWgftVAKGA?e=STNvoe]
+ * Test modules to make sure all parts work in OWL. (Split testing between Irma and Jacquelyn)
+ * Report any issues in this Jira ticket
+ * If problem takes under 45 minutes to solve in articulate, fix the problem
+ * Irma - create certifcate with above wording.
+
+¬†",,,,,,,,,,,,,,,,,,,,,,,,,,
+Create some graphics for green screen video demo,ITRC-3253,270505,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,High,Done,dqian6,sfoster9,sfoster9,2018-11-09 16:25,2018-11-15 15:12,2019-05-30 15:54,2018-11-14 14:22,ITRC Project,,,0,,,,,,,,,,"Create some background graphics for a green screen video demo using the ultra cart and real-time monitor.
+
+For November 14th, we've been asked to host a session for Take Your Kids to Work day. For the session, we'll be demonstrating the studio using the green screen, ultra cart, and real-time monitor. We've decided to do a weather segment from a newscast. 
+
+Please create the following graphical assets to be used in the video:
+- simple map graphic (of southern Ontario with London in the centre)
+- some weather icons for the map (e.g. ""H"" for high, ""L"" for low, a sunshine, a raincloud, etc)
+- a simple 5- or 7-day forecast
+
+To give you a sense of the graphics needed, please take a look at the first minute of this video: https://www.youtube.com/watch?v=zbHW1T7boSc
+(it gets a bit crazy after the 1:06-minute mark, so please ignore the rest)
+
+Please create all graphics as vectors, so we can output them at the size we'll need for the video. ",,sfoster9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,13/Nov/18 4:39 PM;apypstra;3253 - Transparent Assets.zip;https://jira.uwo.ca/secure/attachment/33398/3253+-+Transparent+Assets.zip,12/Nov/18 2:48 PM;dqian6;graphical assets.zip;https://jira.uwo.ca/secure/attachment/33365/graphical+assets.zip,12/Nov/18 12:26 PM;sfoster9;map.png;https://jira.uwo.ca/secure/attachment/33332/map.png,14/Nov/18 10:05 AM;apypstra;snowflake-01.png;https://jira.uwo.ca/secure/attachment/33407/snowflake-01.png,12/Nov/18 3:57 PM;dqian6;updated assets.zip;https://jira.uwo.ca/secure/attachment/33366/updated+assets.zip,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i164vr:,9.22E+18,,,,,,,Ping,No,,,,,"12/Nov/18 12:24 PM;sfoster9;For the map, I'm thinking we'll have 5 ""slides"" that will be the map with the sun, cloud, H, and L icons moving from left to right, as if the time is progressing. 
+
+So once the map and the icon assets are created, we can layer them and move the icons appropriately.","12/Nov/18 12:27 PM;sfoster9;Attaching a map. Please roughly trace the map and give it a simple cartoon overlay of green for land and blue for water. Then add ""Windsor"", ""London"", ""Toronto"", and ""Montreal"" as city labels.","12/Nov/18 2:50 PM;dqian6;Hi Shawn:
+I just uploaded the assets package as attachment, let me know if there's anything that need to add on or change.
+
+Danni","12/Nov/18 6:08 PM;sfoster9;Thanks, [~dqian6]!",15/Nov/18 3:12 PM;sfoster9;The final results of the Take Your Kids to Work day were put on the Force (ITRC Shared > Take Your Kids to Work Day > 2018 > _Final Results),,,,,,,,,,,,,,,,,,,,,,,
+PT 9600 - Module Updates & Improvements ,ITRC-3252,270453,Task,Investigating,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,,yalshara,rsanchez,rsanchez,2018-11-09 13:27,2019-05-21 11:39,2019-05-10 16:27,,ITRC Project,,2019-07-26 0:00,0,itrc-project-design,itrc-project-storyline,,,,,,,,"This project is still pending approval until it has been properly scoped out.¬†
+
+¬†
+
++*Overview*+
+
+9 pre-existing modules that need to update the following:
+ * Consistent Style/Design
+ * Improving Interactions and Functionality
+ * Improving Audio Quality
+ * Potentially Create New Assets (ie. whiteboard style video)
+
++*Client*+
+ * Dianne Bryant - Instructor
+
++*Team*+
+ * Jacquelyn - Lead
+ * Brendan
+ * Yusra
+ * Ramon - PM/ELT Liaison¬†
+
++*Content/Modules*+
+ # Introduction
+ # Research Question
+ # Measurement
+ # RCTs (Therapy)
+ # Observational Studies
+ # Prognosis/Risk
+ # Diagnostic Tools
+ # Systematic Reviews¬†
+ # Data Analysis
+
++*Admin*+
+ * Plan: [https://uwoca-my.sharepoint.com/:x:/g/personal/rsanchez_uwo_ca/EUiizWZa7AhDiz5pQj698IsBh0C9Iyat7GMoMyOxbf-qvA?e=9m2gRJ]",,bcoetzee,jlau333,rsanchez,yalshara,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,11/Jan/19 10:17 AM;jlau333;STYLE GUIDE DRAFT 1.pdf;https://jira.uwo.ca/secure/attachment/34310/STYLE+GUIDE+DRAFT+1.pdf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bcoetzee,jlau333,,,,,,,,,,,Dianne Bryant,,djackows,,,"Health Sciences, Faculty of",,,Dianne.Bryant@uwo.ca,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i164k7:,9.22E+18,,,,,,,Ping,No,,,,,"09/Nov/18 4:36 PM;rsanchez;My email correspondence after our initial meeting:¬†
+
+{quote}
+
+Hi Dianne
+
+Thank you for meeting me with me this morning to further discuss your needs for the project. We will need to meet again to finalize the goals of the project, but I believe I have identified the following items we will need to work on regarding your 9 modules:
+
+¬†
+ # Consistent Style/Design
+ # Improving Interactions and Functionality
+ # Improving Audio Quality
+ # Potentially Create New Assets (ie. whiteboard style video)
+
+¬†
+
+As discussed, I recommend addressing style and design first which will act as a base for the all of the modules. From there we can move on to the more complex elements which are Interactions and New Assets**. Lastly, we can focus on improving audio quality.
+
+¬†
+
+**Creating new assets are the most time consuming parts in these types of projects. It would require a lot of planning from both our teams (ie. specific direction, content, scripts, stroyboards, etc). If we need to create new assets for your modules, we will need a comprehensive list of them before we can officially start this project. This list of specific assets will determine the scope and timeline for this project. I would recommend that your team review your modules and identify any new assets that will need to be created.
+
+¬†
+
+Next steps for me and my team would be to:
+ * Provide you Storyline examples and resources
+ * Review your current modules starting with Research Question
+
+¬†
+
+Action items for your team would be:
+ * Determine design/style needs or wants
+ ** Color scheme/palette
+ ** Fonts (Headers & Body)
+ ** Logo/Branding (if needed)
+ ** Title Cards/Banners
+ ** Menu/Player Design
+ * Review storyline examples and resources
+ * Begin identifying specific interactions/functionality for specific module/slides (ie. Embed Annotated PDF/Docs)
+ * Begin identifying the creation of new assets (ie. videos, graphics/images, etc)
+
+¬†
+
+Please let me know if you have any questions.
+
+{quote}","11/Jan/19 10:24 AM;jlau333;Sent Dianne Bryant the Style Guide Draft 1 on December 19th, 2018.
+
+She replied on January 8th, 2019 with the following questions:¬†¬†
+
+I think this is fine.¬† I wonder if the normal text should be slightly larger?
+
+How will self-assessment quiz-type questions look?¬† How will animations be framed? Will they be more smooth?¬† Are we not there yet?","11/Jan/19 3:58 PM;rsanchez;Modules 1 - 3 = [~jlau333]
+
+Modules 4 - 6 = [~ccretu]
+
+Modules 7 - 10 = [~yalshara]","18/Jan/19 2:35 PM;rsanchez;Meeting Update:
+ * Currently there 1.5 modules that has been redesigned
+ * Slide designs can be found in the Slide Master; figure out how to create template export/import
+ * Send Dianne module 1 - Research Question for feedback about the design
+ * New redesign deadline will be Jan 31st
+ * Ramon will redesign Module 9 - Data Analysis¬†","28/Jan/19 1:06 PM;jlau333;Notes:¬†
+
+For the module and self-assessment title pages, please refer to the completed title pages in under REDESIGN_Module 1.¬†
+
+¬†","29/Jan/19 3:34 PM;jlau333;UPDATE:¬†
+
+Module 1 Redesign is done with Yusra's new template and uploaded OWL, here is the link:¬†
+
+[https://owl.uwo.ca/access/content/group/7b969408-55be-4092-a268-49dbb8f637cd/Old%20Modules/REDESIGN/Module%201%20Introduction_9600_sept/story_html5.html?lms=1]
+
+I have also emailed Dianne the link and asked her for feedback.","18/Apr/19 1:30 PM;jlau333;+*UPDATE*:+
+ * Moved the ""Demystifying"" audio from Audio Room Desktop to the Force.¬†
+ * Waiting on email to see which audio clips are not matching the content.¬†
+ * Self-Assessment formats for results are off in most modules except 1.¬†
+ ** Some have a submit button and some have it in the player.
+
+*+TO DO:+*¬†
+ * Add new audio in.¬†
+ * Fix the audio that isn't matching.¬†
+ * Format the self-assessments.¬†","23/Apr/19 9:51 AM;rsanchez;Yusra will now be taking over this project in preparation for version 4 of the modules. The QA team (Yusra, Jodie, and Ramon) have gone through and identified issues with all the modules and issues/concerned raised by Dianne.¬†
+
+Next steps would be to make those edits and continuing to add the new audio as Dianne re-records.¬†","23/Apr/19 11:25 AM;yalshara;Our current version - Version 4 - will be on:¬†Projects\3252 - PT 9600\working\current_modules_project\V4 REDESIGNS.
+
+The spreadsheet from our last QA phase is [here|[https://uwoca-my.sharepoint.com/:x:/r/personal/rsanchez_uwo_ca/_layouts/15/Doc.aspx?sourcedoc=%7B66cda248-ec5a-4308-8b3e-69423ebdf08b%7D&action=default&cid=f5d49d82-6c97-414d-b0bd-1a2e75333122]].",23/Apr/19 12:32 PM;rsanchez;Dianne has sent the transcript for module 9 and can be found on the force under working > scripts.,"06/May/19 11:34 AM;jlau333;May 6th Meeting Update: We are now in version 4-5.¬†
+
+Version 4: QA from V3, new audio integration and quiz assessment consistency.¬†
+
+Version 5: Captioning and final QA.","08/May/19 4:26 PM;yalshara;Timeline and order of precedence, moving forward:
+ * Module 4: RCTs, figuring out branching and restructuring. & Quizzes
+ * Glossary
+ * Audio Level adjustment
+ * Captioning (pending scripts)
+ * Numbering Module 4: RCTs","10/May/19 4:23 PM;yalshara;UPDATE on Status of Modules: (TODOs)
+ (will edit as we make progress)
+ * Module 1: Audio levels and Captioning
+ * Module 2: Captioning
+ * Module 3: Audio levels, Captioning
+ * Module 4: Needs restructuring, page numbering, Quizzes, Glossary, Audio levels, Captioning
+ * Module 5: Audio levels, Captioning
+ * Module 6: Audio levels, Captioning
+ * Module 7A: Audio levels, Captioning
+ * Module 7B: Audio levels, Captioning
+ * Module 8: Audio levels, Captioning
+ * Module 9: Minor Audio discrepancy in Slide 7, but otherwise DONE.",14/May/19 3:22 PM;jlau333;Quizzes in all modules are done and ready for QA. Please refer to spreadsheet for Quiz Answers.,"21/May/19 10:08 AM;jlau333;Updated spreadsheet ""Audio Video Feedback - V5"" and assigned modules for audio level adjustment.
+
+Please update your progress on that sheet when you're done adjusting audio levels for a module.
+
+¬†",21/May/19 11:39 AM;bcoetzee;Module 1 - Slide 6 & 7 both have the same audio clip playing at end of slide. Slide 6's original audio clip is missing. Let's get Dianne to re-record slide 6.,,,,,,,,,,,,
+APPLHSCI 9002/8 Voiceovers,ITRC-3248,269663,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Won't Do,astew5,rsanchez,rsanchez,2018-11-05 14:15,2019-01-16 16:41,2019-05-30 15:54,2018-11-20 10:07,ITRC Project,,,0,itrc-audio,,,,,,,,,"¬†The ITRC will provide
+ * roughly 78 audio files (2-3 scripts * 13 modules * 2 courses)
+ * each file will be roughy 2-3 mins
+ * audio files will be formatted as .wav
+ * the scripts will be narrated by two different voices (1 per course)
+ * estimated turnaround time per file will be 1 week of receiving the script
+ ** pending length & volume of scripts received
+
++*Milestones*+
+ * November 30 - 9 audio clips delivered
+ * March 30 - End Date¬†
+
++*Files*+
+ * [https://drive.google.com/drive/folders/18nq0Nj6f2Ut58vvWQ1-g7NMMKoMK3lmM]
+
++*Team*+
+ * Allyson - Lead, voice for 9008¬†
+ * Yusra - voice for 9002",,astew5,rsanchez,yalshara,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,yalshara,,,,,,,,,,,,Julie Whitehead,,jwhiteh,,,"Health Sciences, Faculty of",,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i15zov:,9.22E+18,,,,,,,Ping,No,,,,,"12/Nov/18 9:40 AM;rsanchez;Basic Resources for audio editing:¬†
+ * [https://maxrohde.com/2014/06/17/improving-voice-recording-with-audacity/]
+ * [https://larryjordan.com/articles/eq-warm-a-voice-and-improve-diction/]","12/Nov/18 11:17 AM;rsanchez;Also, [~astew5] please create the project folder for this project so we have copies of the scripts, audio recordings, and files.¬†","12/Nov/18 11:43 AM;astew5;I've created two subfolders on the force¬†(one for each course) under: Force > Projects > 3248 - APPLHSCI 9002/8 Voiceovers
+
+¬†","14/Nov/18 2:34 PM;rsanchez;I have made a switch on who will do the voice. Yusra will now be doing the 9002 course.¬†
+
+We have x4 9002 scripts in the google drive linked above ready to be recorded. I will have Yusra start working on those since she is in this Thursday and Friday. Lets aim to get those 4 delivered by early next week.¬†",16/Nov/18 2:23 PM;rsanchez;Yusra has completed the first 4 scripts for 9002. They have been sent off to Kim and Julie for feedback.,20/Nov/18 10:07 AM;rsanchez;The client have withdrew their project request and will seek an external voiceover service.¬†,,,,,,,,,,,,,,,,,,,,,,
+David Stanford Filming - October 12,ITRC-3236,266540,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Fixed,,jsadle7,jsadle7,2018-10-12 13:15,2019-05-07 10:06,2019-05-30 15:54,2019-04-15 11:41,ITRC Project,,,0,,,,,,,,,,Film and edit footage for David Stanford's videos,,jsadle7,zbaig4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i15gp3:,9.22E+18,,,,,,,Ping,No,,,,,"12/Oct/18 1:18 PM;jsadle7;Footage on BB8 scratch, folder name: ITRC-3236 - David Stanford Filming Oct 12
+",03/Apr/19 10:58 AM;zbaig4;Hello [~jsadle7]. Just doing a little spring cleaning. Is this ticket still active/needs help? Can I close this?,,,,,,,,,,,,,,,,,,,,,,,,,,
+ITRC Marketing Videos ,ITRC-3234,265928,Task,Open,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,,,jroach7,jroach7,2018-10-09 11:54,2018-10-09 11:54,2019-05-30 15:54,,ITRC Project,,,0,itrc,itrc-project,itrc-project-video,,,,,,,We will be creating a series of videos to highlight various features our office has to offer. Each video will be 45-60 seconds long with minimal text and no voiceover or actors.,,jroach7,sfoster9,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i15cxj:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+CHEM 1302 - LaTeX Question Pool,ITRC-3187,259609,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Done,fliu253,rsanchez,rsanchez,2018-09-04 9:48,2019-05-17 15:13,2019-05-17 15:13,2019-05-17 15:13,ITRC Project,,2018-12-07 0:00,0,itrc-project,owl-latex,owl-questionpools,,,,,,,"Moved from TDX. TDX Project ID:¬†309314
+
+Develop 11 - 12 sets of Chemistry quizzes for OWL using Latex math mark-up.
+
+Franklin and Damien have been working with Polydoros 'Poly' Kyriacou in digitizing chemistry questions in a large pool set. These questions will be used in CHEM 1302 for professor David Brock.
+
+This project is from SCORE.",,rsanchez,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,David Brock,,dbrock8,,,"Chemistry, Department of",,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i14adb:,9.22E+18,,,,,,,Ping,No,,,,,17/May/19 3:13 PM;rsanchez;This has been completed. David Brock now has ownership of the question pool.¬†,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Carole Orchard - Footage Edit,ITRC-3178,258617,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Fixed,jlau333,apypstra,apypstra,2018-08-27 14:01,2018-09-21 10:20,2019-05-30 15:54,2018-09-21 10:20,ITRC Project,,,0,itrc,itrc-filming,,,,,,,,"Please make the following edits. You'll find the video file on the force.
+
+¬†
+
+{quote}
+
+I have had a chance to download and review the videoclip. May I please request the following edits: Please cut from 4:14 to 4:16 and 4:28 to 4:19
+ 
+Please add the following:
+Title: Collaborative Client-Centred Practice ‚Äì Step 2 The case of ‚ÄúKathy‚Äù
+Credits: 
+Kathy played by Zoe Letwin
+Physician played by Charles Yin
+Nurse played by Jessi Baer
+Physiotherapist played by Jess Yu
+Narrator played by Carole Orchard
+Then show the framework (attached) starting after credits and move to picture of Kathy until 2:40 during this time please show the following bullet points
+ 
+50 year old woman
+Trained as a Medical Office Assistant in a physician‚Äôs office
+Family history of Fibromyalgia
+Experienced hand and arm pain managed to support ability to continue working
+Had car accident that cause injuries leading to acute pain
+Had to give up job and mobility
+Loss of social group and income
+Unable to now manage chronic pain
+ 
+Then move to title of Gathering Ongoing Information up to 6:38
+6:40 add title Determining required health/social needs
+11:59 add title Set goals & Treatment Plan
+15:54 add title Developing Joint Outcome Measures
+17:04 return to starting framework picture until 18:33
+Final credit thanking actors
+
+{quote}",,apypstra,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i1448v:,9.22E+18,,,,,,,Ping,No,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Update BOPPPS Info Graphic,ITRC-3161,254916,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Fixed,astew5,apypstra,apypstra,2018-07-26 13:14,2018-09-21 10:29,2019-05-30 15:54,2018-09-21 10:29,ITRC Project,,,0,itrc-project,,,,,,,,,"Katelyn from CTL would like the old BOPPPS inforgraphics updated with the new CTL Logo.
+
+¬†
+
+Resources can be found in: *Force > Projects > 3161 - BOPPPS*¬†",,apypstra,astew5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,08/Aug/18 9:21 AM;astew5;BOPPPS-ActiveLearningLessonPlanning-2018.pdf;https://jira.uwo.ca/secure/attachment/31751/BOPPPS-ActiveLearningLessonPlanning-2018.pdf,08/Aug/18 9:21 AM;astew5;BOPPPS-ActiveLearningLessonPlanning-2018-1.pdf;https://jira.uwo.ca/secure/attachment/31749/BOPPPS-ActiveLearningLessonPlanning-2018-1.pdf,08/Aug/18 9:21 AM;astew5;BOPPPS-ActiveLearningLessonPlanning-2018-2.pdf;https://jira.uwo.ca/secure/attachment/31750/BOPPPS-ActiveLearningLessonPlanning-2018-2.pdf,27/Jul/18 9:11 AM;astew5;BOPPPSInfoGraphic-2018.pdf;https://jira.uwo.ca/secure/attachment/31622/BOPPPSInfoGraphic-2018.pdf,27/Jul/18 9:16 AM;astew5;BOPPPSInfoGraphic2018-1.pdf;https://jira.uwo.ca/secure/attachment/31625/BOPPPSInfoGraphic2018-1.pdf,27/Jul/18 9:16 AM;astew5;BOPPPSInfoGraphic2018-2.pdf;https://jira.uwo.ca/secure/attachment/31626/BOPPPSInfoGraphic2018-2.pdf,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i13hen:,9.22E+18,,,,,,,Ping,No,,,,,"26/Jul/18 4:27 PM;astew5;New PDFS are attached to the ticket and on the Force in the project folder under ""Exports"".","30/Jul/18 2:40 PM;apypstra;There is a part two incoming.
+
+¬†","30/Jul/18 2:42 PM;apypstra;Email Excerpt:¬†
+
+{quote}
+
+We found a non-eLearning version of the handout that requires the same logo changes, but also switching some of the text at the bottom. If this is do-able, I've attached it's respective .ai file and the new text is below. The new text would replace the very bottom blurb about BOPPPS (after the ""On learning outcomes"" section), and the creative commons icons would remain the same:
+
+New Text: ""BOPPPS Lesson Planning"" is adapted from ""BOPPPS Online Lesson Planning"" by Beth Hundey, copyright 2015, Centre for Teaching and Learning, Western University, used under CC BY NC SA. ""BOPPPS Lesson Planning"" by Stephanie Oliver, copyright 2015, Centre for Teaching and Learning, Western University, is made available under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License, [http://creativecommons.org/licenses/by-nc-sa/4.0.]
+
+{quote}
+
+¬†
+
+Second AI file is on the Force underneath the same folder",08/Aug/18 9:22 AM;astew5;All of the files are on the Force under Projects > 3161 - BOPPPS Info Graphic. The PDF copies are also on this ticket.,,,,,,,,,,,,,,,,,,,,,,,,
+PM Short Course Development,ITRC-3153,251425,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Fixed,ifarrukh,jwinkler,jwinkler,2018-06-29 11:32,2019-05-07 10:07,2019-05-30 15:54,2019-05-07 10:07,ITRC Project,,,0,itrc-project,itrc-project-rise,rise,,,,,,,"Tasks associated with the development of a short project management course (2 weeks) based on ENGSCI 9510L650FW17
+
+Course will be developed using Rise",,aaladl,jwinkler,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,Email only,,,,,,,,,0|i12wdb:,9.22E+18,,,,,,,Ping,No,,,,,09/Jul/18 9:27 AM;aaladl;I moved some of the content from the Unit 1 course content into rise and I made a banner as well. The rise module can be found in the ES9703 Development site or in the itrc1 account.,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Time Tracker Video ,ITRC-3116,240956,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Done,cgordo57,cgordo57,cgordo57,2018-04-16 11:25,2019-01-16 16:41,2019-05-30 15:54,2018-05-09 15:31,ITRC Project,,,0,video,video-recording,,,,,,,,"We are making a video for time tracker - including how to use it, the features etc.¬†
+
+¬†
+
+[https://docs.google.com/document/d/1QOFv2KzIJz_FK4KcHfE6ilv1bcTW6OfTPv-BM83Yb10/edit?usp=sharing]
+
+¬†
+
+Comment ideas too!¬†",,cgordo57,ifarrukh,jroach7,rsanchez,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,ELT-1834,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,ITRC Internal,,,,,"Western Technology Services, Division of",,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,,,,,,,,,,0|i114yf:,9.22E+18,,,,,,,,No,,,,,16/Apr/18 11:28 AM;cgordo57;https://docs.google.com/document/d/1QOFv2KzIJz_FK4KcHfE6ilv1bcTW6OfTPv-BM83Yb10/edit?usp=sharing,30/Apr/18 9:56 AM;cgordo57;[https://docs.google.com/spreadsheets/d/1T7zIES916NtoHGPo7fgJFsBquRBHOTB535h1a1XdmsQ/edit?usp=sharing]¬†,"07/May/18 3:10 PM;ifarrukh;[~rsanchez] The video is done (it's really bad, Sorry!) It can be found in the Timetracker folder on the force- it's called Final Timetracker video¬†","09/May/18 9:04 AM;rsanchez;Nice job! Some minor feedback:
+ * at 15s you circled Saturday on the calendar instead of Friday
+ * include some up-beat, happy music to make it more lively
+ * export as mp4¬†
+ * add credits","09/May/18 2:57 PM;ifarrukh;[~rsanchez]- the edits are finished- the new video is called Final Timetracker Video 2
+
+¬†",09/May/18 3:31 PM;rsanchez;Nice! I have embedded the video in the new ITRC Training - Introduction module in Rise.¬†,,,,,,,,,,,,,,,,,,,,,,
+SCORE Learning Community Edit,ITRC-3112,240139,Task,Closed,ITRC,ITRC,software,sfoster9,"Third level support for eLearning technology, equipment issues, and ITRC projects.",,Medium,Fixed,zbaig4,apypstra,apypstra,2018-04-10 15:44,2019-04-03 12:14,2019-05-30 15:54,2019-04-03 12:14,ITRC Project,,,0,itrc-project,,,,,,,,,"4 Quick Edits for the SCORE sessions recorded at the TSC
+
+Project is located on BB8/Force under *3112 - SCORE Edit*",,apypstra,zbaig4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Default,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.22E+18,No,Yes,,,,,,,,100 Mbit/s,,,,,,,,,,,0|i10zwv:,9.22E+18,,,,,,,,No,,,,,03/Apr/19 10:54 AM;zbaig4;Hello Adam. Just doing a little spring cleaning. Is this ticket still active/needs help? Can I close this?,"03/Apr/19 11:07 AM;apypstra;Nobody has currently done it, the files should be on the force. However, the content has not been requested.
+
+If you feel like doing it, it just needs to be trimmed and titled. Otherwise, feel free to close it.","03/Apr/19 12:14 PM;zbaig4;* Audio and Video Synced
+ * Videos trimmed
+ * Tittles added
+
+All the final copies and Premiere files are on the force in the same ticket.",,,,,,,,,,,,,,,,,,,,,,,,,
