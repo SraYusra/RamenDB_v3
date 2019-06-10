@@ -118,8 +118,8 @@ export default {
       // ALL the lines in the CSV file
       var lines = csv.split('\n')
       var headerLine = lines[0].split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
-      // console.log('headerLine :' + headerLine + '\n\n\n')
-      // console.log(lines[2])
+      console.log('headerLine :' + headerLine)
+      console.log(lines[2])
 
       // Headers that are allowed, that we want
       var availHeaders = [
@@ -140,38 +140,36 @@ export default {
 
       // Pop last entry/line in csv cuz its undefined
       // lines.pop()
-      var vm = this
-      vm.toBePosted = this.toBePosted || []
 
       // After that, read line by line. Map data to headers (these variables are to display data on page)
       // line in indexLine
       lines.map(function (line, indexLine) {
         // Splits between commas unless they're in between quotes
-        // /,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/
-        // var regExPattern = '/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/'
-        var entry = line.split(/,/)
+        var entry = line.split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
         entry = entry || [] // entry is null or []
 
         if (entry.length < 1 || entry === undefined) return // bad
 
-        // console.log('entry::: ' + entry)
+        console.log(entry)
 
         if (indexLine < 1) return // get rid of headers
 
         // Map content of line to the heaaders in lines[0], also stored in headerLine
         var lineMapped = {}
-        headerLine.forEach((key, index) => { lineMapped[key] = entry[index] }) // maps headers to entries for one line at a time
+        headerLine.forEach((k, i) => { lineMapped[k] = entry[i] }) // maps headers to entries for one line at a time
+
+        console.log(lineMapped)
 
         var tempContent = []
 
         // Here i am trying to get all the content from availHeadersw
         availHeaders.forEach(
-          (key, index) => {
-            tempContent[index] = lineMapped[key] // getting values of entry so they can be posted to postHeaders
+          (key, ind) => {
+            tempContent[ind] = lineMapped[key] // getting values of entry so they can be posted to postHeaders
           }
         )
 
-        console.log('tempContent: ' + tempContent)
+        console.log(tempContent)
 
         var postHeaders = [
           'title',
@@ -190,13 +188,9 @@ export default {
         var obj = {}
         postHeaders.forEach((k, i) => { obj[k] = tempContent[i] })
 
-        // if (obj) obj.type.includes('Project') ? obj.type = 'PROJECT' : obj.type = 'SERVICE' // broken
-        if (obj.title !== '') {
-          // console.log('obj: ' + obj.title, obj.description, obj.ticketNum, obj.startDate, obj.endDate, obj.type)
-          console.log('obj: ', obj)
-          vm.toBePosted.push(obj) // pushes ready object to be posted into toBePosted array
-          console.log(obj, 'pushed to ', vm.toBePosted)
-        }
+        if (obj) obj.type.includes('Project') ? obj.type = 'PROJECT' : obj.type = 'SERVICE' // broken
+
+        console.log(obj)
 
         /*
           == TODO: POST OBJ
@@ -214,17 +208,18 @@ export default {
           obj.startDate = entry[indexes[9]]
           obj.endDate = entry[indexes[10]]
         */
-        // this.toBePosted.push(obj) // pushes ready object to be posted into toBePosted array
+        this.toBePosted.push(obj) // pushes ready object to be posted into toBePosted array
       })
 
       // Once all JSONS are created, post all JSONs in this.toBePosted, if its undefined or empty, assign it to an empty array
-      console.log('toBePosted: ', vm.toBePosted)
+      this.toBePosted = this.toBePosted || []
+      console.log(this.toBePosted)
 
-      vm.addProjects()
+      // vm.addProjects()
 
       // ~FIN
     },
-    // loads the file
+    // loads the file yeeeeeeee
     loadCSV (e) {
       var vm = this
       if (window.FileReader) {
@@ -247,7 +242,6 @@ export default {
       }
     },
     async addProjects () {
-      console.log('func addProjects')
       await this.toBePosted.forEach(async function (post) {
         post.description.replace(/"/g, '')
         post.faculty.replace(/"/g, '')
