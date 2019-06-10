@@ -7,20 +7,21 @@
     <div v-if="projects.length > 0" class="table-wrap">
       <div>
         <router-link v-bind:to="{ name: 'addproject' }" class="upload_link">Add Project/Service</router-link>
+        <router-link v-bind:to="{ name: 'upload2' }" class="upload_link">File Upload</router-link>
         <br>
         <br>
       </div>
       <table>
         <tr>
           <td>Title</td>
-          <td width="450">Description</td>
+          <!-- <td width="450">Description</td>  -->
           <td width="100">Type</td>
           <td width="100" align="center">Action</td>
         </tr>
         <tr v-for="(project,index) in filteredProjects" :key="index">
-          <td>{{ project.title }}</td>
-          <td>{{ project.description }}</td>
-          <td>{{ project.type.toLowerCase() }}</td>
+          <td>{{ project.title ? project.title : '' }}</td>
+          <!-- <td>{{ project.description ? project.description : '' }}</td> -->
+          <td>{{ project.type }}</td> <!-- .toLowerCase() -->
           <td align="center">
             <router-link v-bind:to="{ name: 'editproject', params: { id: project._id } }">Edit</router-link> |
             <a href="#" @click="deleteProject(project._id)">Delete</a>
@@ -35,7 +36,7 @@
     <br>
     <br>
     <br>
-    <router-link v-bind:to="{ name: 'upload' }" class="upload_link">File Upload</router-link>
+    <router-link v-bind:to="{ name: 'upload2' }" class="upload2_link">File Upload</router-link>
   </div>
 </template>
 

@@ -147,7 +147,6 @@ export default {
       lines.map(function (line, indexLine) {
         // Splits between commas unless they're in between quotes
         var entry = line.split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
-        console.log('entry', entry)
         entry = entry || [] // entry is null or []
 
         if (entry.length < 1 || entry === undefined) return // bad
@@ -246,9 +245,9 @@ export default {
     async addProjects () {
       console.log('func addProjects')
       await this.toBePosted.forEach(async function (post) {
-        post.description // .replace(/"/g, '')
-        post.faculty // .replace(/"/g, '')
-        post.status // .toLowerCase()
+        post.description.replace(/"/g, '')
+        post.faculty.replace(/"/g, '')
+        post.status.toLowerCase()
         await ProjectsService.addProject({
           title: post.title,
           description: post.description,

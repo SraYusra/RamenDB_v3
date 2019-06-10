@@ -1,6 +1,8 @@
 # Junk #
 .DS_Store
+**/node_modules/**
 
 # Priv #
+**/.env
 .env
 ssl/
