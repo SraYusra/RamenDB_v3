@@ -130,10 +130,10 @@ export default {
       this.courseID = response.data.courseID
       this.status = response.data.status
       this.hours = response.data.hours
-      var tempDate = response.data.startDate.split('T')
-      this.startDate = tempDate[0]
-      tempDate = response.data.endDate.split('T')
-      this.endDate = tempDate[0]
+      // var tempDate = response.data.startDate !== undefined ? response.data.startDate.split('T') : ''
+      this.startDate = response.data.startDate !== undefined ? response.data.startDate.split('T')[0] : undefined
+      // tempDate = response.data.endDate !== undefined ? response.data.endDate.split('T') : ''
+      this.endDate = response.data.endDate !== undefined ? response.data.endDate.split('T')[0] : undefined
       this.faculty = response.data.faculty.replace(/['"]+/g, '')
 
       // Here, mongo send back a whack date that did not work when I tried to attach it to the input fields

@@ -108,7 +108,7 @@ export default {
         result.push(obj)
       })
 
-      result.pop() // remove the last item because undefined values
+      // result.pop() // remove the last item because undefined values
 
       // INSTEAD OF RETURN, lets pass result to a new function to filter out the keys to only get ones we need and post them to database
       return result // JavaScript object
@@ -127,14 +127,14 @@ export default {
         'Summary',
         'Issue key',
         'Status',
-        'Project description',
+        // 'Project description',
         'Time Spent',
         'Created',
         'Component/s',
         'Due Date',
         'Custom field (Customer Name)',
-        'Custom field (Customer User ID)',
-        'Custom field (Department/Faculty)'
+        'Custom field (Department/Faculty)',
+        'Custom field (Customer User ID)'
       ]
 
       // tempHeaders has all the first line headers of the CSV file -- includes headers we need AND don't need
@@ -177,14 +177,14 @@ export default {
           'title',
           'ticketNum',
           'status',
-          'description',
+          // 'description',
           'hours',
           'startDate',
           'type',
           'endDate',
           'customerName',
-          'customerID',
-          'faculty'
+          'faculty',
+          'customerID'
         ]
 
         var obj = {}
@@ -210,11 +210,13 @@ export default {
           obj.startDate = entry[indexes[9]]
           obj.endDate = entry[indexes[10]]
         */
-        vm.toBePosted.push(obj) // pushes ready object to be posted into toBePosted array
+        if (obj.title !== undefined) {
+          vm.toBePosted.push(obj) // pushes ready object to be posted into toBePosted array
+        }
       })
 
       // Once all JSONS are created, post all JSONs in this.toBePosted, if its undefined or empty, assign it to an empty array
-      vm.toBePosted = this.toBePosted || []
+      // vm.toBePosted = this.toBePosted || []
       console.log('toBePosted: ', this.toBePosted)
 
       vm.addProjects()

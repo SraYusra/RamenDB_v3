@@ -1,0 +1,8 @@
+Issue Type,Issue key,Issue id,Parent id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated,Custom field (Customer Name),Custom field (Department/Faculty),Custom field (Customer User ID)
+Task,ITRC-3432,304233,,Film Fest 2019,ddorobek,ddorobek,Low,Open,,2019-06-04 11:54,2019-06-10 10:48,custname1,Advancement Services,cust1
+Service Request,ITRC-3347,296530,,J2B Lecture Recording,ddorobek,apypstra,Medium,Open,,2019-04-22 15:17,2019-06-03 12:01,custname2,Bachelor of Medical Sciences Program,cust2
+Sub-task,ITRC-3360,297968,294358,Search for Stock Footage,ddorobek,apypstra,Medium,Open,,2019-05-01 11:06,2019-05-08 11:15,custname3,Biotron,cus3
+Problem,ITRC-3343,296273,,Drop In - Answer and answer key are identical but answer is incorrect,ddorobek,ddorobek,Medium,Escalated,,2019-04-18 11:33,2019-04-18 12:03,custname4,"Computer Science, Department of",cus4
+Sub-task,ITRC-3294,279962,279757,Database Set-up,ddorobek,yalshara,Medium,Open,,2019-01-15 16:12,2019-02-11 15:04,custname5,Dentistry,cus5
+Service Request,ITRC-3076,229339,,UME Chart Simulation App,ddorobek,apypstra,Medium,Waiting For External,,2018-02-09 13:07,2018-11-08 10:45,custname6,"Economics, Department of",cus6
+Task,ITRC-2959,219189,,Rise Project based on Ana Garcia's Powtoon development,ddorobek,ddorobek,Medium,Open,,2017-11-28 16:30,2018-02-22 16:44,custname7,Facilities Management,vud7

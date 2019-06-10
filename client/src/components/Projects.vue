@@ -8,6 +8,7 @@
       <div>
         <router-link v-bind:to="{ name: 'addproject' }" class="upload_link">Add Project/Service</router-link>
         <router-link v-bind:to="{ name: 'upload2' }" class="upload_link">File Upload</router-link>
+        <a href="#" @click="deleteAllProjects()">Delete Projects</a>
         <br>
         <br>
       </div>
@@ -83,13 +84,38 @@ export default {
           })
         }
       })
+    },
+    async deleteAllProjects () {
+      Swal.fire({
+        title: 'Are you sure?',
+        text: "You won't be able to revert this!",
+        type: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Yes, delete it!'
+      }).then((result) => {
+        if (result.value) {
+          Swal.fire(
+            'Deleted!',
+            'Your file has been deleted.',
+            'success'
+          )
+          var delProjects = this.projects
+          console.log('delP: ', delProjects)
+          delProjects.filter(project => {
+            ProjectsService.deleteProject(project._id)
+          })
+        }
+      })
     }
   },
   computed: {
     filteredProjects () {
-      return this.projects.filter((project) => {
-        return project.title.toLowerCase().includes(this.search.toLowerCase())
-      })
+      return this.projects
+      // return this.projects.filter((project) => {
+      //   return project.title.toLowerCase().includes(this.search.toLowerCase())
+      // })
     }
   }
 }
