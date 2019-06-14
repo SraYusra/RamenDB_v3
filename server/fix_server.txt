@@ -1,0 +1,4 @@
+If the server won't start because a process is running on that port do:
+	lsof -i tcp:PORT
+	kill -9 process_id
+To prevent this, exit npm start process properly with ctrl+C, not ctrl+Z

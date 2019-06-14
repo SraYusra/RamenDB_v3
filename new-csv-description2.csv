@@ -1,0 +1,93 @@
+Issue Type,Issue key,Issue id,Parent id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated,Custom field (Customer Name),Custom field (Department/Faculty),Custom field (Customer User ID),Description
+Task,ITRC-3432,304233,,Film Fest 2019,ddorobek,ddorobek,Low,Open,,2019-06-04 11:54,2019-06-10 15:12,,,,"This year we will be having another film fest.
+
+There will be three stages of filming: planning, production, and post-production. Filming and post-production will take place in July. Planning should be done ahead of time, during June. There will be allotted time in the kiwi schedule for filming (~2 times/week).
+
+Each team will have an opportunity to film during the week on Tuesdays and Wednesdays. Two teams will be able to film on each day while one team remains in the ITRC. Each team must have deliverables by the pre-planning due date (scripts, storyboard, etc.).
+
+Each team member must contribute evenly to their group's film. Damien will be checking on each team on Friday each week to ensure that progress is being made.
+
++*Teams:*+
+ * Asala, Arjun, Brendan, Jiaxin
+ * Damien, Abby, AJ, Andrew
+ * Zeeshan, Alexander, Guillermo, Alex H
+
++*Requirements*+: 
+ * Minimum length: 4 minutes
+ * Max length: 10 minutes
+ * Use office equipment for filming
+ * Each film must have some special effects
+ * Each film must have closed captions 
+ * Each film must have an original score (soundtrack) 
+ * Each film must have choreography (i.e. dance or action sequence) 
+ * Each film must take place in the same universe (Skull-i-verse)
+
++*Deadlines:*+
+ * Pre-planning - June 28
+ ** Script
+ ** Storyboard
+ * Post-production/Screening - July 26 
+
++*Awards*+
+ * Best Picture (Overall)
+ * Best Visual Effects
+ * Best Original Music/Score
+ * Best Choreography
+ * Best Script
+ * Best Cameo"
+Problem,ITRC-3367,298835,,Drop In - Gradebook Final Grades,ddorobek,ddorobek,Medium,Closed,Fixed,2019-05-06 11:43,2019-05-06 11:45,,,,'Scholastica Madu wanted to know why her students' final grades were all set to 0%. I told her that she selected the option to set empty cells to 0% and reverted this change. She then asked how to submit final grades so I walked her through the process."
+Sub-task,ITRC-3360,297968,294358,Search for Stock Footage,ddorobek,apypstra,Medium,Open,,2019-05-01 11:06,2019-05-08 11:15,,,,
+Service Request,ITRC-3347,296530,,J2B Lecture Recording,ddorobek,apypstra,Medium,Open,,2019-04-22 15:17,2019-06-11 9:05,,,,
+Problem,ITRC-3343,296273,,Drop In - Answer and answer key are identical but answer is incorrect,ddorobek,ddorobek,Medium,Escalated,,2019-04-18 11:33,2019-04-18 12:03,,,,
+Task,ITRC-3341,296071,,BIO 2290 - Bacterial Cloning Articulate Storyline Module,ddorobek,ddorobek,Medium,Closed,Fixed,2019-04-17 11:45,2019-05-23 10:17,Michelle Belton,"Biology, Department of",mharris7,
+Sub-task,ITRC-3294,279962,279757,Database Set-up,ddorobek,yalshara,Medium,Open,,2019-01-15 16:12,2019-02-11 15:04,,,,
+Problem,ITRC-3274,278094,,Drop In - Student Participation,ddorobek,ddorobek,Medium,Closed,Fixed,2019-01-08 11:24,2019-01-08 11:24,,,,
+Service Request,ITRC-3272,277598,,Powtoon - Fabiana Crowley,ddorobek,apypstra,Medium,Closed,Won't Do,2019-01-07 9:42,2019-02-15 12:14,,,,
+Service Request,ITRC-3261,273340,,Drop In - Anonymous Quiz,ddorobek,ddorobek,Medium,Closed,Fixed,2018-11-28 11:14,2018-11-28 11:14,,,,
+Task,ITRC-3258,272112,,Remove former ITRC student consultants from the ITRC public site,ddorobek,sfoster9,Medium,Closed,Fixed,2018-11-21 10:53,2018-11-21 11:19,,,,
+Problem,ITRC-3238,267198,,OWL Support - Lessons and Forums Settings,ddorobek,ddorobek,Medium,Closed,Fixed,2018-10-17 15:01,2018-10-17 15:02,,,,
+Problem,ITRC-3154,253172,,Drop In - Adding Links to Subpages,ddorobek,ddorobek,Medium,Closed,Fixed,2018-07-12 12:50,2018-07-12 12:50,,,,
+Problem,ITRC-3140,245127,,Drop In - Importing Resources and Converting Audio Files,ddorobek,ddorobek,Medium,Closed,Fixed,2018-05-14 14:29,2018-05-14 14:29,,,,
+Problem,ITRC-3103,237429,,Drop In - Lessons Help,ddorobek,ddorobek,Medium,Closed,Fixed,2018-03-23 12:45,2018-03-23 12:45,,,,
+Problem,ITRC-3082,231641,,Drop in - Certification Question,ddorobek,ddorobek,Medium,Closed,Fixed,2018-02-21 14:49,2018-02-21 14:49,,,,
+Service Request,ITRC-3076,229339,,UME Chart Simulation App,ddorobek,apypstra,Medium,Waiting For External,,2018-02-09 13:07,2018-11-08 10:45,,,,
+Problem,ITRC-3070,228906,,Drop In - Tests and Quizzes Feedback,ddorobek,ddorobek,Medium,Closed,Fixed,2018-02-07 13:45,2018-02-07 13:45,,,,
+Problem,ITRC-3031,223011,,Drop In - Peer Assessment Assignments,ddorobek,ddorobek,Medium,Closed,Fixed,2018-01-03 14:46,2018-01-03 14:46,,,,
+Problem,ITRC-3027,222442,,Drop In - Deleting Assignment from Gradebook,ddorobek,ddorobek,Medium,Closed,Fixed,2017-12-22 14:06,2017-12-22 14:06,,,,
+Problem,ITRC-3026,222441,,Drop In - Image in Resources Not Displaying,ddorobek,ddorobek,Medium,Closed,Fixed,2017-12-22 14:03,2017-12-22 14:03,,,,
+Task,ITRC-3015,221371,,OCCPTHER 9613 - Modules - Updates,ddorobek,rsanchez,Medium,Closed,Fixed,2017-12-14 11:17,2019-01-16 16:45,Liliana Alvarez ,"Health Sciences, Faculty of",lalvare2,
+Sub-task,ITRC-2989,219708,219682,OWL Help Documentation - Phase 3 - Statistics,ddorobek,rsanchez,Medium,Closed,Done,2017-12-01 10:37,2018-05-14 9:20,,,,
+Sub-task,ITRC-2986,219705,219682,OWL Help Documentation - Phase 3 - SCORM,ddorobek,rsanchez,High,Closed,Done,2017-12-01 10:37,2018-05-14 9:40,,,,
+Task,ITRC-2959,219189,,Rise Project based on Ana Garcia's Powtoon development,ddorobek,ddorobek,Medium,Open,,2017-11-28 16:30,2018-02-22 16:44,,,,
+Problem,ITRC-2955,217884,,Drop In - Linking Resources to Lesson Pages,ddorobek,ddorobek,Medium,Closed,Fixed,2017-11-17 16:05,2017-11-17 16:05,,,,
+Sub-task,ITRC-2936,214479,191393,Revision - Chapter 3 - Review Questions: Precede-Proceed,ddorobek,rsanchez,Medium,Closed,Fixed,2017-10-23 12:21,2017-10-30 9:40,,,,
+Problem,ITRC-2916,212243,,Drop In - Assignment Resubmission,ddorobek,ddorobek,Medium,Closed,Fixed,2017-10-02 15:32,2017-10-02 15:32,,,,
+Sub-task,ITRC-2876,208776,208732,OWL Help Documentation - Phase 2 - Site Info,ddorobek,rsanchez,Medium,Closed,Done,2017-09-11 11:47,2017-10-06 16:24,,,,
+Sub-task,ITRC-2866,208762,208732,OWL Help Documentation - Phase 2 - News,ddorobek,rsanchez,Medium,Closed,Fixed,2017-09-11 11:43,2017-10-06 12:39,,,,
+Sub-task,ITRC-2863,208759,208732,OWL Help Documentation - Phase 2 - iClicker,ddorobek,rsanchez,Medium,Closed,Fixed,2017-09-11 11:42,2017-10-06 12:25,,,,
+Problem,ITRC-2848,208500,,Drop In - Roster Changes,ddorobek,ddorobek,Medium,Closed,Fixed,2017-09-08 14:33,2017-09-08 14:33,,,,
+Problem,ITRC-2810,204251,,Drop In - Blackboard Collaborate Help,ddorobek,ddorobek,Medium,Closed,Fixed,2017-08-08 13:23,2017-08-08 13:23,,,,
+Problem,ITRC-2796,202161,,Drop In - Image in Resources Not Displaying,ddorobek,ddorobek,Medium,Closed,Fixed,2017-07-17 11:01,2017-07-17 11:02,,,,
+Task,ITRC-2793,201639,,Ana Garcia Powtoon Project,ddorobek,ddorobek,Medium,Closed,Fixed,2017-07-11 13:53,2017-11-03 14:25,,,,
+Problem,ITRC-2764,198649,,Drop In - Inputting grades into gradebook,ddorobek,ddorobek,Medium,Closed,Fixed,2017-06-13 9:06,2017-06-13 9:06,,,,
+Problem,ITRC-2727,194294,,Drop In - Recording with Blackboard Collaborate,ddorobek,ddorobek,Medium,Closed,Fixed,2017-05-03 14:20,2017-05-03 14:20,,,,
+Problem,ITRC-2726,194286,,Drop In - Reordering Pages in Lessons,ddorobek,ddorobek,Medium,Closed,Fixed,2017-05-03 14:12,2017-05-03 14:12,,,,
+Task,ITRC-2694,191393,,HEALTHSCI 2250 - Health Promotion Course Redesign,ddorobek,rsanchez,Medium,Closed,Done,2017-04-11 11:04,2019-01-16 17:23,Jennifer Irwin,"Health Sciences, Faculty of",jenirwin,
+Sub-task,ITRC-2683,186973,186361,Research the limitations of SCORM & Storyline in OWL,ddorobek,rsanchez,Medium,Closed,Obsolete,2017-03-06 9:24,2017-03-29 11:18,,,,
+Sub-task,ITRC-2675,186389,186361,Develop Articulate Template Structure & Design,ddorobek,rsanchez,Medium,Closed,Fixed,2017-02-28 13:10,2017-06-27 15:41,,,,
+Sub-task,ITRC-2674,186387,186361,Record & Edit Voiceovers ,ddorobek,rsanchez,Medium,Closed,Done,2017-02-28 13:07,2017-03-29 10:32,,,,
+Task,ITRC-2673,186361,,OCCPTHER 9613 - Case Study Modules,ddorobek,rsanchez,Medium,Closed,Fixed,2017-02-28 11:43,2019-01-16 17:24,Liliana Alvarez,"Health Sciences, Faculty of",lalvare2,
+Problem,ITRC-2648,183594,,Drop In - Formatting Tests and Quizzes,ddorobek,ddorobek,Medium,Closed,Fixed,2017-02-01 14:49,2017-02-01 14:50,,,,
+Problem,ITRC-2640,182857,,Call In - Number of Current OWL courses,ddorobek,ddorobek,Medium,Closed,Fixed,2017-01-26 15:22,2017-01-26 15:22,,,,
+Problem,ITRC-2637,182023,,Drop In - Student Can't Access Course Site,ddorobek,ddorobek,Medium,Closed,Fixed,2017-01-20 15:05,2017-01-20 15:05,,,,
+Problem,ITRC-2618,180602,,Call in - Removal from Course Sites,ddorobek,ddorobek,Medium,Closed,Fixed,2017-01-11 15:51,2017-01-16 15:21,,,,
+Problem,ITRC-2609,179635,, Help Set Up Forums and Assignments for Nursing Course,ddorobek,ddorobek,Medium,Closed,Fixed,2017-01-05 14:23,2017-01-19 8:47,,,,
+Problem,ITRC-2560,173949,,Drop In - Adding Grades to Gradebook,ddorobek,ddorobek,Medium,Closed,Fixed,2016-11-04 10:18,2016-11-04 10:34,,,,
+Problem,ITRC-2551,172987,,Drop In - Importing Quiz to OWL from Scantron,ddorobek,ddorobek,Medium,Closed,Fixed,2016-10-26 15:08,2016-10-26 15:09,,,,
+Problem,ITRC-2545,172343,,Drop In - Commenting On Word,ddorobek,ddorobek,Medium,Closed,Fixed,2016-10-20 14:13,2016-10-20 15:44,,,,
+Problem,ITRC-2543,172254,,Drop In - Question About Exam Location Internet Restrictions ,ddorobek,ddorobek,Medium,Closed,Fixed,2016-10-19 16:01,2016-10-19 16:01,,,,
+Problem,ITRC-2492,168256,,Drop In - Configuring Forums With Groups,ddorobek,ddorobek,Medium,Closed,Fixed,2016-09-15 15:25,2016-09-15 15:40,,,,
+Problem,ITRC-2457,165671,,Drop In - Importing Content from Previous Site,ddorobek,ddorobek,Medium,Closed,Fixed,2016-09-01 14:05,2016-09-01 14:06,,,,
+Sub-task,ITRC-2415,162012,78596,OWL Tool - Lessons - Comments feature,ddorobek,sfoster9,Medium,Closed,Fixed,2016-08-03 11:00,2017-11-03 14:25,,,,
+Task,ITRC-2081,151285,,Migrant Worker Workshop - Edit,ddorobek,apypstra,Medium,Closed,Fixed,2016-05-04 10:33,2016-08-24 9:55,Ava John-Baptiste,,ajohnbap,
+Task,ITRC-417,106167,,Create instructions for refreshing the browser caches ,ddorobek,sfoster9,Medium,Closed,Fixed,2015-05-04 12:12,2016-08-02 9:43,,,,

@@ -56,11 +56,13 @@
 
 <script>
 import ProjectsService from '@/services/ProjectsService'
+import Swal from 'sweetalert2'
 
 export default {
   name: 'upload2',
   data () {
     return {
+      projects: [],
       channel_name: '',
       channel_fields: [],
       channel_entries: [],
@@ -69,8 +71,14 @@ export default {
       parse_csv: [], // im not suree
       sortOrders: {},
       sortKey: '',
-      toBePosted: [] // contains all objects to be posted to DB
+      toBePosted: [], // contains all objects to be posted to DB
+      matchCount: 0,
+      matchObjects: [],
+      unmatchObjects: []
     }
+  },
+  mounted () {
+    this.getProjects()
   },
   filters: {
     // capitalizes first letter only
@@ -80,6 +88,10 @@ export default {
   },
   methods: {
     // no idea............................................................................
+    async getProjects () {
+      const response = await ProjectsService.fetchProjects()
+      this.projects = response.data.projects
+    },
     sortBy: function (key) {
       var vm = this
       vm.sortKey = key
@@ -127,13 +139,13 @@ export default {
         'Summary',
         'Issue key',
         'Status',
-        // 'Project description',
         'Time Spent',
         'Created',
         'Component/s',
         'Due Date',
         'Custom field (Customer Name)',
         'Custom field (Department/Faculty)',
+        // 'Description',
         'Custom field (Customer User ID)'
       ]
 
@@ -177,13 +189,13 @@ export default {
           'title',
           'ticketNum',
           'status',
-          // 'description',
           'hours',
           'startDate',
           'type',
           'endDate',
           'customerName',
           'faculty',
+          // 'description',
           'customerID'
         ]
 
@@ -193,25 +205,37 @@ export default {
         // if (obj) obj.type.includes('Project') ? obj.type = 'PROJECT' : obj.type = 'SERVICE' // broken
         console.log('obj: ', obj)
         console.log('tobeposted: ', vm.toBePosted)
+        entry.forEach(e => {
+          if (e.toLowerCase().includes('project')) {
+            obj.type = 'PROJECT'
+          }
+        })
 
-        /*
-          == TODO: POST OBJ
-          == THE ABOVE CODE DOES THE FOLLOWING:
-          var obj = {}
-          obj.title = entry[indexes[0]]
-          obj.description = entry[indexes[1]]
-          obj.ticketNum = entry[indexes[2]]
-          obj.type = entry[indexes[3]]
-          obj.status = entry[indexes[4]]
-          obj.faculty = entry[indexes[5]]
-          obj.customerName = entry[indexes[6]]
-          obj.customerID = entry[indexes[7]]
-          obj.hours = entry[indexes[8]]
-          obj.startDate = entry[indexes[9]]
-          obj.endDate = entry[indexes[10]]
-        */
-        if (obj.title !== undefined) {
-          vm.toBePosted.push(obj) // pushes ready object to be posted into toBePosted array
+        if (obj.title !== undefined || obj.ticketNum !== undefined) {
+          if (obj.startDate === '') {
+            obj.startDate = undefined
+          }
+          if (obj.endDate === '') {
+            obj.endDate = undefined
+          }
+          console.log('end: ', obj.endDate, obj.endDate === '')
+          if (obj.type !== 'PROJECT') {
+            obj.type = 'SERVICE'
+          }
+          var match = false
+          console.log('this.proj', vm.projects)
+          vm.projects.forEach(project => {
+            if (project.title.includes(obj.title)) {
+              match = true
+              vm.matchCount++
+              vm.matchObjects.push(obj)
+            }
+          })
+          if (!match) {
+            vm.toBePosted.push(obj) // pushes ready object to be posted into toBePosted array
+          }
+          match = false
+          console.log('matchCount:', vm.matchCount)
         }
       })
 
@@ -219,7 +243,7 @@ export default {
       // vm.toBePosted = this.toBePosted || []
       console.log('toBePosted: ', this.toBePosted)
 
-      vm.addProjects()
+      // vm.addProjects()
 
       // ~FIN
     },
@@ -246,7 +270,6 @@ export default {
       }
     },
     async addProjects () {
-      console.log('func addProjects')
       await this.toBePosted.forEach(async function (post) {
         post.description // .replace(/"/g, '')
         post.faculty // .replace(/"/g, '')
@@ -265,12 +288,47 @@ export default {
           faculty: post.faculty
         })
       })
-      this.$swal(
-        'Great!',
-        `Your projects have been added! Please REFRESH page.`,
-        'success'
-      )
-      this.$router.push({ name: 'Projects' })
+      if (this.matchCount === 0) {
+        Swal.fire(
+          'Great!',
+          `Your projects have been added! Please REFRESH page.`,
+          'success'
+        )
+        this.$router.push({ name: 'Projects' })
+      } else {
+        var matchString = ''
+        var unmatchString = ''
+        this.matchObjects.forEach(project => {
+          matchString += project.ticketNum + '<br>'
+        })
+        this.toBePosted.forEach(project => {
+          unmatchString += project.ticketNum + '<br>'
+        })
+        Swal.queue([{
+          type: 'warning',
+          title: 'Warning',
+          confirmButtonText: 'Next',
+          html: `The following projects/services have already been uploaded:<br>` + matchString,
+          preConfirm: () => {
+            Swal.insertQueueStep({
+              type: 'success',
+              title: 'Success',
+              html: `The following projects/services have been uploaded:<br>` + unmatchString
+            })
+          }
+        }])
+        // Swal.fire(
+        //   'Warning',
+        //   `The following projects/services have already been uploaded:\n` + matchString,
+        //   'warning'
+        // )
+        // Swal.fire(
+        //   'Success',
+        //   `The following projects/services have been uploaded:\n` + unmatchString,
+        //   'success'
+        // )
+        this.$router.push({ name: 'Projects' })
+      }
     }
   }
 }

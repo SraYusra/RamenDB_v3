@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Projects from '@/components/Projects'
 import addproject from '@/components/AddProject'
 import editproject from '@/components/EditProject'
+import viewproject from '@/components/ViewProject'
 import upload from '@/components/UploadFile'
 import search from '@/components/SearchProjects'
 import upload2 from '@/components/UploadFile2'
@@ -26,6 +27,11 @@ export default new Router({
       path: '/projects/:id/edit',
       component: editproject,
       name: 'editproject'
+    },
+    {
+      path: '/projects/:id/view',
+      component: viewproject,
+      name: 'viewproject'
     },
     {
       path: '/upload',

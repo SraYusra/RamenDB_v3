@@ -1,0 +1,388 @@
+Issue Type,Issue key,Issue id,Parent id,Summary,Assignee,Reporter,Priority,Status,Resolution,Created,Updated,Custom field (Customer Name),Custom field (Department/Faculty),Custom field (Customer User ID),Description
+Task,ITRC-3432,304233,,Film Fest 2019,ddorobek,ddorobek,Low,Open,,2019-06-04 11:54,2019-06-10 15:12,,,,"This year we will be having another film fest.
+
+There will be three stages of filming: planning, production, and post-production. Filming and post-production will take place in July. Planning should be done ahead of time, during June. There will be allotted time in the kiwi schedule for filming (~2 times/week).
+
+Each team will have an opportunity to film during the week on Tuesdays and Wednesdays. Two teams will be able to film on each day while one team remains in the ITRC. Each team must have deliverables by the pre-planning due date (scripts, storyboard, etc.).
+
+Each team member must contribute evenly to their group's film. Damien will be checking on each team on Friday each week to ensure that progress is being made.
+
++*Teams:*+
+ * Asala, Arjun, Brendan, Jiaxin
+ * Damien, Abby, AJ, Andrew
+ * Zeeshan, Alexander, Guillermo, Alex H
+
++*Requirements*+: 
+ * Minimum length: 4 minutes
+ * Max length: 10 minutes
+ * Use office equipment for filming
+ * Each film must have some special effects
+ * Each film must have closed captions 
+ * Each film must have an original score (soundtrack) 
+ * Each film must have choreography (i.e. dance or action sequence) 
+ * Each film must take place in the same universe (Skull-i-verse)
+
++*Deadlines:*+
+ * Pre-planning - June 28
+ ** Script
+ ** Storyboard
+ * Post-production/Screening - July 26 
+
++*Awards*+
+ * Best Picture (Overall)
+ * Best Visual Effects
+ * Best Original Music/Score
+ * Best Choreography
+ * Best Script
+ * Best Cameo"
+Problem,ITRC-3367,298835,,Drop In - Gradebook Final Grades,ddorobek,ddorobek,Medium,Closed,Fixed,2019-05-06 11:43,2019-05-06 11:45,,,,Scholastica Madu wanted to know why her students' final grades were all set to 0%. I told her that she selected the option to set empty cells to 0% and reverted this change. She then asked how to submit final grades so I walked her through the process.
+Sub-task,ITRC-3360,297968,294358,Search for Stock Footage,ddorobek,apypstra,Medium,Open,,2019-05-01 11:06,2019-05-08 11:15,,,,"Attempt to find stock footage for the associated storyboard scenes. Determine what will need to be shot by us and what can be purchased.
+
+The rough storyboard is outlined in the powerpoint on the main ticket, there is also a visual storyboard in Adam's office."
+Service Request,ITRC-3347,296530,,J2B Lecture Recording,ddorobek,apypstra,Medium,Open,,2019-04-22 15:17,2019-06-11 9:05,,,,"Dr. Wong would like us to examine if there is a possibility to construct a trailer from the two lectures provided (see folder on Force).
+
+*Current Shot List* 
+ * Harmonics
+ * String Tension
+ * String Density
+ * String Length
+ * Overall Gradient
+ * Chuck Berry
+ * Hendrix
+ * Slinky
+
+*Video or Module?*
+ * Few Quiz questions throughout
+ * Touch-Tone Quiz
+
+*Audio Recording*
+  * Slides (pt1-3, 30 mins each, individual slide recordings)
+
+ "
+Problem,ITRC-3343,296273,,Drop In - Answer and answer key are identical but answer is incorrect,ddorobek,ddorobek,Medium,Escalated,,2019-04-18 11:33,2019-04-18 12:03,,,,"Kenan Fanni came in with a tests and quizzes issue. One of his students inputted the correct answer however it was listed as incorrect. The answer has an accent (é) in it, which is believed to be the cause of the problem. The question type was fill in the blank."
+Task,ITRC-3341,296071,,BIO 2290 - Bacterial Cloning Articulate Storyline Module,ddorobek,ddorobek,Medium,Closed,Fixed,2019-04-17 11:45,2019-05-23 10:17,Michelle Belton,"Biology, Department of",mharris7,"Create an interactive Storyline module about Bacterial Cloning.
+
+ 
+
+Timeline:
+ * April 17 - Content Received
+ * April 30 - Update Meeting & Demo
+ * May 10 - QA
+ * May 17 - Delivery (Projected)
+
+ 
+
+Admin
+ * Course: BIOLOGY 2290
+ * Instructor: Michelle Belton ([mharris7@uwo.ca|mailto:mharris7@uwo.ca])
+ * ITRC Lead: Damien D.
+ * ELT: Ramon"
+Sub-task,ITRC-3294,279962,279757,Database Set-up,ddorobek,yalshara,Medium,Open,,2019-01-15 16:12,2019-02-11 15:04,,,,"Building the Database infrastructure, taking into account the Jira export project data."
+Problem,ITRC-3274,278094,,Drop In - Student Participation,ddorobek,ddorobek,Medium,Closed,Fixed,2019-01-08 11:24,2019-01-08 11:24,,,,Erika Simpson came in for help with setting up participation marks in an online course. I walked her through this process.
+Service Request,ITRC-3272,277598,,Powtoon - Fabiana Crowley,ddorobek,apypstra,Medium,Closed,Won't Do,2019-01-07 9:42,2019-02-15 12:14,,,,
+Service Request,ITRC-3261,273340,,Drop In - Anonymous Quiz,ddorobek,ddorobek,Medium,Closed,Fixed,2018-11-28 11:14,2018-11-28 11:14,,,,Rebecca Yardley (ryardley) came in asking how to create an anonymous quiz. I walked her through the steps and showed her how to export the results.
+Task,ITRC-3258,272112,,Remove former ITRC student consultants from the ITRC public site,ddorobek,sfoster9,Medium,Closed,Fixed,2018-11-21 10:53,2018-11-21 11:19,,,,"Please remove Chrisinda from the Student Consultants page:
+https://itrc.uwo.ca/about_us/student_consultants.html"
+Problem,ITRC-3238,267198,,OWL Support - Lessons and Forums Settings,ddorobek,ddorobek,Medium,Closed,Fixed,2018-10-17 15:01,2018-10-17 15:02,,,,An instructor (A. Kim) came in asking for help with a Lessons page. She wanted to make sure that her prerequisites were set up properly. She also wanted help with commenting on forum posts after the topic has been closed.
+Problem,ITRC-3154,253172,,Drop In - Adding Links to Subpages,ddorobek,ddorobek,Medium,Closed,Fixed,2018-07-12 12:50,2018-07-12 12:50,,,,Kenan Fanni came in asking to help him update the broken links in his OWL site. He also asked about question types in tests and quizzes and I explained the different types to him. 
+Problem,ITRC-3140,245127,,Drop In - Importing Resources and Converting Audio Files,ddorobek,ddorobek,Medium,Closed,Fixed,2018-05-14 14:29,2018-05-14 14:29,,,,Henri Boyi (hboyi) came in asking to import resources from one of his previous year's courses to this year's equivalent course. He also wanted to convert audio files of .aiff format to .mp3 as students were having trouble opening the .aiff files. I showed him how to import the resources to his new course and converted his audio files as well.
+Problem,ITRC-3103,237429,,Drop In - Lessons Help,ddorobek,ddorobek,Medium,Closed,Fixed,2018-03-23 12:45,2018-03-23 12:45,,,,"Laura Louch (llouch) came in asking for help within Lessons pages. I helped her with linking to external sites, embedding images, and changing the layout of the Lessons page."
+Problem,ITRC-3082,231641,,Drop in - Certification Question,ddorobek,ddorobek,Medium,Closed,Fixed,2018-02-21 14:49,2018-02-21 14:49,,,, Eunice Isidro (eisidro) came in asking why her students weren't receiving a certificate upon completing a quiz. The quiz wasn't linked in the gradebook so the certificate requirement wasn't activated. I sent the quiz scores to the gradebook and reactivated the certificate so her students could now receive their certificates.
+Service Request,ITRC-3076,229339,,UME Chart Simulation App,ddorobek,apypstra,Medium,Waiting For External,,2018-02-09 13:07,2018-11-08 10:45,,,,"Charting Simulator app for UME
+
+*Faculty:*
+ Rob Leeper
+ Angela BuilesAguilar
+
+ 
+
+*Work Breakdown:*
+
+*API:* Adam
+
+*Web:* Yusra
+
+*iOS:* Damien / Devan
+
+ 
+
+*gitlab:* [https://gitlab.com/ITRC-UWO] "
+Problem,ITRC-3070,228906,,Drop In - Tests and Quizzes Feedback,ddorobek,ddorobek,Medium,Closed,Fixed,2018-02-07 13:45,2018-02-07 13:45,,,,Nigel Blamey (nblamey2) came in asking questions related to feedback in tests and quizzes which I showed him how to do.
+Problem,ITRC-3031,223011,,Drop In - Peer Assessment Assignments,ddorobek,ddorobek,Medium,Closed,Fixed,2018-01-03 14:46,2018-01-03 14:46,,,,James Flath dropped in wanting to create a peer assessment assignment where each student assesses a student within their group. I told him it wasn't possible to create a peer assessment group assignment and that the best course of action would be to create separate peer assessment assignments released to the individual groups.
+Problem,ITRC-3027,222442,,Drop In - Deleting Assignment from Gradebook,ddorobek,ddorobek,Medium,Closed,Fixed,2017-12-22 14:06,2017-12-22 14:06,,,,Wei Wei Da (wda@uwo.ca) came in asking why she couldn't get rid of an assignment from the gradebook. I showed her how to change the permissions for deleting assignments and removed the assignment.
+Problem,ITRC-3026,222441,,Drop In - Image in Resources Not Displaying,ddorobek,ddorobek,Medium,Closed,Fixed,2017-12-22 14:03,2017-12-22 14:03,,,,Kenan Fanni (kfanni@uwo.ca) came in wondering why his students couldn't see an image on his course site. I changed his permissions for the image folder so it is hidden but its contents are viewable and reuploaded the image to fix this.
+Task,ITRC-3015,221371,,OCCPTHER 9613 - Modules - Updates,ddorobek,rsanchez,Medium,Closed,Fixed,2017-12-14 11:17,2019-01-16 16:45,Liliana Alvarez ,"Health Sciences, Faculty of",lalvare2,"*WHAT*
+Reduce the amount of instructor work (ie feedback) by streamlining the activities and include automated feedback.
+ 
+Adjusting Activities
+_Activities 1 - 5_
+- no longer graded
+- will be within the module
+- multiple choice with rationale input
+Function
+- provide automated feedback per choice
+- multiple attempts until they get it correct
+- should be able to see their previous input and rationale (download?)
+_Activities 6 - 10_
+- keep as is but with updated instructions
+- to be graded
+- instructor will provide manual feedback
+
+Introduction Video
+- Redo introduction video
+- Ensure the teleprompter works and is aligned well
+- Captions
+
+Lightboard
+- Redo light board video lecture
+- Create a new light board video about objectives
+-- roughly 10 minutes
+-- use animation and effects to highlight text/content
+- Captions
+
+(Inspiration Video)
+- https://www.youtube.com/watch?v=R7IUd7217Xc
+
+*WHEN*
+Introduction Video Shoot - Wed. Feb 21st
+Light Board Video Shoot - Wed. Feb 21st
+Content & Updates Provided - Wed. Feb 21st
+Projected Completion Date - March 15th
+
+*WHO*
+Project Lead - Damian
+Video/FX - Jodie R. 
+Instructor - Liliana Alvarez
+ELT - Ramon"
+Sub-task,ITRC-2989,219708,219682,OWL Help Documentation - Phase 3 - Statistics,ddorobek,rsanchez,Medium,Closed,Done,2017-12-01 10:37,2018-05-14 9:20,,,,"Phase 3 of OWL Help will complete the following:
+ - Importing relevant information from OWL Documentation to OWL Help
+ -- Resulting in OWL Documentation being obsolete and/or unpublished
+ - Write new content about tool usage and specific OWL (Western) related information
+ - *Plan* on how to add rich media content (video tutorials, info-graphs, etc.)
+
+*Old OWL Docs*
+ [https://owl.uwo.ca/portal/site/8fdbf430-43ff-4df1-b004-f180db17dc0b/tool/f8597ddc-7aaa-4ff6-a0dc-ee89000d4073]
+
+*Style Guide*
+ [https://kiwi.uwo.ca/display/ITRC/OWL+Documentation+Style+Guide]
+
+*Page Tracking*
+
+https://docs.google.com/spreadsheets/d/15SvNwI44wmCZddJ3qey4CvU3mRKjID_qdkQ7QRdLeVQ/edit#gid=153620584"
+Sub-task,ITRC-2986,219705,219682,OWL Help Documentation - Phase 3 - SCORM,ddorobek,rsanchez,High,Closed,Done,2017-12-01 10:37,2018-05-14 9:40,,,,"Phase 3 of OWL Help will complete the following:
+- Importing relevant information from OWL Documentation to OWL Help
+-- Resulting in OWL Documentation being obsolete and/or unpublished 
+- Write new content about tool usage and specific OWL (Western) related information
+- *Plan* on how to add rich media content (video tutorials, info-graphs, etc.)
+
+*Old OWL Docs*
+https://owl.uwo.ca/portal/site/8fdbf430-43ff-4df1-b004-f180db17dc0b/tool/f8597ddc-7aaa-4ff6-a0dc-ee89000d4073
+
+*Style Guide*
+https://kiwi.uwo.ca/display/ITRC/OWL+Documentation+Style+Guide
+
+*Page Tracking*
+https://docs.google.com/spreadsheets/d/15SvNwI44wmCZddJ3qey4CvU3mRKjID_qdkQ7QRdLeVQ/edit#gid=153620584"
+Task,ITRC-2959,219189,,Rise Project based on Ana Garcia's Powtoon development,ddorobek,ddorobek,Medium,Open,,2017-11-28 16:30,2018-02-22 16:44,,,,
+Problem,ITRC-2955,217884,,Drop In - Linking Resources to Lesson Pages,ddorobek,ddorobek,Medium,Closed,Fixed,2017-11-17 16:05,2017-11-17 16:05,,,,Clare Gordon came in asking how to link resources to her lesson pages. I showed her how to do this as well as how to hide the Resources tool from students.
+Sub-task,ITRC-2936,214479,191393,Revision - Chapter 3 - Review Questions: Precede-Proceed,ddorobek,rsanchez,Medium,Closed,Fixed,2017-10-23 12:21,2017-10-30 9:40,,,,"[~ddorobek] There are two minor updates that need to be made in the Chapter 3 Module:
+
+1. Intervention Planning is incorrectly spelled in the left navigation
+2. Question #3 option ""c"" should be ""PRECEDE-PROCEED""
+3. Question #6 isn't accepting the correct answer. Adjust the scoring to match the answer key:
+o Social Assessment and Situational Analysis : Seeks to subjectively define the quality of
+the term with its definition on the right concerning the PRECEDE-PROCEED model.
+life of those in the priority population
+o Educational and Ecological Assessment: identifies and classifies factors that have the
+potential to influence behavior or change the environment
+o Process Evaluation: check measurements of implementation to control, assure, or
+improve the quality of the program
+o Impact and Outcome Evaluation: verify immediate observable long-term effects of the
+program
+
+Please make these revisions, save the project file, and export/upload the new version to the HEALTHSCI 2250 course: https://owl.uwo.ca/portal/site/939aae64-75b0-4fcd-a1e3-7c67ad35dd1e
+ "
+Problem,ITRC-2916,212243,,Drop In - Assignment Resubmission,ddorobek,ddorobek,Medium,Closed,Fixed,2017-10-02 15:32,2017-10-02 15:32,,,,"John Dickinson came in asking how to allow specific students to resubmit to an assignment with the 'accept until date' already passed. I told him that students who did not submit to the original assignment will not be able to resubmit despite being given this permission from the instructor and that the best course of action would be to reopen the assignment and set the 'accept until date' to a further date.
+
+I also showed him how to link videos in resources from other resource folders."
+Sub-task,ITRC-2876,208776,208732,OWL Help Documentation - Phase 2 - Site Info,ddorobek,rsanchez,Medium,Closed,Done,2017-09-11 11:47,2017-10-06 16:24,,,,"Complete the following for *both* instructor and student pages:
+- Group similar topics into categories & condense sections onto one page
+-- Add 'On this Page' (table of content) if there are multiple sections
+- Adjust content to match Styling Guide
+- Update/Upload screenshots using OWL
+- Provide *alt text* for images for accessibility
+- Edit/Remove hyperlinks
+- Adjust configure settings 
+- *Begin* writing new content
+
+https://kiwi.uwo.ca/display/ITRC/OWL+Documentation+Style+Guide"
+Sub-task,ITRC-2866,208762,208732,OWL Help Documentation - Phase 2 - News,ddorobek,rsanchez,Medium,Closed,Fixed,2017-09-11 11:43,2017-10-06 12:39,,,,"Complete the following for *both* instructor and student pages:
+- Group similar topics into categories & condense sections onto one page
+-- Add 'On this Page' (table of content) if there are multiple sections
+- Adjust content to match Styling Guide
+- Update/Upload screenshots using OWL
+- Provide *alt text* for images for accessibility
+- Edit/Remove hyperlinks
+- Adjust configure settings 
+- *Begin* writing new content
+
+https://kiwi.uwo.ca/display/ITRC/OWL+Documentation+Style+Guide"
+Sub-task,ITRC-2863,208759,208732,OWL Help Documentation - Phase 2 - iClicker,ddorobek,rsanchez,Medium,Closed,Fixed,2017-09-11 11:42,2017-10-06 12:25,,,,"Complete the following for *both* instructor and student pages:
+- Group similar topics into categories & condense sections onto one page
+-- Add 'On this Page' (table of content) if there are multiple sections
+- Adjust content to match Styling Guide
+- Update/Upload screenshots using OWL
+- Provide *alt text* for images for accessibility
+- Edit/Remove hyperlinks
+- Adjust configure settings 
+- *Begin* writing new content
+
+https://kiwi.uwo.ca/display/ITRC/OWL+Documentation+Style+Guide"
+Problem,ITRC-2848,208500,,Drop In - Roster Changes,ddorobek,ddorobek,Medium,Closed,Fixed,2017-09-08 14:33,2017-09-08 14:33,,,,Jun Wang came in asking how to separate her course into 2 sections. I also helped her with forums as she wanted a way for students to choose presentation topics without overlap.
+Problem,ITRC-2810,204251,,Drop In - Blackboard Collaborate Help,ddorobek,ddorobek,Medium,Closed,Fixed,2017-08-08 13:23,2017-08-08 13:23,,,,Shazya Karmali came in asking for Blackboard Collaborate help. She was wondering why her recording had no sound. I told her she probably didn't set up the microphone settings correctly and showed her how to do so. 
+Problem,ITRC-2796,202161,,Drop In - Image in Resources Not Displaying,ddorobek,ddorobek,Medium,Closed,Fixed,2017-07-17 11:01,2017-07-17 11:02,,,,Kenan Fanni came in wondering why his students couldn't see the photo on the home page of his course site. I changed the permissions in his images folder so that his students could see them and walked him through this process.
+Task,ITRC-2793,201639,,Ana Garcia Powtoon Project,ddorobek,ddorobek,Medium,Closed,Fixed,2017-07-11 13:53,2017-11-03 14:25,,,,"ITRC Lead: Damian
+Project Team: Damian & Nathan
+ELT Support:  jane
+
+Ana Garcia <agarcia> has asked us to create a short (~3 min) animation explaining the concept of flipped classroom for students in language studies.  Ana's TA - Adriana <asostocor> will also be involved.
+
+ETAs:
+Content/script delivery from Ana/Adriana:  July 14
+Samples/mockups to Ana/Adriana:  July 21
+Major changes from Ana/Adriana:  July 28
+Completion date: August 21
+
+The development platform for this project is Powtoon
+We will use a mailing list - powdev1@uwo.ca - to keep all team members aware of project development/status
+All team members have access to the Powtoon group - Dev1.  The link is:  https://www.powtoon.com/edu/join-group/oRCS/
+Once an account has been setup and (automatically) joined to the group, access is via the login link on the homepage:  https://www.powtoon.com
+"
+Problem,ITRC-2764,198649,,Drop In - Inputting grades into gradebook,ddorobek,ddorobek,Medium,Closed,Fixed,2017-06-13 9:06,2017-06-13 9:06,,,,Richard VandeWetering came in asking how to input grades from an assignment into gradebook. I walked him through the process.
+Problem,ITRC-2727,194294,,Drop In - Recording with Blackboard Collaborate,ddorobek,ddorobek,Medium,Closed,Fixed,2017-05-03 14:20,2017-05-03 14:20,,,,Mark Yaniszewski came in asking how to record lectures so he can post them on his OWL site. I showed him how to use Blackboard Collaborate to record his lectures and how to upload the recordings to Resources.
+Problem,ITRC-2726,194286,,Drop In - Reordering Pages in Lessons,ddorobek,ddorobek,Medium,Closed,Fixed,2017-05-03 14:12,2017-05-03 14:12,,,,Cindy Forget came in asking how to reorder sub pages within the Lessons tool. I walked her through the process.
+Task,ITRC-2694,191393,,HEALTHSCI 2250 - Health Promotion Course Redesign,ddorobek,rsanchez,Medium,Closed,Done,2017-04-11 11:04,2019-01-16 17:23,Jennifer Irwin,"Health Sciences, Faculty of",jenirwin," HEALTSCI 2250 is being redesigned to be of a blended course and their OWL site will need a revamp. 
+
+The instructor is asking help build:
+- Learning Modules (x2) (including illustration & voiceover)
+- Structure online resources/course flow
+- Custom CSS for Lessons/Home Page
+- Building online practice quizzes
+- Setting up Blackboard Collaborate
+- AODA Compliant
+
+*TEAM*
+- Aleks R. - Project & Design Lead
+- Irma - Illustrator/Architect
+- Damien - Audio/Architect/Accessibility Lead
+- Claudiu - Runner/Shadow
+- Ramon - ELT Liaison
+- Jen Irwin - Instructor (jenirwin)
+- Hieu Ly - TA/Content Expert (vly8)
+
+*SCHEDULE*
+- Meet & Greet - May 10
+- Content #1 Delivered (projected) - May 19
+- Module #1 Audio - May 26
+- Structure & Flow - May 30
+- Module #1 Media Assets - June 2
+- Content #2 Delivered (projected) - June 2
+- CSS & OWL Design - June 2
+- Module #2 AODA & Testing - June 9 
+- Module #2 Audio - June 8
+- Module #2 Media Assets - June 14
+- Module #2 AODA & Testing - June 16 
+
+Introduction/ Definitions - Alex (/)
+Ecological Perspective -Damian (/)
+Behaviour Change Theories (Approaches) -Claudiu (/)
+Behaviour Change Theories - Intrapersonal Level -Alex (/)
+Stimulus Response Theory - Alex (/)
+Theory of Planned Behaviour - Claudiu (/)
+Health Belief Model - Damian (/)
+Protection Motivation Theory -Irma (/)
+Elaboration Likelihood Model - Alex (/)
+Information-Motivation-Behavioural Skills Model -Damian (/)
+Transtheoretical Model - Alex (/)
+Precaution Adoption Process Model -Damian (/)
+Behaviour Change Theories- Interpersonal Level - Claudiu (/)
+Social Cognitive Theory - Irma (/)
+Social Network Theory - Alex (/)
+Social Capital Theory - Irma
+Behaviour Change Theories - Community Level - Devan (/)
+Diffusion Theory - Alex (/)
+Community Readiness Model - Nathan (/)
+Cognitive Behavioural Model of the Relapse Process - Nathan (/)"
+Sub-task,ITRC-2683,186973,186361,Research the limitations of SCORM & Storyline in OWL,ddorobek,rsanchez,Medium,Closed,Obsolete,2017-03-06 9:24,2017-03-29 11:18,,,,"The instructor want students to be able write content, based on the information  in the modules, then provide them with a grade and feedback. These grades will be included for course grade calculations. We need to determine which is the best way to do all of this and making it manageable for both the students, instructor and TA. 
+
+Potential solutions:
+- SCORM
+- Embedded SCORM/Storyline in Assignment
+etc.."
+Sub-task,ITRC-2675,186389,186361,Develop Articulate Template Structure & Design,ddorobek,rsanchez,Medium,Closed,Fixed,2017-02-28 13:10,2017-06-27 15:41,,,,"Design and develop the structure for the modules, including different paths/branches, input methods, feedback methods, grading, SCORM compatibility etc."
+Sub-task,ITRC-2674,186387,186361,Record & Edit Voiceovers ,ddorobek,rsanchez,Medium,Closed,Done,2017-02-28 13:07,2017-03-29 10:32,,,,Using the content provided create the voiceover narration and edit the audio clips to remove noise and have an optimal output volume. Minimize the sound file as much as possible without losing quality. 
+Task,ITRC-2673,186361,,OCCPTHER 9613 - Case Study Modules,ddorobek,rsanchez,Medium,Closed,Fixed,2017-02-28 11:43,2019-01-16 17:24,Liliana Alvarez,"Health Sciences, Faculty of",lalvare2,"We are redesigning the evaluation OCCPTHER 9613 to use Case Studies embedded in Storyline that will allow students to have a multiple choice and written rationale response. The instructor and TA will then provide them with written feedback and mark based on a rubric. There will be 5 weeks with two different scenario options, for a total of 10 modules. 
+
+We have agreed that we will aim for 5 modules first then create a second set if time permits. 
+
+*TEAM*
+- Damien - Lead/Articulate/Voiceover
+- Irma - Articulate
+- Cecilia - Illustrator
+- Aleks R. - Illustrator 
+- Allyson - Accessibility Lead
+- Ramon - ELT Liaison
+- Liliana Alvarez - Instructor
+- Lauren Anstey - TSC
+
+*SCHEDULE*
+- Initial Meeting - Feb 28 (/)
+- Content #1 Delivered (projected) - -Mar 3- -Mar 6- Mar 10 (Late) (/)
+- Voiceover #1 - Mar 15 (/)
+- Articulate Design Template & OWL Layout - -Mar 22- Apr 7 
+- Illustration Set #1 - Apr 28 (/)
+- Accessibility #1 - Apr 28 
+- Week 1 Module - May 5
+- OWL Testing  - May 9
+- Week 2 - May 12
+- Week 3 - May 19
+- Week 4 - May 26
+- Week 5 - June -2- 7
+- Week 6 - June -9- 7
+- End Date - June -12- 7
+- Course Begins - June 26
+
+*THEME/DESIGN*
+- Professional
+- Clinical
+- Clean Cut"
+Problem,ITRC-2648,183594,,Drop In - Formatting Tests and Quizzes,ddorobek,ddorobek,Medium,Closed,Fixed,2017-02-01 14:49,2017-02-01 14:50,,,,"An instructor came in with a few questions regarding tests and quizzes. First, she wanted to know if she could change the size of the text box for short answer/essay type questions, which I told her she couldn't. Next, she wanted to know if there was a way to remove the ""Acceptable Characters"" text for the numeric response type question. I told her she couldn't and suggested she used the fill in the blank type question. She also wanted to know how to add people to her project site, so I walked her through the process."
+Problem,ITRC-2640,182857,,Call In - Number of Current OWL courses,ddorobek,ddorobek,Medium,Closed,Fixed,2017-01-26 15:22,2017-01-26 15:22,,,,"Librarian Marg Sloan called asking for the number of current academic courses active in OWL in order to figure out how many research guides she had left to complete. I asked Deanna and she told me the number was 3926, which I then relayed to Marg."
+Problem,ITRC-2637,182023,,Drop In - Student Can't Access Course Site,ddorobek,ddorobek,Medium,Closed,Fixed,2017-01-20 15:05,2017-01-20 15:05,,,,Hoa Ly came in and said one of his students couldn't access his course site but all the other students could. I removed the student from the course site and added them again.
+Problem,ITRC-2618,180602,,Call in - Removal from Course Sites,ddorobek,ddorobek,Medium,Closed,Fixed,2017-01-11 15:51,2017-01-16 15:21,,,,Megan Thorne called asking to be removed from all the MIT courses she was enrolled in 2 years ago as she kept receiving OWL announcements.
+Problem,ITRC-2609,179635,, Help Set Up Forums and Assignments for Nursing Course,ddorobek,ddorobek,Medium,Closed,Fixed,2017-01-05 14:23,2017-01-19 8:47,,,,Allan McConnell booked an appointment for January 12 to help set up his OWL site.
+Problem,ITRC-2560,173949,,Drop In - Adding Grades to Gradebook,ddorobek,ddorobek,Medium,Closed,Fixed,2016-11-04 10:18,2016-11-04 10:34,,,,David Rodenhiser came in asking how to add grades to the gradebook. I walked him through the proper steps.
+Problem,ITRC-2551,172987,,Drop In - Importing Quiz to OWL from Scantron,ddorobek,ddorobek,Medium,Closed,Fixed,2016-10-26 15:08,2016-10-26 15:09,,,,Professor Christopher Whitty came in asking to import his Scantron grade results into owl. I walked him through the steps on correcting Scantron errors and creating a .dpc file through ScanExam-II and then showed him how to import the .dpc file into the gradebook.
+Problem,ITRC-2545,172343,,Drop In - Commenting On Word,ddorobek,ddorobek,Medium,Closed,Fixed,2016-10-20 14:13,2016-10-20 15:44,,,,Eli Nathans came in asking how to view a document on Word without the comments he added. I showed him how to do this.
+Problem,ITRC-2543,172254,,Drop In - Question About Exam Location Internet Restrictions ,ddorobek,ddorobek,Medium,Closed,Fixed,2016-10-19 16:01,2016-10-19 16:01,,,,A professor from Huron came in and asked if there was a way to only give students access to OWL on their laptops during an exam in order to prevent them from communicating with each other. I advised him to try booking a lab during the exam period as you can control students' access in the labs.
+Problem,ITRC-2492,168256,,Drop In - Configuring Forums With Groups,ddorobek,ddorobek,Medium,Closed,Fixed,2016-09-15 15:25,2016-09-15 15:40,,,,"Jessie Goldberg came in because she created forums for specific groups and the students within didn't have access to the forum topics. I found out that only the forum settings were configured to give contributor access to the groups, but not the topic settings."
+Problem,ITRC-2457,165671,,Drop In - Importing Content from Previous Site,ddorobek,ddorobek,Medium,Closed,Fixed,2016-09-01 14:05,2016-09-01 14:06,,,,Harvey Brown came in asking how to import content for his fall/winter course from the previous year's course. I walked him through the steps and made sure all the information was accurate.
+Sub-task,ITRC-2415,162012,78596,OWL Tool - Lessons - Comments feature,ddorobek,sfoster9,Medium,Closed,Fixed,2016-08-03 11:00,2017-11-03 14:25,,,,"Add a section to OWL Documentation about the Comments Tool feature of Lessons.
+
+Points should include:
+
+* adding the feature
+* how students would use it
+* how the feature promotes class interaction (e.g. comments and peer assessment)
+* how instructors can review and use students' work
+"
+Task,ITRC-2081,151285,,Migrant Worker Workshop - Edit,ddorobek,apypstra,Medium,Closed,Fixed,2016-05-04 10:33,2016-08-24 9:55,Ava John-Baptiste,,ajohnbap,"There is currently a rough cut of the Migrant Worker seminar from the filming in January. Ava would like a more refined edit with the slide-decks incorporated.
+
+Please come to me for the slides."
+Task,ITRC-417,106167,,Create instructions for refreshing the browser caches ,ddorobek,sfoster9,Medium,Closed,Fixed,2015-05-04 12:12,2016-08-02 9:43,,,,"Create a set of instructions for a public page to explain to users how to force refresh their browser caches.
+
+Please include instructions for modern browsers and version numbers.
+
+Please include screenshots eventually.
+
+This request is to assist us with dealing with the number of OWL issues following upgrades that are attributed to cached assets in the browsers."

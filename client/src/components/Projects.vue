@@ -3,6 +3,15 @@
     <h1>Projects and Services</h1>
     <div>
       <input type="text" v-model="search" placeholder="Search">
+      <select v-model="selected">
+        <option disabled>Filter by...</option>
+        <option>Title</option>
+        <option>Description</option>
+      </select>
+      <span>Project</span>
+      <input type="checkbox" id="projType" v-model="projType">
+      <span>Service</span>
+      <input type="checkbox" id="servType" v-model="servType">
     </div>
     <div v-if="projects.length > 0" class="table-wrap">
       <div>
@@ -14,13 +23,15 @@
       </div>
       <table>
         <tr>
-          <td>Title</td>
-          <!-- <td width="450">Description</td>  -->
-          <td width="100">Type</td>
-          <td width="100" align="center">Action</td>
+          <th v-for="column in columns" :key="column" width="100">
+            <a class="header" href="#" v-on:click="sortBy(column)" vbind:class="active: sortKey == column">{{ column }}</a>
+          </th>
+          <!-- <th @click="sortBy('title')">Title</th>
+          <th width="100">Type</th>
+          <th width="100" align="center">Action</th> -->
         </tr>
         <tr v-for="(project,index) in filteredProjects" :key="index">
-          <td>{{ project.title ? project.title : '' }}</td>
+          <td><router-link v-bind:to="{ name: 'viewproject', params: { id: project._id } }">{{ project.title ? project.title : '' }}</router-link></td>
           <!-- <td>{{ project.description ? project.description : '' }}</td> -->
           <td>{{ project.type }}</td> <!-- .toLowerCase() -->
           <td align="center">
@@ -44,13 +55,23 @@
 <script>
 import ProjectsService from '@/services/ProjectsService'
 import Swal from 'sweetalert2'
+// import Vue2Filters from 'vue2-filters'
+// import Vue from 'vue'
+
+// Vue.use(Vue2Filters)
 
 export default {
   name: 'projects',
   data () {
     return {
       projects: [],
-      search: ''
+      columns: ['Title', 'Type', 'Action'],
+      search: '',
+      selected: '',
+      projType: true,
+      servType: true,
+      sortKey: 'title',
+      reverse: false
     }
   },
   mounted () {
@@ -108,14 +129,35 @@ export default {
           })
         }
       })
+    },
+    sortBy (sortKey) {
+      console.log('sortBy', sortKey)
+      this.reverse = (this.sortKey === sortKey) ? !this.reverse : false
+      this.sortKey = sortKey
     }
   },
   computed: {
     filteredProjects () {
-      return this.projects
-      // return this.projects.filter((project) => {
-      //   return project.title.toLowerCase().includes(this.search.toLowerCase())
-      // })
+      if (this.projType || this.servType) {
+        if (this.projType && !this.servType) {
+          return this.projects.filter((project) => {
+            if (project.type.toLowerCase().includes('project')) {
+              return project.title.toLowerCase().includes(this.search.toLowerCase())
+            }
+          })
+        }
+        if (this.servType && !this.projType) {
+          return this.projects.filter((project) => {
+            if (project.type.toLowerCase().includes('service')) {
+              return project.title.toLowerCase().includes(this.search.toLowerCase())
+            }
+          })
+        } else {
+          return this.projects.filter((project) => {
+            return project.title.toLowerCase().includes(this.search.toLowerCase())
+          })
+        }
+      }
     }
   }
 }
@@ -131,9 +173,14 @@ export default {
 }
 table th, table tr {
   text-align: left;
+  padding: 10px;
+}
+table th {
+  color: #f2f2f2;
 }
 table thead {
   background: #f2f2f2;
+  padding: 10px;
 }
 table tr td {
   padding: 10px;
@@ -164,5 +211,8 @@ a.upload_link {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
+}
+a.header {
+  color: #f2f2f2;
 }
 </style>
