@@ -4,7 +4,7 @@ let express = require('express')
 let app = express.Router()
 
 app.get('/projects', (req, res) => {
-    Project.find({}, 'title description type', function (error, projects) {
+    Project.find({}, 'title description type ticketNum status faculty customerName customerID', function (error, projects) {
         if (error) { console.error(error); }
         res.send({
               projects: projects

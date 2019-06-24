@@ -1,12 +1,18 @@
 <template>
   <div class="projects">
     <h1>Projects and Services</h1>
+    <h2>Project Count: {{ this.projects.length }}</h2>
     <div>
       <input type="text" v-model="search" placeholder="Search">
       <select v-model="selected">
         <option disabled>Filter by...</option>
         <option>Title</option>
-        <option>Description</option>
+        <!-- <option>Description</option> -->
+        <option>Ticket Number</option>
+        <option>Status</option>
+        <option>Faculty/Affiliate</option>
+        <option>Customer Name</option>
+        <option>Customer ID</option>
       </select>
       <span>Project</span>
       <input type="checkbox" id="projType" v-model="projType">
@@ -134,29 +140,84 @@ export default {
       console.log('sortBy', sortKey)
       this.reverse = (this.sortKey === sortKey) ? !this.reverse : false
       this.sortKey = sortKey
+    },
+    findProjects () {
+      var typeString = ''
+      if (this.projType && this.servType) {
+        typeString = "project.type.toLowerCase().includes('project') || project.type.toLowerCase().includes('service')"
+      } else if (this.projType && !this.servType) {
+        typeString = "project.type.toLowerCase().includes('project')"
+      } else if (!this.projType && this.servType) {
+        typeString = "project.type.toLowerCase().includes('service')"
+      } else {
+        typeString = ''
+      }
+
+      switch (this.selected) {
+        case 'Title':
+          return this.projects.filter((project) => {
+            if (typeString) {
+              return project.title.toLowerCase().includes(this.search.toLowerCase())
+            }
+          })
+        case 'Ticket Number':
+          return this.projects.filter((project) => {
+            if (typeString) {
+              return project.ticketNum.toLowerCase().includes(this.search.toLowerCase())
+            }
+          })
+        case 'Status':
+          return this.projects.filter((project) => {
+            if (typeString) {
+              return project.status.toLowerCase().includes(this.search.toLowerCase())
+            }
+          })
+        case 'Faculty/Affiliate':
+          return this.projects.filter((project) => {
+            if (typeString) {
+              return project.faculty.toLowerCase().includes(this.search.toLowerCase())
+            }
+          })
+        case 'Customer Name':
+          return this.projects.filter((project) => {
+            if (typeString) {
+              return project.customerName.toLowerCase().includes(this.search.toLowerCase())
+            }
+          })
+        case 'Customer ID':
+          return this.projects.filter((project) => {
+            if (typeString) {
+              return project.customerID.toLowerCase().includes(this.search.toLowerCase())
+            }
+          })
+        case '':
+          return this.projects.filter((project) => {
+            if (typeString) {
+              if (project.title.toLowerCase().includes(this.search.toLowerCase())) {
+                return project.title.toLowerCase().includes(this.search.toLowerCase())
+              } else if (project.ticketNum.toLowerCase().includes(this.search.toLowerCase())) {
+                return project.ticketNum.toLowerCase().includes(this.search.toLowerCase())
+              } else if (project.status.toLowerCase().includes(this.search.toLowerCase())) {
+                return project.status.toLowerCase().includes(this.search.toLowerCase())
+              } else if (project.faculty.toLowerCase().includes(this.search.toLowerCase())) {
+                return project.faculty.toLowerCase().includes(this.search.toLowerCase())
+              } else if (project.customerName.toLowerCase().includes(this.search.toLowerCase())) {
+                return project.customerName.toLowerCase().includes(this.search.toLowerCase())
+              } else if (project.customerID.toLowerCase().includes(this.search.toLowerCase())) {
+                return project.customerID.toLowerCase().includes(this.search.toLowerCase())
+              }
+            }
+          })
+      }
     }
   },
   computed: {
     filteredProjects () {
-      if (this.projType || this.servType) {
-        if (this.projType && !this.servType) {
-          return this.projects.filter((project) => {
-            if (project.type.toLowerCase().includes('project')) {
-              return project.title.toLowerCase().includes(this.search.toLowerCase())
-            }
-          })
-        }
-        if (this.servType && !this.projType) {
-          return this.projects.filter((project) => {
-            if (project.type.toLowerCase().includes('service')) {
-              return project.title.toLowerCase().includes(this.search.toLowerCase())
-            }
-          })
-        } else {
-          return this.projects.filter((project) => {
-            return project.title.toLowerCase().includes(this.search.toLowerCase())
-          })
-        }
+      // var retProjects = []
+      if (this.selected === '') {
+        return this.findProjects()
+      } else {
+        return this.findProjects()
       }
     }
   }

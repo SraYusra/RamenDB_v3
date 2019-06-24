@@ -4,14 +4,8 @@
       <a id="home" href="/"> 
         <span>Projects/Services</span>  
       </a>
-      <a id="search" href="/search"> 
-        <span>Search</span>  
-      </a>
-      <a id="upload" href="/upload"> 
-        <span>Upload</span>  
-      </a>
       <a id="upload2" href="/upload2"> 
-        <span>Upload 2.0</span>  
+        <span>Upload</span>  
       </a>
       </Slide>
     </div>

@@ -1,47 +1,111 @@
 <template>
   <div class="projects">
     <h1>View Project</h1>
-      <div class="form">
-        <div>
-          <label>Title:</label> {{ title }}
-        </div>
-        <div>
-          <label>Description:</label> {{ description }}
-        </div>
-
-        <div>
-          <label>Ticket Number:</label> {{ ticketNum }}
-        </div>
-        <div>
-          <label>Type:</label> {{ type }}
-        </div>
-        <div>
-          <label>Status:</label> {{ status }}
-        </div>
-        <div>
-          <label>Faculty/Affiliate:</label> {{ faculty }}
-        </div>
-        <div>
-          <label>Customer Name:</label> {{ customerName }}
-        </div>
-        <div>
-           <label>Customer ID:</label> {{ customerID }}
-        </div>
-        <div>
-           <label>Course ID:</label> {{ courseID }}
-        </div>
-        <div>
-          <label>Hours:</label> {{ hours }}
-        </div>
-        <div>
-          <label>Start Date:</label> {{ startDate }}
-        </div>
-        <div>
-          <label>End Date:</label> {{ endDate }}
-        </div>
-        <div>
+      <div class="table-wrap">
+        <table align="center">
+          <tr>
+            <td width="25%">
+              <label>Title</label>
+            </td>
+            <td>
+              <p>{{ title }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Description</label>
+            </td>
+            <td>
+              <p>{{ description }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Ticket Number</label>
+            </td>
+            <td>
+              <p>{{ ticketNum }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Type</label>
+            </td>
+            <td>
+              <p>{{ type }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Status</label>
+            </td>
+            <td>
+              <p>{{ status }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Faculty/Affiliate</label>
+            </td>
+            <td>
+              <p>{{ faculty }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Customer Name</label>
+            </td>
+            <td>
+              <p>{{ customerName }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Customer ID</label>
+            </td>
+            <td>
+              <p>{{ customerID }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Course ID</label>
+            </td>
+            <td>
+              <p>{{ courseID }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Hours</label>
+            </td>
+            <td>
+              <p>{{ hours }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Start Date</label>
+            </td>
+            <td>
+              <p>{{ startDate }}</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>End Date</label>
+            </td>
+            <td>
+              <p>{{ endDate }}</p>
+            </td>
+          </tr>
+          <div>
+            <!-- <router-link v-bind:to="{ name: 'editproject', params: { id: project._id } }">Edit</router-link>  -->
+          </div>
+        </table>
+        <div align="center">
           <button class="app_project_btn" @click="editProject">Edit</button>
-          <!-- <router-link v-bind:to="{ name: 'editproject', params: { id: project._id } }">Edit</router-link>  -->
+          <button class="app_project_btn" @click="goBack">Back</button>
         </div>
       </div>
   </div>
@@ -67,7 +131,7 @@ export default {
       startDate: '',
       endDate: '',
       faculty: '',
-
+      id: '',
       statuses: [],
       faculties: [],
 
@@ -103,13 +167,18 @@ export default {
       this.faculty = response.data.faculty.replace(/['"]+/g, '')
     },
     async editProject () {
-      console.log()
+      // let ps = this.getProject()
+      console.log(this.id)
       // const response = await ProjectsService.getProject({
       //   id: this.$route.params.id // takes the id from the url, gets data by id" => projects/:id
       // })
-      // $this.$router.go({
+      // response.name
+      // this.$router.go({
       //   path: '/edit/', id
       // })
+    },
+    async goBack () {
+      this.$router.push({ name: 'Projects' })
     },
     async updateProject () {
       // Sends the updated data to the API
@@ -205,9 +274,28 @@ export default {
   text-transform: uppercase;
   font-size: 12px;
   font-weight: bold;
-  width: 520px;
+  /* width: 520px; */
   border: none;
   cursor: pointer;
+}
+.table-wrap {
+  width: 60%;
+  margin: 10px auto;
+  text-align: left;
+}
+table th {
+  background: #f2f2f2;
+  /* padding: 10px; */
+}
+table tr td {
+  padding: 10px;
+}
+table tr:nth-child(odd) {
+  background: #f2f2f2;
+}
+table {
+  border: 5px solid #f2f2f2;
+  /* border-collapse: collapse */
 }
 </style>
 

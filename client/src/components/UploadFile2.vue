@@ -13,11 +13,11 @@
             <input type="file" id="csv_file" name="csv_file" class="form-control" @change="loadCSV($event)">
           </div>
         </div>
-        <div class="col-sm-offset-3 col-sm-9">
+        <!-- <div class="col-sm-offset-3 col-sm-9">
           <div class="checkbox-inline">
             <label for="header_rows"><input type="checkbox" id="header_rows"> File contains header row?</label>
           </div>
-        </div>
+        </div> -->
         
         <div class="col-sm-offset-3 col-sm-9">
           <button @click="addProjects" class="app_project_btn">Parse CSV</button>
@@ -27,6 +27,7 @@
         <table v-if="parse_csv">
           <thead>
             <tr>
+              <th v-if="parse_csv">{{select}}</th>
               <th v-for="key in parse_header" :key="key.id"
                   @click="sortBy(key)"
                   :class="{ active: sortKey == key }">
@@ -37,18 +38,16 @@
             </tr>
           </thead> 
           <tr v-for="csv in parse_csv" :key="csv.id">
+            <td>
+              <div class="checkbox-inline">
+                <input type="checkbox" id="select" v-model="checkedProjects">
+              </div>
+            </td>
             <td v-for="key in parse_header" :key="key.id">
               {{csv[key]}}
             </td>
-            <td>
-              <div class="checkbox-inline">
-                <input type="checkbox" id="select">
-              </div>
-            </td>
           </tr>
-          
         </table>
-
       </div>
     </div>
   </div>
@@ -73,8 +72,11 @@ export default {
       sortKey: '',
       toBePosted: [], // contains all objects to be posted to DB
       matchCount: 0,
+      unmatchCount: 0,
       matchObjects: [],
-      unmatchObjects: []
+      unmatchObjects: [],
+      select: undefined,
+      checkedProjects: []
     }
   },
   mounted () {
@@ -97,13 +99,24 @@ export default {
       vm.sortKey = key
       vm.sortOrders[key] = vm.sortOrders[key] * -1
     },
-    // old parse csv(dont need, why is this here)
     csvJSON (csv) {
       var vm = this
       var lines = csv.split('\n')
       var result = []
       var headers = lines[0].split(',')
       this.parse_header = lines[0].split(',')
+      this.parse_header = [
+        'Summary',
+        'Issue key',
+        'Status',
+        'Created',
+        'Component/s',
+        'Due Date',
+        'Custom field (Customer Name)',
+        'Custom field (Department/Faculty)',
+        'Custom field (Customer User ID)'
+      ]
+      console.log(this.parse_header)
       lines[0].split(',').forEach(function (key) {
         vm.sortOrders[key] = 1
       })
@@ -116,7 +129,10 @@ export default {
 
         headers.map(function (header, indexHeader) {
           obj[header] = currentline[indexHeader]
+          // debugger
         })
+        // debugger
+        console.log(obj[1])
         result.push(obj)
       })
 
@@ -159,7 +175,7 @@ export default {
       lines.map(function (line, indexLine) {
         // Splits between commas unless they're in between quotes
         var entry = line.split(/,(?![^"]*"(?:(?:[^"]*"){2})*[^"]*$)/)
-        console.log('entry', entry)
+        // console.log('entry', entry)
         entry = entry || [] // entry is null or []
 
         if (entry.length < 1 || entry === undefined) return // bad
@@ -183,7 +199,7 @@ export default {
           }
         )
 
-        console.log('tempContent: ' + tempContent)
+        // console.log('tempContent: ' + tempContent)
 
         var postHeaders = [
           'title',
@@ -203,8 +219,8 @@ export default {
         postHeaders.forEach((k, i) => { obj[k] = tempContent[i] })
 
         // if (obj) obj.type.includes('Project') ? obj.type = 'PROJECT' : obj.type = 'SERVICE' // broken
-        console.log('obj: ', obj)
-        console.log('tobeposted: ', vm.toBePosted)
+        // console.log('obj: ', obj)
+        // console.log('tobeposted: ', vm.toBePosted)
         entry.forEach(e => {
           if (e.toLowerCase().includes('project')) {
             obj.type = 'PROJECT'
@@ -218,30 +234,35 @@ export default {
           if (obj.endDate === '') {
             obj.endDate = undefined
           }
-          console.log('end: ', obj.endDate, obj.endDate === '')
+          // console.log('end: ', obj.endDate, obj.endDate === '')
           if (obj.type !== 'PROJECT') {
             obj.type = 'SERVICE'
           }
           var match = false
-          console.log('this.proj', vm.projects)
+          // console.log('this.proj', vm.projects)
           vm.projects.forEach(project => {
-            if (project.title.includes(obj.title)) {
+            if (project.title === obj.title) {
               match = true
               vm.matchCount++
               vm.matchObjects.push(obj)
             }
           })
           if (!match) {
+            vm.unmatchCount++
             vm.toBePosted.push(obj) // pushes ready object to be posted into toBePosted array
           }
           match = false
-          console.log('matchCount:', vm.matchCount)
+          // console.log('matchCount:', vm.matchCount)
+          match = false
+          // console.log('matchObj len:', vm.matchObjects.length)
+          // console.log('matchObj:', vm.matchObjects)
+          // console.log('unmatchCount:', vm.unmatchCount)
         }
       })
 
       // Once all JSONS are created, post all JSONs in this.toBePosted, if its undefined or empty, assign it to an empty array
       // vm.toBePosted = this.toBePosted || []
-      console.log('toBePosted: ', this.toBePosted)
+      // console.log('toBePosted: ', this.toBePosted)
 
       // vm.addProjects()
 
@@ -253,10 +274,9 @@ export default {
       if (window.FileReader) {
         var reader = new FileReader()
         reader.readAsText(e.target.files[0])
-        // Handle errors load
+        this.select = 'Select'
         reader.onload = function (event) {
           var csv = event.target.result // Loads entire csv file content
-          // console.log(csv)
           vm.parse_csv = vm.csvJSON(csv)
           vm.parseCSV(csv) // Passes the csv to parseCSV
         }
@@ -308,12 +328,12 @@ export default {
           type: 'warning',
           title: 'Warning',
           confirmButtonText: 'Next',
-          html: `The following projects/services have already been uploaded:<br>` + matchString,
+          html: `The following ` + this.matchCount + ` projects/services have already been uploaded:<br>` + matchString,
           preConfirm: () => {
             Swal.insertQueueStep({
               type: 'success',
               title: 'Success',
-              html: `The following projects/services have been uploaded:<br>` + unmatchString
+              html: `The following ` + this.unmatchCount + ` projects/services have been uploaded:<br>` + unmatchString
             })
           }
         }])
@@ -352,9 +372,11 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15) 0 1px 0 0;
   margin: 10px;
   padding: 10px;
+  word-wrap: break-word;
+  display: table;
 } 
 .panel.panel-sm {
-  width: 60%;
+  width: 80%;
   margin: 10px auto;
   text-align: center;
 }
@@ -374,16 +396,21 @@ table {
   width: 100%;
   overflow-x: scroll;
   margin-top: 15px;
+  word-wrap: break-word;
+  border: 2px solid #dfdfdf;
 }
 
 td, th {
-  border: 1px solid #dddddd;
+  /* border: 1px solid #dddddd; */
+  
+  border-width: 1px;
   text-align: left;
   padding: 8px;
+  word-wrap: break-word;
 }
-
 tr:nth-child(even) {
   background-color: #dddddd;
+  /* border: 1px solid black; */
 }
 
 .app_project_btn {
